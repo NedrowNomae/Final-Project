@@ -8,11 +8,11 @@ print(len(cards))
 print(cards)
 #hearts
 
-class 2H(Sprite):
-    2H = ImageAsset("2H.png")
+class H2(Sprite):
+    H2 = ImageAsset("2H.png")
     def __init__(self,  position):
         super().__init__(2H.2H, position)
-class 3H(Sprite):
+"""class H3(Sprite):
     3H = ImageAsset("3H.png")
     def __init__(self,  position):
         super().__init__(3H.3H, position)
@@ -87,7 +87,7 @@ KC
 AC = Sprite(ImageAsset("4D.png"))
 
 """
-3H((100,100))
+H2((100,100))
     
     
 
