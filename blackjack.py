@@ -173,15 +173,46 @@ class AS(Sprite):
 
 
 #clubs
-2C
-3C
-4C
-5C
-6C
-7C
-8C
-9C
-10C
+class C2(Sprite):
+    C2 = ImageAsset("2C.png")
+    def __init__(self,  position):
+        super().__init__(C2.C2, position)
+class C3(Sprite):
+    C3 = ImageAsset("3C.png")
+    def __init__(self,  position):
+        super().__init__(C3.C3, position)
+class C4(Sprite):
+    C4 = ImageAsset("4C.png")
+    def __init__(self,  position):
+        super().__init__(C4.C4, position)
+class C5(Sprite):
+    C5 = ImageAsset("5C.png")
+    def __init__(self,  position):
+        super().__init__(C5.C5, position)
+class C6(Sprite):
+    C6 = ImageAsset("2C.png")
+    def __init__(self,  position):
+        super().__init__(C6.C6, position)
+class C7(Sprite):
+    C7 = ImageAsset("7C.png")
+    def __init__(self,  position):
+        super().__init__(C7.C7, position)
+class C8(Sprite):
+    C8 = ImageAsset("8C.png")
+    def __init__(self,  position):
+        super().__init__(C8.C8, position)
+class C9(Sprite):
+    C9 = ImageAsset("9C.png")
+    def __init__(self,  position):
+        super().__init__(C9.C9, position)
+class C10(Sprite):
+    C10 = ImageAsset("10C.png")
+    def __init__(self,  position):
+        super().__init__(C10.C10, position)
+class C2(Sprite):
+    C2 = ImageAsset("JC.png")
+    def __init__(self,  position):
+        super().__init__(JC.JC, position)
 JC
 QC
 KC
