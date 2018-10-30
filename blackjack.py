@@ -61,7 +61,7 @@ QC
 KC
 AC
 """
-s= Sprite(ImageAsset("4D.png"), (100,200))
+s= Sprite(ImageAsset("4D.png"), (500,1000))
 #s.scale = .1
 
 
