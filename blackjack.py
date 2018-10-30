@@ -87,7 +87,7 @@ KC
 AC = Sprite(ImageAsset("4D.png"))
 
 """
-
+3H((100,100))
     
     
 
