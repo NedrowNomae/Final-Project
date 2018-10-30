@@ -1,18 +1,28 @@
 
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset, ImageAsset
+import random
 
+cards = [2H, 3H, 4H, 5H, 6H, 7H, 8H, 9H, 10H, JH, QH, KH, AH]
+random.shuffle(cards)
+print(cards)
 #hearts
+"""
 class 2H(Sprite):
     2H = ImageAsset("2H.png")
     def __init__(self,  position):
         super().__init__(2H.2H, position)
-3H
 class 3H(Sprite):
     3H = ImageAsset("3H.png")
     def __init__(self,  position):
         super().__init__(3H.3H, position)
-4H
-5H
+class 4H(Sprite):
+    4H = ImageAsset("4H.png")
+    def __init__(self,  position):
+        super().__init__(4H.4H, position)
+class 5H(Sprite):
+    5H = ImageAsset("2H.png")
+    def __init__(self,  position):
+        super().__init__(5H.5H, position)
 6H
 7H
 8H
@@ -68,7 +78,7 @@ QC
 KC
 AC = Sprite(ImageAsset("4D.png"))
 
-
+"""
 
     
     
