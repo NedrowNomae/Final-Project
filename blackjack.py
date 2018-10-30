@@ -21,11 +21,17 @@ class 4H(Sprite):
     def __init__(self,  position):
         super().__init__(4H.4H, position)
 class 5H(Sprite):
-    5H = ImageAsset("2H.png")
+    5H = ImageAsset("5H.png")
     def __init__(self,  position):
         super().__init__(5H.5H, position)
-6H
-7H
+class 6H(Sprite):
+    6H = ImageAsset("6H.png")
+    def __init__(self,  position):
+        super().__init__(6H.6H, position)
+class 7H(Sprite):
+    7H = ImageAsset("7H.png")
+    def __init__(self,  position):
+        super().__init__(7H.7H, position)
 8H
 9H
 10H
