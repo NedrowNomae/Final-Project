@@ -228,9 +228,8 @@ class AC(Sprite):
 
 s = cards[1]
 print(s)
-for x in range(1):
-    cards[x]((100,100))
-#s = s.scale(.1)
+s((100,100))
+s = s.scale(.1)
 
 
     
