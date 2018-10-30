@@ -1,9 +1,12 @@
 
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset, ImageAsset
-"""
+
 #hearts
-2H = Sprite
-3H
+class 2H(Sprite):
+    2H = ImageAsset("2H.png")
+    def __init__(self,  position):
+        super().__init__(2H.2H, position)
+"""3H
 4H
 5H
 6H
@@ -59,10 +62,12 @@ AS
 JC
 QC
 KC
-AC
+AC = Sprite(ImageAsset("4D.png"))
 """
-s= Sprite(ImageAsset("4D.png"), (500,1000))
-#s.scale = .1
+s = Sprite(ImageAsset("4D.png"), (500,1000))
+def card(s):
+    
+    
 
 
 app = App(500,500)  
