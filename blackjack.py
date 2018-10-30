@@ -64,8 +64,9 @@ QC
 KC
 AC = Sprite(ImageAsset("4D.png"))
 """
-s = Sprite(ImageAsset("4D.png"), (500,1000))
+#s = Sprite(ImageAsset("4D.png"), (500,1000))
 def card(s):
+    
     
     
 
