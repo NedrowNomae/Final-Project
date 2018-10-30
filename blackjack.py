@@ -62,7 +62,7 @@ KC
 AC
 """
 s= Sprite(ImageAsset("4D.png"), (100,200))
-s.scale = .1
+#s.scale = .1
 
 
 app = App(5000,5000)  
