@@ -7,7 +7,7 @@ random.shuffle(cards)
 print(len(cards))
 print(cards)
 #hearts
-"""
+
 class 2H(Sprite):
     2H = ImageAsset("2H.png")
     def __init__(self,  position):
@@ -32,6 +32,7 @@ class 7H(Sprite):
     7H = ImageAsset("7H.png")
     def __init__(self,  position):
         super().__init__(7H.7H, position)
+"""
 8H
 9H
 10H
