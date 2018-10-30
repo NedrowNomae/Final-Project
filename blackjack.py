@@ -227,7 +227,7 @@ class AC(Sprite):
         super().__init__(AC.AC, position)
 
 
-cards[1]((100,100))
+str(cards[1])((100,100))
     
     
 
