@@ -228,7 +228,7 @@ class AC(Sprite):
 
 s = cards[1]
 print(s)
-s((100,100))
+
 
 
     
