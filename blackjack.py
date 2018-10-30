@@ -65,5 +65,5 @@ s= Sprite(ImageAsset("4D.png"), (500,1000))
 #s.scale = .1
 
 
-app = App(5000,5000)  
+app = App(10000,10000)  
 app.run()
