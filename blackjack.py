@@ -1,6 +1,6 @@
 
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset, ImageAsset
-
+"""
 #hearts
 2H = Sprite
 3H
@@ -60,7 +60,7 @@ JC
 QC
 KC
 AC
-
+"""
 s= Sprite(ImageAsset("4D.png"), (100,200))
 s.scale = .1
 
