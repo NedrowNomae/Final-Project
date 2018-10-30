@@ -6,7 +6,11 @@ class 2H(Sprite):
     2H = ImageAsset("2H.png")
     def __init__(self,  position):
         super().__init__(2H.2H, position)
-"""3H
+3H
+class 3H(Sprite):
+    3H = ImageAsset("3H.png")
+    def __init__(self,  position):
+        super().__init__(3H.3H, position)
 4H
 5H
 6H
@@ -63,10 +67,9 @@ JC
 QC
 KC
 AC = Sprite(ImageAsset("4D.png"))
-"""
-#s = Sprite(ImageAsset("4D.png"), (500,1000))
-def card(s):
-    
+
+
+
     
     
 
