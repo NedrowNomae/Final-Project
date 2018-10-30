@@ -226,10 +226,8 @@ class AC(Sprite):
     def __init__(self,  position):
         super().__init__(AC.AC, position)
 
-s = cards[0]((100,100))
-print(s)
+AC(100,100)
 
-s.scale = .1
 
     
     
