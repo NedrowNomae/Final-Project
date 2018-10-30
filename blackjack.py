@@ -209,14 +209,22 @@ class C10(Sprite):
     C10 = ImageAsset("10C.png")
     def __init__(self,  position):
         super().__init__(C10.C10, position)
-class C2(Sprite):
-    C2 = ImageAsset("JC.png")
+class JC(Sprite):
+    JC = ImageAsset("JC.png")
     def __init__(self,  position):
         super().__init__(JC.JC, position)
-JC
-QC
-KC
-AC = Sprite(ImageAsset("4D.png"))
+class QC(Sprite):
+    QC = ImageAsset("QC.png")
+    def __init__(self,  position):
+        super().__init__(QC.QC, position)
+class KC(Sprite):
+    KC = ImageAsset("KC.png")
+    def __init__(self,  position):
+        super().__init__(KC.KC, position)
+class AC(Sprite):
+    AC = ImageAsset("AC.png")
+    def __init__(self,  position):
+        super().__init__(AC.AC, position)
 
 
 H2((100,100))
