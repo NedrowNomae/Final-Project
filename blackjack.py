@@ -226,8 +226,8 @@ class AC(Sprite):
     def __init__(self,  position):
         super().__init__(AC.AC, position)
 
-
-str(cards[1])((100,100))
+s = 
+((100,100))
     
     
 
