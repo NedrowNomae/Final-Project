@@ -228,7 +228,7 @@ class AC(Sprite):
 
 s = cards[1]
 print(s)
-((100,100))
+H4((100,100))
 s = s.scale(.1)
 
 
