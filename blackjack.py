@@ -40,7 +40,7 @@ class H9(Sprite):
     H9 = ImageAsset("9H.png")
     def __init__(self,  position):
         super().__init__(H9.H9, position)
-class 10H(Sprite):
+class H10(Sprite):
     H7 = ImageAsset("10H.png")
     def __init__(self,  position):
         super().__init__(H10.H10, position)
