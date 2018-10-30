@@ -11,7 +11,7 @@ print(cards)
 class H2(Sprite):
     H2 = ImageAsset("2H.png")
     def __init__(self,  position):
-        super().__init__(2H.2H, position)
+        super().__init__(H2.H2, position)
 """class H3(Sprite):
     3H = ImageAsset("3H.png")
     def __init__(self,  position):
@@ -32,7 +32,7 @@ class 7H(Sprite):
     7H = ImageAsset("7H.png")
     def __init__(self,  position):
         super().__init__(7H.7H, position)
-"""
+
 8H
 9H
 10H
