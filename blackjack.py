@@ -234,7 +234,7 @@ s = cards[0]
 
 
 s((100,100))
-s = s.scale(.1)
+#s = s.scale(.1)
 
     
     
