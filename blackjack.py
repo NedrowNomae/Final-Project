@@ -233,7 +233,7 @@ random.shuffle(cards)
 s = cards[0]
 print(s)
 s((100,100))
-#s = s.scale(.1)
+s = s.scale(.1)
 
 
     
