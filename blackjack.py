@@ -232,9 +232,9 @@ random.shuffle(cards)
 s = cards[0]
 
 
-#s((100,100))
-a = s.scale(.1)
-a((100,100))
+s((100,100))
+s = s.scale(.1)
+s((100,100))
     
     
 
