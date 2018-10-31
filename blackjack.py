@@ -232,7 +232,7 @@ s = cards[0]
 a = s((100,100))
 a.scale = 0.1
 
-cards.remove[0]
+cards.pop(0)
 
 b = cards[0]
 c = b((200,200))
