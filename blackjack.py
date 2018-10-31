@@ -235,7 +235,7 @@ a.scale = 0.1
 cards.pop(0)
 
 b = cards[0]
-c = b((200,200))
+c = b((200,100))
 c.scale = 0.1
 
 app = App(500,500)  
