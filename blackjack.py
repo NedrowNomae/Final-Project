@@ -267,8 +267,9 @@ def pauseplay(event):
 
 def step():
     global t
-    while t == 1:
-        print("Press H to hit or press S to stay")
+    while t == 20:
+        print("Hello")
+        t = 21
 def stay(event):
     global t
     if t == 1:
