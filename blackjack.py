@@ -284,7 +284,7 @@ def hit(event):
     p = o((x,y))
     p.scale = .1
     cards.pop(0)
-    x += 50
+    x = x + 100
 
 
 
