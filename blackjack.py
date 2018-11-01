@@ -265,18 +265,21 @@ def pauseplay(event):
     global t
     t = 1
 
+def step():
+    while t == 1:
+        action = input("H to hit or S to stay")
+        if action == "H":
+            print("hit")
+        if action == "S":
+            print("stay")
+            t = 2
+        else:
+        print("Try again")
+
 
 app = App(500,500)  
-app.run()
+app.run(step)
 myapp.listenKeyEvent('keydown','space',pauseplay)
 
-while t == 1:
-    action = input("H to hit or S to stay")
-    if action == "H":
-        print("hit")
-    if action == "S":
-        print("stay")
-        t = 2
-    else:
-        print("Try again")
+
 
