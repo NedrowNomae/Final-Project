@@ -276,7 +276,7 @@ def step():
         else:
             print("Try again")
 
-
+myapp = App()
 app = App(500,500)  
 app.run(step)
 myapp.listenKeyEvent('keydown','space',pauseplay)
