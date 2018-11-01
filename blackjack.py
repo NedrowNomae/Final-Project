@@ -287,7 +287,7 @@ def hit(event):
     p.scale = .1
     cards.pop(0)
     m = m + 1
-    print(o)
+    print(str(o))
 
 
 
