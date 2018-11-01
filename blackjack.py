@@ -271,7 +271,6 @@ def step():
     y = 150
     while t == 1:
         print("Press H to hit or press S to stay")
-        t = 2
 def stay(event):
     global t
     if t == 1:
