@@ -271,7 +271,7 @@ def step():
         action = input("H to hit or S to stay")
         if action == "H":
             print("hit")
-        if action == "S":
+        elif action == "S":
             print("stay")
             t = 2
         else:
