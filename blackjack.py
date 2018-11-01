@@ -276,7 +276,7 @@ def stay(event):
     if t == 1:
         print("You stayed")
         t = 2
-m = 3
+m = 2
 def hit(event):
     global cards, y, m
     y = 150
