@@ -250,7 +250,7 @@ w = q((50,25))
 w.scale = .1
 cards.pop(0)
 
-cardback = 
+cardback((150,25))
 
 
 
