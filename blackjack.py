@@ -270,25 +270,12 @@ def step():
     x = 250
     y = 150
     while t == 1:
-        action = input("H to hit or S to stay")
-        if action == "H":
-            print("hit")
-            o = cards[0]
-            p = o((x,y))
-            p.scale = .1
-            cards.pop(0)
-            x += 50
-            
-        elif action == "S":
-            print("stay")
-            t = 2
-        else:
-            print("Try again")
+        print("Press H to hit or press S to stay")
 
 myapp = App()
 app = App(500,500)  
 app.run(step)
 myapp.listenKeyEvent('keydown','space',pauseplay)
-
-
+myapp.listenKeyEvent('keydown','s',stay)
+myapp.listenKeyEvent('keydown','h',hit)
 
