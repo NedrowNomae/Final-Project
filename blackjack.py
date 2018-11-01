@@ -243,6 +243,10 @@ cards.pop(0)
 q = cards[0]
 w = q((50,25))
 w.scale = .1
+cards.pop(0)
+
+ImageAsset("gray_back.png",(150,25))
+
 
 
 app = App(500,500)  
