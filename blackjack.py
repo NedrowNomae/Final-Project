@@ -258,7 +258,7 @@ if q == H10 or q == JH or q == QH or q == KH or q == AH or q == D10 or q == JD o
     cards.pop(0)
 e = cardback((150, 25))
 e.scale = .1
-t = 0
+t = 1
 
 print("press space to being")
 def pauseplay(event):
@@ -273,7 +273,8 @@ def step():
         print("Press H to hit or press S to stay")
         t = 2
 def stay(event):
-    if t = 1:
+    global t
+    if t == 1:
         print("You stayed")
         t = 2
 def hit(event):
