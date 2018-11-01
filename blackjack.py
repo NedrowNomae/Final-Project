@@ -282,7 +282,7 @@ def hit(event):
     x = 250
     y = 150
     o = cards[0]
-    p = o((50m,y))
+    p = o((75*m,y))
     p.scale = .1
     cards.pop(0)
     m = m + 1
