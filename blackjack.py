@@ -261,9 +261,9 @@ e.scale = .1
 t = 0
 while t == 0:
     action = input("H to hit or S to stay")
-    if action = "H":
+    if action == "H":
         print("hit")
-    if action = "S":
+    if action == "S":
         print("stay")
         t = 1
     else:
