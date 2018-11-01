@@ -229,13 +229,13 @@ cards = [H2, H3, H4, H5, H6, H7, H8, H9, H10, JH, QH, KH, AH, D2, D3, D4, D5, D6
 random.shuffle(cards)
 
 s = cards[0]
-a = s((100,150))
+a = s((50,150))
 a.scale = 0.1
 
 cards.pop(0)
 
 b = cards[0]
-c = b((200,150))
+c = b((150,150))
 c.scale = 0.1
 
 app = App(500,500)  
