@@ -252,7 +252,7 @@ w = q((50,25))
 w.scale = .1
 cards.pop(0)
 
-e = cardback()
+e = cardback((150, 25))
 e.scale = .1
 
 
