@@ -264,6 +264,7 @@ print("press space to being")
 def pauseplay(event):
     global t
     t = 1
+    print("Press H to hit or S to stay")
 
 def step():
     global t
