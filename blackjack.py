@@ -251,7 +251,7 @@ w.scale = .1
 cards.pop(0)
 
 cardback((150,25))
-
+cardback.scale = .1
 
 
 app = App(500,500)  
