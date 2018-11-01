@@ -276,13 +276,12 @@ def stay(event):
     if t == 1:
         print("You stayed")
         t = 2
-m = 5
+m = 3
 def hit(event):
-    global cards, x, y, m
-    x = 250
+    global cards, y, m
     y = 150
     o = cards[0]
-    p = o((75*m,y))
+    p = o((100*m+50,y))
     p.scale = .1
     cards.pop(0)
     m = m + 1
