@@ -275,7 +275,7 @@ def step():
 def stay(event):
     print("You stayed")
 def hit(event):
-    global cards
+    global cards, x
     x = 250
     y = 150
     o = cards[0]
