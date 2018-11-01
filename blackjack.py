@@ -258,7 +258,18 @@ if q == H10 or q == JH or q == QH or q == KH or q == AH or q == D10 or q == JD o
     cards.pop(0)
 e = cardback((150, 25))
 e.scale = .1
-
+t = 0
+while t == 0:
+    action = input("H to hit or S to stay")
+    if action = "H":
+        print("hit")
+    if action = "S":
+        print("stay")
+        t = 1
+    else:
+        print("Try again")
+    
+    
 
 
 app = App(500,500)  
