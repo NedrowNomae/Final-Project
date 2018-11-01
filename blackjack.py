@@ -255,6 +255,7 @@ if q == H10 or q == JH or q == QH or q == KH or q == AH or q == D10 or q == JD o
     r = cards[0]
     if r == H10 or r == JH or r == QH or r == KH or r == AH or r == D10 or r == JD or r == QD or r == KD or r == AD or r == S10 or r == JS or r == QS or r == KS or r == AS or r == C10 or r == JC or r == QC or r == KC or r == AC:
         print("Dealer has blackjack")
+        r((150, 25))
     cards.pop(0)
 e = cardback((150, 25))
 e.scale = .1
