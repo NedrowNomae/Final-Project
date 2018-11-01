@@ -267,10 +267,14 @@ def pauseplay(event):
 
 def step():
     global t
+    x = 200
+    y = 150
     while t == 1:
         action = input("H to hit or S to stay")
         if action == "H":
             print("hit")
+            y = cards[0]
+            
         elif action == "S":
             print("stay")
             t = 2
