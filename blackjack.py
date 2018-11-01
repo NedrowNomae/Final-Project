@@ -278,7 +278,7 @@ def hit(event):
     global cards
     x = 250
     y = 150
-    o = cards(0)
+    o = cards[0]
     p = o((x,y))
     p.scale = .1
     cards.pop(0)
