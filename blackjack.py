@@ -238,5 +238,10 @@ b = cards[0]
 c = b((150,150))
 c.scale = 0.1
 
+q = cards[0]
+w = q((50,50))
+w.scale = .1
+
+
 app = App(500,500)  
 app.run()
