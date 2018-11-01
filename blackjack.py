@@ -274,7 +274,7 @@ def step():
             print("stay")
             t = 2
         else:
-        print("Try again")
+            print("Try again")
 
 
 app = App(500,500)  
