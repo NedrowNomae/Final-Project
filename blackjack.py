@@ -238,8 +238,10 @@ b = cards[0]
 c = b((150,150))
 c.scale = 0.1
 
+cards.pop(0)
+
 q = cards[0]
-w = q((50,50))
+w = q((50,25))
 w.scale = .1
 
 
