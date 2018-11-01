@@ -273,7 +273,11 @@ def step():
         action = input("H to hit or S to stay")
         if action == "H":
             print("hit")
-            y = cards[0]
+            o = cards[0]
+            p = o((x,y))
+            p.scale = .1
+            cards.pop(0)
+            x += 50
             
         elif action == "S":
             print("stay")
