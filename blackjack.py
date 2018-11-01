@@ -1,7 +1,7 @@
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset, ImageAsset
 import random
 
-
+run = 0
 
 #print(len(cards))
 
@@ -251,9 +251,11 @@ q = cards[0]
 w = q((50,25))
 w.scale = .1
 cards.pop(0)
-
+if q == H10 or q == JH or q == QH or q == KH:
+    print("Hello")
 e = cardback((150, 25))
 e.scale = .1
+
 
 
 app = App(500,500)  
