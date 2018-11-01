@@ -266,6 +266,7 @@ def pauseplay(event):
     t = 1
 
 def step():
+    global t
     while t == 1:
         action = input("H to hit or S to stay")
         if action == "H":
