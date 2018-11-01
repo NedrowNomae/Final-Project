@@ -267,8 +267,6 @@ def pauseplay(event):
 
 def step():
     global t
-    x = 250
-    y = 150
     while t == 1:
         print("Press H to hit or press S to stay")
 def stay(event):
@@ -277,7 +275,7 @@ def stay(event):
         print("You stayed")
         t = 2
 def hit(event):
-    global cards, x
+    global cards, x, y
     x = 250
     y = 150
     o = cards[0]
