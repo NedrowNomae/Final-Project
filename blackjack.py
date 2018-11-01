@@ -273,7 +273,9 @@ def step():
         print("Press H to hit or press S to stay")
         t = 2
 def stay(event):
-    print("You stayed")
+    if t = 1:
+        print("You stayed")
+        t = 2
 def hit(event):
     global cards, x
     x = 250
