@@ -271,6 +271,20 @@ def step():
     y = 150
     while t == 1:
         print("Press H to hit or press S to stay")
+        t = 2
+def stay(event):
+    print("You stayed")
+def hit(event):
+    global cards
+    x = 250
+    y = 150
+    o = cards(0)
+    p = o((x,y))
+    p.scale = .1
+    cards.pop(0)
+    x += 50
+
+
 
 myapp = App()
 app = App(500,500)  
