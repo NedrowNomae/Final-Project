@@ -259,18 +259,24 @@ if q == H10 or q == JH or q == QH or q == KH or q == AH or q == D10 or q == JD o
 e = cardback((150, 25))
 e.scale = .1
 t = 0
-while t == 0:
+
+print("press space to being")
+def pauseplay(event):
+    global t
+    t = 1
+
+
+app = App(500,500)  
+app.run()
+myapp.listenKeyEvent('keydown','space',pauseplay)
+
+while t == 1:
     action = input("H to hit or S to stay")
     if action == "H":
         print("hit")
     if action == "S":
         print("stay")
-        t = 1
+        t = 2
     else:
         print("Try again")
-    
-    
 
-
-app = App(500,500)  
-app.run()
