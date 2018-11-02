@@ -273,9 +273,11 @@ def pauseplay(event):
 
 def step():
     global t
-    while t == 20:
-        print("Hello")
-        t = 21
+    while t == 2:
+        r((150,25))
+        r.scale = .1
+        t = 3
+    
 def stay(event):
     global t, r
     if t == 1:
