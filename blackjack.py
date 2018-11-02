@@ -285,112 +285,112 @@ def stay(event):
         t = 2
 yourscore = 0
 #getting the starting score
-if a == H2:
+if s == H2:
     yourscore += 2
     print(yourscore)
-elif a == S2:
+elif s == S2:
     yourscore += 2
     print(yourscore)
-elif a == D2:
+elif s == D2:
     yourscore += 2
     print(yourscore)
-elif a == C2:
+elif s == C2:
     yourscore += 2
     print(yourscore)
-elif a == H3:
+elif s == H3:
     yourscore += 3
     print(yourscore)
-elif a == S3:
+elif s == S3:
     yourscore += 3
     print(yourscore)
-elif a == D3:
+elif s == D3:
     yourscore += 3
     print(yourscore)
-elif a == C3:
+elif s == C3:
     yourscore += 3
     print(yourscore)
-elif a == H4:
+elif s == H4:
     yourscore += 4
     print(yourscore)
-elif a == S4:
+elif s == S4:
     yourscore += 4
     print(yourscore)
-elif a == D4:
+elif s == D4:
     yourscore += 4
     print(yourscore)
-elif a == C4:
+elif s == C4:
     yourscore += 4
     print(yourscore)
-elif a == H5:
+elif s == H5:
     yourscore += 5
     print(yourscore)
-elif a == C5:
+elif s == C5:
     yourscore += 5
     print(yourscore)
-elif a == D5:
+elif s == D5:
     yourscore += 5
     print(yourscore)
-elif a == S5:
+elif s == S5:
     yourscore += 5
     print(yourscore)
-elif a == H6:
+elif s == H6:
     yourscore += 6
     print(yourscore)
-elif a == S6:
+elif s == S6:
     yourscore += 6
     print(yourscore)
-elif a == D6:
+elif s == D6:
     yourscore += 6
     print(yourscore)
-elif a == C6:
+elif s == C6:
     yourscore += 6
     print(yourscore)
-elif a == H7:
+elif s == H7:
     yourscore += 7
     print(yourscore)
-elif a == C7:
+elif s == C7:
     yourscore += 7
     print(yourscore)
-elif a == S7:
+elif s == S7:
     yourscore += 7
     print(yourscore)
-elif a == D7:
+elif s == D7:
     yourscore += 7
     print(yourscore)
-elif a == D8:
+elif s == D8:
     yourscore += 8
     print(yourscore)
-elif a == C8:
+elif s == C8:
     yourscore += 8
     print(yourscore)
-elif a == S8:
+elif s == S8:
     yourscore += 8
     print(yourscore)
-elif a == H8:
+elif s == H8:
     yourscore += 8
     print(yourscore)
-elif a == D9:
+elif s == D9:
     yourscore += 9
     print(yourscore)
-elif a == H9:
+elif s == H9:
     yourscore += 9
     print(yourscore)
-elif a == S9:
+elif s == S9:
     yourscore += 9
     print(yourscore)
-elif a == C9:
+elif s == C9:
     yourscore += 9
     print(yourscore)
-elif a == AH:
+elif s == AH:
     yourscore += 1
     print(yourscore)
-elif a == AH:
+elif s == AS:
     yourscore += 1
     print(yourscore)
-elif a == AC:
+elif s == AC:
     yourscore += 1
     print(yourscore)
-elif a == AD:
+elif s == AD:
     yourscore += 1
     print(yourscore)
 else:
@@ -508,7 +508,7 @@ def hit(event):
     elif o == AH:
         yourscore += 1
         print(yourscore)
-    elif o == AH:
+    elif o == AS:
         yourscore += 1
         print(yourscore)
     elif o == AC:
