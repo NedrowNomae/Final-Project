@@ -508,7 +508,7 @@ elif b == AD:
     yourscore += 1
     print(yourscore)
 else:
-    yourscore += 1
+    yourscore += 10
     print(yourscore)
 
 
