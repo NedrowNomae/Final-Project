@@ -296,7 +296,7 @@ def hit(event):
     m = m + 1
     print(str(o))
     if o == H2:
-        yourscare += 2
+        yourscore += 2
         print(yourscore)
         
 
