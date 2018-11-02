@@ -2,7 +2,8 @@ from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, El
 import random
 
 run = 0
-
+yourscore = 0
+dealerscore = 0
 #print(len(cards))
 
 class cardback(Sprite):
@@ -285,7 +286,8 @@ def stay(event):
         t = 2
         j = r((150,25))
         j.scale = .1
-yourscore = 0
+        
+
 #getting the starting score
 if s == H2:
     yourscore += 2
