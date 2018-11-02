@@ -283,11 +283,11 @@ def stay(event):
     if t == 1:
         print("You stayed")
         t = 2
-
+yourscore = 0
 
 m = 2
 def hit(event):
-    global cards, y, m
+    global cards, y, m, yourscore
     y = 150
     o = cards[0]
     p = o((100*m+50,y))
@@ -295,6 +295,10 @@ def hit(event):
     cards.pop(0)
     m = m + 1
     print(str(o))
+    if o == H2:
+        yourscare += 2
+        print(yourscore)
+        
 
 
 
