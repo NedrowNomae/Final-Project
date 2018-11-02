@@ -516,7 +516,7 @@ else:
 
 m = 2
 def hit(event):
-    global cards, y, m, yourscore
+    global cards, y, m, yourscore, t
     y = 150
     o = cards[0]
     p = o((100*m+50,y))
