@@ -406,7 +406,7 @@ def hit(event):
         print(yourscore)
     else:
         yourscore += 1
-        print(your score)
+        print(yourscore)
     if yourscore > 21:
         print("You busted")
 
