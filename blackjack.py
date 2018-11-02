@@ -260,6 +260,7 @@ if q == H10 or q == JH or q == QH or q == KH or q == AH or q == D10 or q == JD o
     cards.pop(0)
 r = cards[0]
 cards.pop(0)
+
 e = cardback((150, 25))
 e.scale = .1
 t = 1
@@ -281,6 +282,7 @@ def stay(event):
         print("You stayed")
         t = 2
     r((150,25))
+    r.scale = .1
     
 m = 2
 def hit(event):
