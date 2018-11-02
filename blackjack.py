@@ -274,10 +274,12 @@ def step():
         print("Hello")
         t = 21
 def stay(event):
-    global t
+    global t, r
     if t == 1:
         print("You stayed")
         t = 2
+    r((150,25))
+    
 m = 2
 def hit(event):
     global cards, y, m
