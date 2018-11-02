@@ -510,6 +510,8 @@ else:
     print(dealerscore)
 if dealerscore == 21:
     print("dealer has blackjack")
+    j = r((150,25))
+    j.scale = .1
     t = 3
 
 #getting the starting score
