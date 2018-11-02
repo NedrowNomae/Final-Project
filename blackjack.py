@@ -284,119 +284,118 @@ def stay(event):
         print("You stayed")
         t = 2
 yourscore = 0
-
-    if o == H2:
-        yourscore += 2
-        print(yourscore)
-    elif o == S2:
-        yourscore += 2
-        print(yourscore)
-    elif o == D2:
-        yourscore += 2
-        print(yourscore)
-    elif o == C2:
-        yourscore += 2
-        print(yourscore)
-
-    elif o == H3:
-        yourscore += 3
-        print(yourscore)
-    elif o == S3:
-        yourscore += 3
-        print(yourscore)
-    elif o == D3:
-        yourscore += 3
-        print(yourscore)
-    elif o == C3:
-        yourscore += 3
-        print(yourscore)
-    elif o == H4:
-        yourscore += 4
-        print(yourscore)
-    elif o == S4:
-        yourscore += 4
-        print(yourscore)
-    elif o == D4:
-        yourscore += 4
-        print(yourscore)
-    elif o == C4:
-        yourscore += 4
-        print(yourscore)
-    elif o == H5:
-        yourscore += 5
-        print(yourscore)
-    elif o == C5:
-        yourscore += 5
-        print(yourscore)
-    elif o == D5:
-        yourscore += 5
-        print(yourscore)
-    elif o == S5:
-        yourscore += 5
-        print(yourscore)
-    elif o == H6:
-        yourscore += 6
-        print(yourscore)
-    elif o == S6:
-        yourscore += 6
-        print(yourscore)
-    elif o == D6:
-        yourscore += 6
-        print(yourscore)
-    elif o == C6:
-        yourscore += 6
-        print(yourscore)
-    elif o == H7:
-        yourscore += 7
-        print(yourscore)
-    elif o == C7:
-        yourscore += 7
-        print(yourscore)
-    elif o == S7:
-        yourscore += 7
-        print(yourscore)
-    elif o == D7:
-        yourscore += 7
-        print(yourscore)
-    elif o == D8:
-        yourscore += 8
-        print(yourscore)
-    elif o == C8:
-        yourscore += 8
-        print(yourscore)
-    elif o == S8:
-        yourscore += 8
-        print(yourscore)
-    elif o == H8:
-        yourscore += 8
-        print(yourscore)
-    elif o == D9:
-        yourscore += 9
-        print(yourscore)
-    elif o == H9:
-        yourscore += 9
-        print(yourscore)
-    elif o == S9:
-        yourscore += 9
-        print(yourscore)
-    elif o == C9:
-        yourscore += 9
-        print(yourscore)
-    elif o == AH:
-        yourscore += 1
-        print(yourscore)
-    elif o == AH:
-        yourscore += 1
-        print(yourscore)
-    elif o == AC:
-        yourscore += 1
-        print(yourscore)
-    elif o == AD:
-        yourscore += 1
-        print(yourscore)
-    else:
-        yourscore += 1
-        print(yourscore)
+#getting the starting score
+if a == H2:
+    yourscore += 2
+    print(yourscore)
+elif a == S2:
+    yourscore += 2
+    print(yourscore)
+elif a == D2:
+    yourscore += 2
+    print(yourscore)
+elif a == C2:
+    yourscore += 2
+    print(yourscore)
+elif a == H3:
+    yourscore += 3
+    print(yourscore)
+elif a == S3:
+    yourscore += 3
+    print(yourscore)
+elif a == D3:
+    yourscore += 3
+    print(yourscore)
+elif a == C3:
+    yourscore += 3
+    print(yourscore)
+elif a == H4:
+    yourscore += 4
+    print(yourscore)
+elif a == S4:
+    yourscore += 4
+    print(yourscore)
+elif a == D4:
+    yourscore += 4
+    print(yourscore)
+elif a == C4:
+    yourscore += 4
+    print(yourscore)
+elif a == H5:
+    yourscore += 5
+    print(yourscore)
+elif a == C5:
+    yourscore += 5
+    print(yourscore)
+elif a == D5:
+    yourscore += 5
+    print(yourscore)
+elif a == S5:
+    yourscore += 5
+    print(yourscore)
+elif a == H6:
+    yourscore += 6
+    print(yourscore)
+elif a == S6:
+    yourscore += 6
+    print(yourscore)
+elif a == D6:
+    yourscore += 6
+    print(yourscore)
+elif a == C6:
+    yourscore += 6
+    print(yourscore)
+elif a == H7:
+    yourscore += 7
+    print(yourscore)
+elif a == C7:
+    yourscore += 7
+    print(yourscore)
+elif a == S7:
+    yourscore += 7
+    print(yourscore)
+elif a == D7:
+    yourscore += 7
+    print(yourscore)
+elif a == D8:
+    yourscore += 8
+    print(yourscore)
+elif a == C8:
+    yourscore += 8
+    print(yourscore)
+elif a == S8:
+    yourscore += 8
+    print(yourscore)
+elif a == H8:
+    yourscore += 8
+    print(yourscore)
+elif a == D9:
+    yourscore += 9
+    print(yourscore)
+elif a == H9:
+    yourscore += 9
+    print(yourscore)
+elif a == S9:
+    yourscore += 9
+    print(yourscore)
+elif a == C9:
+    yourscore += 9
+    print(yourscore)
+elif a == AH:
+    yourscore += 1
+    print(yourscore)
+elif a == AH:
+    yourscore += 1
+    print(yourscore)
+elif a == AC:
+    yourscore += 1
+    print(yourscore)
+elif a == AD:
+    yourscore += 1
+    print(yourscore)
+else:
+    yourscore += 1
+    print(yourscore)
 
 m = 2
 def hit(event):
