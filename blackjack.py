@@ -396,7 +396,7 @@ elif s == AD:
     yourscore += 1
     print(yourscore)
 else:
-    yourscore += 1
+    yourscore += 10
     print(yourscore)
 
 if b == H2:
