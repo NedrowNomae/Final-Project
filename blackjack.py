@@ -281,9 +281,9 @@ def stay(event):
     if t == 1:
         print("You stayed")
         t = 2
-    r((150,25))
-    r.scale = .1
-r.scale = .1
+    h = r
+    h((150,25))
+    h.scale = .1
 
 m = 2
 def hit(event):
