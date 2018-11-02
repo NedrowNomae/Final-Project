@@ -283,13 +283,12 @@ def stay(event):
         t = 2
         j = r((150,25))
         j.scale = .1
-    if dealerscore < 17:
     o = cards[0]
     p = o((100*m+50,y))
     p.scale = .1
     cards.pop(0)
     n = n + 1
-    if t == 1:
+    while dealerscore < 17:
         if o == H2:
             yourscore += 2
             print(yourscore)
