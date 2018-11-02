@@ -276,8 +276,6 @@ def pauseplay(event):
 def step():
     global t
     while t == 2:
-        r((150,25))
-        r.scale = .1
         t = 3
     
 def stay(event):
