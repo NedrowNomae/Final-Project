@@ -287,227 +287,153 @@ def stay(event):
 #getting the dealers starting score
 if q == H2:
     dealerscore += 2
-    print(dealerscore)
 elif q == S2:
     dealerscore += 2
-    print(dealerscore)
 elif q == D2:
     dealerscore += 2
-    print(dealerscore)
 elif q == C2:
     dealerscore += 2
-    print(dealerscore)
 elif q == H3:
     dealerscore += 3
-    print(dealerscore)
 elif q == S3:
     dealerscore += 3
-    print(dealerscore)
 elif q == D3:
     dealerscore += 3
-    print(dealerscore)
 elif q == C3:
     dealerscore += 3
-    print(dealerscore)
 elif q == H4:
     dealerscore += 4
-    print(dealerscore)
 elif q == S4:
     dealerscore += 4
-    print(dealerscore)
 elif q == D4:
     dealerscore += 4
-    print(dealerscore)
 elif q == C4:
     dealerscore += 4
-    print(dealerscore)
 elif q == H5:
     dealerscore += 5
-    print(dealerscore)
 elif q == C5:
     dealerscore += 5
-    print(dealerscore)
 elif q == D5:
     dealerscore += 5
-    print(dealerscore)
 elif q == S5:
     dealerscore += 5
-    print(dealerscore)
 elif q == H6:
     dealerscore += 6
-    print(dealerscore)
 elif q == S6:
     dealerscore += 6
-    print(dealerscore)
 elif q == D6:
     dealerscore += 6
-    print(dealerscore)
 elif q == C6:
     dealerscore += 6
-    print(dealerscore)
 elif q == H7:
     dealerscore += 7
-    print(dealerscore)
 elif q == C7:
     dealerscore += 7
-    print(dealerscore)
 elif q == S7:
     dealerscore += 7
-    print(dealerscore)
 elif q == D7:
     dealerscore += 7
-    print(dealerscore)
 elif q == D8:
     dealerscore += 8
-    print(dealerscore)
 elif q == C8:
     dealerscore += 8
-    print(dealerscore)
 elif q == S8:
     dealerscore += 8
-    print(dealerscore)
 elif q == H8:
     dealerscore += 8
-    print(dealerscore)
 elif q == D9:
     dealerscore += 9
-    print(dealerscore)
 elif q == H9:
     dealerscore += 9
-    print(dealerscore)
 elif q == S9:
     dealerscore += 9
-    print(dealerscore)
 elif q == C9:
     dealerscore += 9
-    print(dealerscore)
 elif q == AH:
     dealerscore += 1
-    print(dealerscore)
 elif q == AS:
     dealerscore += 1
-    print(dealerscore)
 elif q == AC:
     dealerscore += 1
-    print(dealerscore)
 elif q == AD:
     dealerscore += 1
-    print(dealerscore)
 else:
     dealerscore += 10
-    print(dealerscore)
 
 if r == H2:
     dealerscore += 2
-    print(dealerscore)
 elif r == S2:
     dealerscore += 2
-    print(dealerscore)
 elif r == D2:
     dealerscore += 2
-    print(dealerscore)
 elif r == C2:
     dealerscore += 2
-    print(dealerscore)
 elif r == H3:
     dealerscore += 3
-    print(dealerscore)
 elif r == S3:
     dealerscore += 3
-    print(dealerscore)
 elif r == D3:
     dealerscore += 3
-    print(dealerscore)
 elif r == C3:
     dealerscore += 3
-    print(dealerscore)
 elif r == H4:
     dealerscore += 4
-    print(dealerscore)
 elif r == S4:
     dealerscore += 4
-    print(dealerscore)
 elif r == D4:
     dealerscore += 4
-    print(dealerscore)
 elif r == C4:
     dealerscore += 4
-    print(dealerscore)
 elif r == H5:
     dealerscore += 5
-    print(dealerscore)
 elif r == C5:
     dealerscore += 5
-    print(dealerscore)
 elif r == D5:
     dealerscore += 5
-    print(dealerscore)
 elif r == S5:
     dealerscore += 5
-    print(dealerscore)
 elif r == H6:
     dealerscore += 6
-    print(dealerscore)
 elif r == S6:
     dealerscore += 6
-    print(dealerscore)
 elif r == D6:
     dealerscore += 6
-    print(dealerscore)
 elif r == C6:
     dealerscore += 6
-    print(dealerscore)
 elif r == H7:
     dealerscore += 7
-    print(dealerscore)
 elif r == C7:
     dealerscore += 7
-    print(dealerscore)
 elif r == S7:
     dealerscore += 7
-    print(dealerscore)
 elif r == D7:
     dealerscore += 7
-    print(dealerscore)
 elif r == D8:
     dealerscore += 8
-    print(dealerscore)
 elif r == C8:
     dealerscore += 8
-    print(dealerscore)
 elif r == S8:
     dealerscore += 8
-    print(dealerscore)
 elif r == H8:
     dealerscore += 8
-    print(dealerscore)
 elif r == D9:
     dealerscore += 9
-    print(dealerscore)
 elif r == H9:
     dealerscore += 9
-    print(dealerscore)
 elif r == S9:
     dealerscore += 9
-    print(dealerscore)
 elif r == C9:
     dealerscore += 9
-    print(dealerscore)
 elif r == AH:
     dealerscore += 1
-    print(dealerscore)
 elif r == AS:
     dealerscore += 1
-    print(dealerscore)
 elif r == AC:
     dealerscore += 1
-    print(dealerscore)
 elif r == AD:
     dealerscore += 1
-    print(dealerscore)
 else:
     dealerscore += 10
-    print(dealerscore)
 if dealerscore == 21:
     print("dealer has blackjack")
     j = r((150,25))
