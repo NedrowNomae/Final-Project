@@ -255,8 +255,8 @@ if q == H10 or q == JH or q == QH or q == KH or q == AH or q == D10 or q == JD o
     r = cards[0]
     if r == H10 or r == JH or r == QH or r == KH or r == AH or r == D10 or r == JD or r == QD or r == KD or r == AD or r == S10 or r == JS or r == QS or r == KS or r == AS or r == C10 or r == JC or r == QC or r == KC or r == AC:
         print("Dealer has blackjack")
-        r((150, 25))
-        r.scale = .1
+        j = r((150,25))
+        j.scale = .1
     cards.pop(0)
 r = cards[0]
 cards.pop(0)
@@ -284,6 +284,119 @@ def stay(event):
         print("You stayed")
         t = 2
 yourscore = 0
+
+    if o == H2:
+        yourscore += 2
+        print(yourscore)
+    elif o == S2:
+        yourscore += 2
+        print(yourscore)
+    elif o == D2:
+        yourscore += 2
+        print(yourscore)
+    elif o == C2:
+        yourscore += 2
+        print(yourscore)
+
+    elif o == H3:
+        yourscore += 3
+        print(yourscore)
+    elif o == S3:
+        yourscore += 3
+        print(yourscore)
+    elif o == D3:
+        yourscore += 3
+        print(yourscore)
+    elif o == C3:
+        yourscore += 3
+        print(yourscore)
+    elif o == H4:
+        yourscore += 4
+        print(yourscore)
+    elif o == S4:
+        yourscore += 4
+        print(yourscore)
+    elif o == D4:
+        yourscore += 4
+        print(yourscore)
+    elif o == C4:
+        yourscore += 4
+        print(yourscore)
+    elif o == H5:
+        yourscore += 5
+        print(yourscore)
+    elif o == C5:
+        yourscore += 5
+        print(yourscore)
+    elif o == D5:
+        yourscore += 5
+        print(yourscore)
+    elif o == S5:
+        yourscore += 5
+        print(yourscore)
+    elif o == H6:
+        yourscore += 6
+        print(yourscore)
+    elif o == S6:
+        yourscore += 6
+        print(yourscore)
+    elif o == D6:
+        yourscore += 6
+        print(yourscore)
+    elif o == C6:
+        yourscore += 6
+        print(yourscore)
+    elif o == H7:
+        yourscore += 7
+        print(yourscore)
+    elif o == C7:
+        yourscore += 7
+        print(yourscore)
+    elif o == S7:
+        yourscore += 7
+        print(yourscore)
+    elif o == D7:
+        yourscore += 7
+        print(yourscore)
+    elif o == D8:
+        yourscore += 8
+        print(yourscore)
+    elif o == C8:
+        yourscore += 8
+        print(yourscore)
+    elif o == S8:
+        yourscore += 8
+        print(yourscore)
+    elif o == H8:
+        yourscore += 8
+        print(yourscore)
+    elif o == D9:
+        yourscore += 9
+        print(yourscore)
+    elif o == H9:
+        yourscore += 9
+        print(yourscore)
+    elif o == S9:
+        yourscore += 9
+        print(yourscore)
+    elif o == C9:
+        yourscore += 9
+        print(yourscore)
+    elif o == AH:
+        yourscore += 1
+        print(yourscore)
+    elif o == AH:
+        yourscore += 1
+        print(yourscore)
+    elif o == AC:
+        yourscore += 1
+        print(yourscore)
+    elif o == AD:
+        yourscore += 1
+        print(yourscore)
+    else:
+        yourscore += 1
+        print(yourscore)
 
 m = 2
 def hit(event):
