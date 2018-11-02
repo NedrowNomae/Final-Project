@@ -396,7 +396,7 @@ elif a == AD:
 else:
     yourscore += 1
     print(yourscore)
-print("yourscore" + yourscore)
+print("yourscore" + str(yourscore))
 
 m = 2
 def hit(event):
