@@ -396,7 +396,121 @@ elif s == AD:
 else:
     yourscore += 1
     print(yourscore)
-print("yourscore" + str(yourscore))
+
+if q == H2:
+    yourscore += 2
+    print(yourscore)
+elif q == S2:
+    yourscore += 2
+    print(yourscore)
+elif q == D2:
+    yourscore += 2
+    print(yourscore)
+elif q == C2:
+    yourscore += 2
+    print(yourscore)
+elif q == H3:
+    yourscore += 3
+    print(yourscore)
+elif q == S3:
+    yourscore += 3
+    print(yourscore)
+elif q == D3:
+    yourscore += 3
+    print(yourscore)
+elif q == C3:
+    yourscore += 3
+    print(yourscore)
+elif q == H4:
+    yourscore += 4
+    print(yourscore)
+elif q == S4:
+    yourscore += 4
+    print(yourscore)
+elif q == D4:
+    yourscore += 4
+    print(yourscore)
+elif q == C4:
+    yourscore += 4
+    print(yourscore)
+elif q == H5:
+    yourscore += 5
+    print(yourscore)
+elif q == C5:
+    yourscore += 5
+    print(yourscore)
+elif q == D5:
+    yourscore += 5
+    print(yourscore)
+elif q == S5:
+    yourscore += 5
+    print(yourscore)
+elif q == H6:
+    yourscore += 6
+    print(yourscore)
+elif q == S6:
+    yourscore += 6
+    print(yourscore)
+elif q == D6:
+    yourscore += 6
+    print(yourscore)
+elif q == C6:
+    yourscore += 6
+    print(yourscore)
+elif q == H7:
+    yourscore += 7
+    print(yourscore)
+elif q == C7:
+    yourscore += 7
+    print(yourscore)
+elif q == S7:
+    yourscore += 7
+    print(yourscore)
+elif q == D7:
+    yourscore += 7
+    print(yourscore)
+elif q == D8:
+    yourscore += 8
+    print(yourscore)
+elif q == C8:
+    yourscore += 8
+    print(yourscore)
+elif q == S8:
+    yourscore += 8
+    print(yourscore)
+elif q == H8:
+    yourscore += 8
+    print(yourscore)
+elif q == D9:
+    yourscore += 9
+    print(yourscore)
+elif q == H9:
+    yourscore += 9
+    print(yourscore)
+elif q == S9:
+    yourscore += 9
+    print(yourscore)
+elif q == C9:
+    yourscore += 9
+    print(yourscore)
+elif q == AH:
+    yourscore += 1
+    print(yourscore)
+elif q == AS:
+    yourscore += 1
+    print(yourscore)
+elif q == AC:
+    yourscore += 1
+    print(yourscore)
+elif q == AD:
+    yourscore += 1
+    print(yourscore)
+else:
+    yourscore += 1
+    print(yourscore)
+
+
+
 
 m = 2
 def hit(event):
