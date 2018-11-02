@@ -514,6 +514,9 @@ elif r == AD:
 else:
     dealerscore += 10
     print(dealerscore)
+if dealerscore == 21:
+    print("dealer has blackjack")
+    t = 3
 
 #getting the starting score
 if s == H2:
