@@ -275,14 +275,137 @@ def step():
     global t
     while t == 2:
         t = 3
-    
+n = 2
 def stay(event):
-    global t, r
+    global t, r, n
     if t == 1:
         print("You stayed")
         t = 2
         j = r((150,25))
         j.scale = .1
+    if dealerscore < 17:
+    o = cards[0]
+    p = o((100*m+50,y))
+    p.scale = .1
+    cards.pop(0)
+    n = n + 1
+    if t == 1:
+        if o == H2:
+            yourscore += 2
+            print(yourscore)
+        elif o == S2:
+            yourscore += 2
+            print(yourscore)
+        elif o == D2:
+            yourscore += 2
+            print(yourscore)
+        elif o == C2:
+            yourscore += 2
+            print(yourscore)
+    
+        elif o == H3:
+            yourscore += 3
+            print(yourscore)
+        elif o == S3:
+            yourscore += 3
+            print(yourscore)
+        elif o == D3:
+            yourscore += 3
+            print(yourscore)
+        elif o == C3:
+            yourscore += 3
+            print(yourscore)
+        elif o == H4:
+            yourscore += 4
+            print(yourscore)
+        elif o == S4:
+            yourscore += 4
+            print(yourscore)
+        elif o == D4:
+            yourscore += 4
+            print(yourscore)
+        elif o == C4:
+            yourscore += 4
+            print(yourscore)
+        elif o == H5:
+            yourscore += 5
+            print(yourscore)
+        elif o == C5:
+            yourscore += 5
+            print(yourscore)
+        elif o == D5:
+            yourscore += 5
+            print(yourscore)
+        elif o == S5:
+            yourscore += 5
+            print(yourscore)
+        elif o == H6:
+            yourscore += 6
+            print(yourscore)
+        elif o == S6:
+            yourscore += 6
+            print(yourscore)
+        elif o == D6:
+            yourscore += 6
+            print(yourscore)
+        elif o == C6:
+            yourscore += 6
+            print(yourscore)
+        elif o == H7:
+            yourscore += 7
+            print(yourscore)
+        elif o == C7:
+            yourscore += 7
+            print(yourscore)
+        elif o == S7:
+            yourscore += 7
+            print(yourscore)
+        elif o == D7:
+            yourscore += 7
+            print(yourscore)
+        elif o == D8:
+            yourscore += 8
+            print(yourscore)
+        elif o == C8:
+            yourscore += 8
+            print(yourscore)
+        elif o == S8:
+            yourscore += 8
+            print(yourscore)
+        elif o == H8:
+            yourscore += 8
+            print(yourscore)
+        elif o == D9:
+            yourscore += 9
+            print(yourscore)
+        elif o == H9:
+            yourscore += 9
+            print(yourscore)
+        elif o == S9:
+            yourscore += 9
+            print(yourscore)
+        elif o == C9:
+            yourscore += 9
+            print(yourscore)
+        elif o == AH:
+            yourscore += 1
+            print(yourscore)
+        elif o == AS:
+            yourscore += 1
+            print(yourscore)
+        elif o == AC:
+            yourscore += 1
+            print(yourscore)
+        elif o == AD:
+            yourscore += 1
+            print(yourscore)
+        else:
+            yourscore += 10
+            print(yourscore)
+        if yourscore > 21:
+            print("You busted")
+            t = 2
+        
 
 #getting the dealers starting score
 if q == H2:
@@ -677,7 +800,6 @@ def hit(event):
     p.scale = .1
     cards.pop(0)
     m = m + 1
-    print(str(o))
     if t == 1:
         if o == H2:
             yourscore += 2
