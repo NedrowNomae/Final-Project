@@ -283,7 +283,8 @@ def stay(event):
         t = 2
     r((150,25))
     r.scale = .1
-    
+r.scale = .1
+
 m = 2
 def hit(event):
     global cards, y, m
