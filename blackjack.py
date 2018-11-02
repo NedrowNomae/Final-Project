@@ -289,7 +289,120 @@ def stay(event):
         t = 2
         j = r((150,25))
         j.scale = .1
-        
+
+#getting the dealers starting score
+if s == H2:
+    dealerscore += 2
+    print(dealerscore)
+elif s == S2:
+    dealerscore += 2
+    print(dealerscore)
+elif s == D2:
+    dealerscore += 2
+    print(dealerscore)
+elif s == C2:
+    dealerscore += 2
+    print(dealerscore)
+elif s == H3:
+    dealerscore += 3
+    print(dealerscore)
+elif s == S3:
+    dealerscore += 3
+    print(dealerscore)
+elif s == D3:
+    dealerscore += 3
+    print(dealerscore)
+elif s == C3:
+    dealerscore += 3
+    print(dealerscore)
+elif s == H4:
+    dealerscore += 4
+    print(dealerscore)
+elif s == S4:
+    dealerscore += 4
+    print(dealerscore)
+elif s == D4:
+    dealerscore += 4
+    print(dealerscore)
+elif s == C4:
+    dealerscore += 4
+    print(dealerscore)
+elif s == H5:
+    dealerscore += 5
+    print(dealerscore)
+elif s == C5:
+    dealerscore += 5
+    print(dealerscore)
+elif s == D5:
+    dealerscore += 5
+    print(dealerscore)
+elif s == S5:
+    dealerscore += 5
+    print(dealerscore)
+elif s == H6:
+    dealerscore += 6
+    print(dealerscore)
+elif s == S6:
+    dealerscore += 6
+    print(dealerscore)
+elif s == D6:
+    dealerscore += 6
+    print(dealerscore)
+elif s == C6:
+    dealerscore += 6
+    print(dealerscore)
+elif s == H7:
+    dealerscore += 7
+    print(dealerscore)
+elif s == C7:
+    dealerscore += 7
+    print(dealerscore)
+elif s == S7:
+    dealerscore += 7
+    print(dealerscore)
+elif s == D7:
+    dealerscore += 7
+    print(dealerscore)
+elif s == D8:
+    dealerscore += 8
+    print(dealerscore)
+elif s == C8:
+    dealerscore += 8
+    print(dealerscore)
+elif s == S8:
+    dealerscore += 8
+    print(dealerscore)
+elif s == H8:
+    dealerscore += 8
+    print(dealerscore)
+elif s == D9:
+    dealerscore += 9
+    print(dealerscore)
+elif s == H9:
+    dealerscore += 9
+    print(dealerscore)
+elif s == S9:
+    dealerscore += 9
+    print(dealerscore)
+elif s == C9:
+    dealerscore += 9
+    print(dealerscore)
+elif s == AH:
+    dealerscore += 1
+    print(dealerscore)
+elif s == AS:
+    dealerscore += 1
+    print(dealerscore)
+elif s == AC:
+    dealerscore += 1
+    print(dealerscore)
+elif s == AD:
+    dealerscore += 1
+    print(dealerscore)
+else:
+    dealerscore += 10
+    print(dealerscore)
+
 
 #getting the starting score
 if s == H2:
