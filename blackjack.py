@@ -250,7 +250,9 @@ cards.pop(0)
 q = cards[0]
 w = q((50,25))
 w.scale = .1
+
 cards.pop(0)
+
 if q == H10 or q == JH or q == QH or q == KH or q == AH or q == D10 or q == JD or q == QD or q == KD or q == AD or q == S10 or q == JS or q == QS or q == KS or q == AS or q == C10 or q == JC or q == QC or q == KC or q == AC:
     r = cards[0]
     if r == H10 or r == JH or r == QH or r == KH or r == AH or r == D10 or r == JD or r == QD or r == KD or r == AD or r == S10 or r == JS or r == QS or r == KS or r == AS or r == C10 or r == JC or r == QC or r == KC or r == AC:
@@ -397,112 +399,112 @@ else:
     yourscore += 1
     print(yourscore)
 
-if q == H2:
+if b == H2:
     yourscore += 2
     print(yourscore)
-elif q == S2:
+elif b == S2:
     yourscore += 2
     print(yourscore)
-elif q == D2:
+elif b == D2:
     yourscore += 2
     print(yourscore)
-elif q == C2:
+elif b == C2:
     yourscore += 2
     print(yourscore)
-elif q == H3:
+elif b == H3:
     yourscore += 3
     print(yourscore)
-elif q == S3:
+elif b == S3:
     yourscore += 3
     print(yourscore)
-elif q == D3:
+elif b == D3:
     yourscore += 3
     print(yourscore)
-elif q == C3:
+elif b == C3:
     yourscore += 3
     print(yourscore)
-elif q == H4:
+elif b == H4:
     yourscore += 4
     print(yourscore)
-elif q == S4:
+elif b == S4:
     yourscore += 4
     print(yourscore)
-elif q == D4:
+elif b == D4:
     yourscore += 4
     print(yourscore)
-elif q == C4:
+elif b == C4:
     yourscore += 4
     print(yourscore)
-elif q == H5:
+elif b == H5:
     yourscore += 5
     print(yourscore)
-elif q == C5:
+elif b == C5:
     yourscore += 5
     print(yourscore)
-elif q == D5:
+elif b == D5:
     yourscore += 5
     print(yourscore)
-elif q == S5:
+elif b == S5:
     yourscore += 5
     print(yourscore)
-elif q == H6:
+elif b == H6:
     yourscore += 6
     print(yourscore)
-elif q == S6:
+elif b == S6:
     yourscore += 6
     print(yourscore)
-elif q == D6:
+elif b == D6:
     yourscore += 6
     print(yourscore)
-elif q == C6:
+elif b == C6:
     yourscore += 6
     print(yourscore)
-elif q == H7:
+elif b == H7:
     yourscore += 7
     print(yourscore)
-elif q == C7:
+elif b == C7:
     yourscore += 7
     print(yourscore)
-elif q == S7:
+elif b == S7:
     yourscore += 7
     print(yourscore)
-elif q == D7:
+elif b == D7:
     yourscore += 7
     print(yourscore)
-elif q == D8:
+elif b == D8:
     yourscore += 8
     print(yourscore)
-elif q == C8:
+elif b == C8:
     yourscore += 8
     print(yourscore)
-elif q == S8:
+elif b == S8:
     yourscore += 8
     print(yourscore)
-elif q == H8:
+elif b == H8:
     yourscore += 8
     print(yourscore)
-elif q == D9:
+elif b == D9:
     yourscore += 9
     print(yourscore)
-elif q == H9:
+elif b == H9:
     yourscore += 9
     print(yourscore)
-elif q == S9:
+elif b == S9:
     yourscore += 9
     print(yourscore)
-elif q == C9:
+elif b == C9:
     yourscore += 9
     print(yourscore)
-elif q == AH:
+elif b == AH:
     yourscore += 1
     print(yourscore)
-elif q == AS:
+elif b == AS:
     yourscore += 1
     print(yourscore)
-elif q == AC:
+elif b == AC:
     yourscore += 1
     print(yourscore)
-elif q == AD:
+elif b == AD:
     yourscore += 1
     print(yourscore)
 else:
