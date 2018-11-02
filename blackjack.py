@@ -285,6 +285,8 @@ def stay(event):
     if t == 1:
         print("You stayed")
         t = 2
+        j = r((150,25))
+        j.scale = .1
 yourscore = 0
 #getting the starting score
 if s == H2:
