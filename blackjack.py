@@ -639,6 +639,7 @@ def hit(event):
             print(yourscore)
         if yourscore > 21:
             print("You busted")
+            t = 2
 
 
 
