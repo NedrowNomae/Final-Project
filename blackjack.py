@@ -388,16 +388,21 @@ def stay(event):
             print(yourscore)
         elif o == AH:
             yourscore += 1
+            ace = 1
             print(yourscore)
+            ace = 1
         elif o == AS:
             yourscore += 1
             print(yourscore)
+            ace = 1
         elif o == AC:
             yourscore += 1
+            ace = 1
             print(yourscore)
         elif o == AD:
             yourscore += 1
             print(yourscore)
+            ace = 1
         else:
             yourscore += 10
             print(yourscore)
