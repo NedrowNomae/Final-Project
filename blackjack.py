@@ -265,7 +265,7 @@ e = cardback((150, 25))
 e.scale = .1
 t = 1
 
-print("press space to being")
+print("press space to begin")
 def pauseplay(event):
     global t
     t = 1
