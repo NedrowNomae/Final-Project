@@ -236,7 +236,7 @@ class AC(Sprite):
 
 print("press space to begin")
 print("Press r for the rules")
-    ace = 0
+ace = 0
 def rules(event):
     print("The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
