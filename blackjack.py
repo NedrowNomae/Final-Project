@@ -266,6 +266,10 @@ e.scale = .1
 t = 1
 
 print("press space to begin")
+print("Press r for the rules")
+
+def rules(event):
+    print("The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
     global t
     t = 1
@@ -956,4 +960,4 @@ app.run(step)
 myapp.listenKeyEvent('keydown','space',pauseplay)
 myapp.listenKeyEvent('keydown','s',stay)
 myapp.listenKeyEvent('keydown','h',hit)
-
+myapp.listenKeyEvent('keydown','r',rules)
