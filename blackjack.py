@@ -295,7 +295,7 @@ def stay(event):
     p = o((100*m+50,25))
     p.scale = .1
     cards.pop(0)
-    n = n + 1
+    m = m + 1
     if ace == 1 and yourscore + 10 < 22:
         yourscore = yourscore + 10
         print("yourscore: " + yourscore)
