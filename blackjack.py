@@ -423,15 +423,13 @@ def stay(event):
             print("dealer busted")
             t = 2
             db = 5
-    if yourscore > dealerscore:
+    if yb == 5:
         if yb == 5:
             print("You lose")
-        else:
-            print("You win")
     elif yourscore == dealerscore:
         print("Push")
     else:
-        print("You lose")
+        print("You win")
 
         
 
