@@ -232,7 +232,7 @@ class AC(Sprite):
     def __init__(self,  position):
         super().__init__(AC.AC, position)
         
-ace = 0
+"""ace = 0
 cards = [H2, H3, H4, H5, H6, H7, H8, H9, H10, JH, QH, KH, AH, D2, D3, D4, D5, D6, D7, D8, D9, D10, JD, QD, KD, AD, S2, S3, S4, S5, S6, S7, S8, S9, S10, JS, QS, KS, AS, C2, C3, C4, C5, C6, C7, C8, C9, C10, JC, QC, KC, AC]
 random.shuffle(cards)
 
@@ -255,7 +255,7 @@ w.scale = .1
 cards.pop(0)
 r = cards[0]
 cards.pop(0)
-#check for blackjack
+
 r = cards[0]
 cards.pop(0)
 
@@ -263,7 +263,7 @@ cards.pop(0)
 
 e = cardback((150, 25))
 e.scale = .1
-t = 1
+t = 1"""
 
 print("press space to begin")
 print("Press r for the rules")
@@ -272,8 +272,38 @@ def rules(event):
     print("The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
     global t
+    ace = 0
+    cards = [H2, H3, H4, H5, H6, H7, H8, H9, H10, JH, QH, KH, AH, D2, D3, D4, D5, D6, D7, D8, D9, D10, JD, QD, KD, AD, S2, S3, S4, S5, S6, S7, S8, S9, S10, JS, QS, KS, AS, C2, C3, C4, C5, C6, C7, C8, C9, C10, JC, QC, KC, AC]
+    random.shuffle(cards)
+    
+    s = cards[0]
+    a = s((50,150))
+    a.scale = 0.1
+    
+    cards.pop(0)
+    
+    b = cards[0]
+    c = b((150,150))
+    c.scale = 0.1
+    
+    cards.pop(0)
+    
+    q = cards[0]
+    w = q((50,25))
+    w.scale = .1
+    
+    cards.pop(0)
+    r = cards[0]
+    cards.pop(0)
+    
+    r = cards[0]
+    cards.pop(0)
+    
+    
+    
+    e = cardback((150, 25))
+    e.scale = .1
     t = 1
-    print("Press H to hit or S to stay")
 
 def step():
     global t
@@ -596,10 +626,10 @@ if q == H10 or q == JH or q == QH or q == KH or q == D10 or q == JD or q == QD o
 
 if r == H10 or r == JH or r == QH or r == KH or r == D10 or r == JD or r == QD or r == KD or r == S10 or r == JS or r == QS or r == KS or r == C10 or r == JC or r == QC or r == KC:
     if q == AH or q == AD or q == AS or q == AC:
-        print("You have blackjack")
+        print("Dealer has blackjack")
         j = r((150,25))
         j.scale = .1
-        yb = 5
+        db = 5
     cards.pop(0)
 
 #getting the starting score
