@@ -271,7 +271,7 @@ print("Press r for the rules")
 def rules(event):
     print("The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
-    global t
+    global t, dealerscore, yourscore, db, yb
     ace = 0
     cards = [H2, H3, H4, H5, H6, H7, H8, H9, H10, JH, QH, KH, AH, D2, D3, D4, D5, D6, D7, D8, D9, D10, JD, QD, KD, AD, S2, S3, S4, S5, S6, S7, S8, S9, S10, JS, QS, KS, AS, C2, C3, C4, C5, C6, C7, C8, C9, C10, JC, QC, KC, AC]
     random.shuffle(cards)
@@ -305,8 +305,8 @@ def pauseplay(event):
     e.scale = .1
     t = 1
     if q == H10 or q == JH or q == QH or q == KH or q == D10 or q == JD or q == QD or q == KD or q == S10 or q == JS or q == QS or q == KS or q == C10 or q == JC or q == QC or q == KC:
-    if r == AH or r == AD or r == AS or r == AC:
-        print("Dealer has blackjack")
+        if r == AH or r == AD or r == AS or r == AC:
+            print("Dealer has blackjack")
         j = r((150,25))
         j.scale = .1
         db = 5
