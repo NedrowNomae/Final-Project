@@ -819,11 +819,12 @@ m = 2
 def hit(event):
     global cards, y, m, yourscore, t, ace
     y = 150
-    o = cards[0]
-    p = o((100*m+50,y))
-    p.scale = .1
-    cards.pop(0)
-    m = m + 1
+    if t == 1:
+        o = cards[0]
+        p = o((100*m+50,y))
+        p.scale = .1
+        cards.pop(0)
+        m = m + 1
     if t == 1:
         if o == H2:
             yourscore += 2
