@@ -255,7 +255,7 @@ w.scale = .1
 cards.pop(0)
 r = cards[0]
 cards.pop(0)
-#check for blackjack
+
 r = cards[0]
 cards.pop(0)
 
@@ -587,6 +587,23 @@ else:
     dealerscore += 10
 
 #check for dealer blackjack
+if q == H10 or q == JH or q == QH or q == KH or q == D10 or q == JD or q == QD or q == KD or q == S10 or q == JS or q == QS or q == KS or q == C10 or q == JC or q == QC or q == KC:
+    if r == AH or r == AD or r == AS or r == AC:
+        print("Dealer has blackjack")
+        j = r((150,25))
+        j.scale = .1
+        db = 5
+    cards.pop(0)
+
+if r == H10 or r == JH or r == QH or r == KH or r == D10 or r == JD or r == QD or r == KD or r == S10 or r == JS or r == QS or r == KS or r == C10 or r == JC or r == QC or r == KC:
+    if q == AH or q == AD or q == AS or q == AC:
+        print("Dealer has blackjack")
+        j = r((150,25))
+        j.scale = .1
+        yb = 5
+    cards.pop(0)
+    
+#check if player blackjack(todo)
 if q == H10 or q == JH or q == QH or q == KH or q == D10 or q == JD or q == QD or q == KD or q == S10 or q == JS or q == QS or q == KS or q == C10 or q == JC or q == QC or q == KC:
     if r == AH or r == AD or r == AS or r == AC:
         print("Dealer has blackjack")
