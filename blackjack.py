@@ -666,16 +666,20 @@ elif s == C9:
     print(yourscore)
 elif s == AH:
     yourscore += 1
+    ace = 1
     print(yourscore)
 elif s == AS:
     yourscore += 1
+    ace = 1
     print(yourscore)
 elif s == AC:
     yourscore += 1
     print(yourscore)
+    ace = 1
 elif s == AD:
     yourscore += 1
     print(yourscore)
+    ace = 1
 else:
     yourscore += 10
     print(yourscore)
@@ -779,15 +783,19 @@ elif b == C9:
 elif b == AH:
     yourscore += 1
     print(yourscore)
+    ace = 1
 elif b == AS:
     yourscore += 1
     print(yourscore)
+    ace = 1
 elif b == AC:
     yourscore += 1
     print(yourscore)
+    ace = 1
 elif b == AD:
     yourscore += 1
     print(yourscore)
+    ace = 1
 else:
     yourscore += 10
     print(yourscore)
@@ -797,7 +805,7 @@ else:
 
 m = 2
 def hit(event):
-    global cards, y, m, yourscore, t
+    global cards, y, m, yourscore, t, ace
     y = 150
     o = cards[0]
     p = o((100*m+50,y))
@@ -905,15 +913,19 @@ def hit(event):
         elif o == AH:
             yourscore += 1
             print(yourscore)
+            ace = 1
         elif o == AS:
             yourscore += 1
             print(yourscore)
+            ace = 1
         elif o == AC:
             yourscore += 1
             print(yourscore)
+            ace = 1
         elif o == AD:
             yourscore += 1
             print(yourscore)
+            ace = 1
         else:
             yourscore += 10
             print(yourscore)
