@@ -418,7 +418,7 @@ def stay(event):
             dealerscore += 10
             print(dealerscore)
         if dealerscore > 21:
-            print("You busted")
+            print("dealer busted")
             t = 2
     if yourscore > dealerscore:
         print("you win")
