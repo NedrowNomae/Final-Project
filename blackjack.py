@@ -704,7 +704,7 @@ def pauseplay(event):
     else:
         yourscore += 10
         print(yourscore)
-
+    print("Done")
 def step():
     global t
     while t == 2:
