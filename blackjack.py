@@ -427,6 +427,8 @@ def stay(event):
         print("You lose")
     elif yourscore == dealerscore:
         print("Push")
+    elif yourscore < dealerscore:
+        print("You lose")
     else:
         print("You win")
 
