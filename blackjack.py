@@ -424,8 +424,7 @@ def stay(event):
             t = 2
             db = 5
     if yb == 5:
-        if yb == 5:
-            print("You lose")
+        print("You lose")
     elif yourscore == dealerscore:
         print("Push")
     else:
