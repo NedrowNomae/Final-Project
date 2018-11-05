@@ -423,7 +423,7 @@ def stay(event):
             print("dealer busted")
             t = 3
             db = 5
-    if t == 3:
+    if t /= 3:
         if yb == 5:
             print("You lose")
         elif yourscore == dealerscore:
@@ -597,7 +597,7 @@ if q == H10 or q == JH or q == QH or q == KH or q == D10 or q == JD or q == QD o
 
 if r == H10 or r == JH or r == QH or r == KH or r == D10 or r == JD or r == QD or r == KD or r == S10 or r == JS or r == QS or r == KS or r == C10 or r == JC or r == QC or r == KC:
     if q == AH or q == AD or q == AS or q == AC:
-        print("You have blackjack")
+        print("Dealer has blackjack")
         j = r((150,25))
         j.scale = .1
         yb = 5
