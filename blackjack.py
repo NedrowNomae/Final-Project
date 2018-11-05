@@ -276,6 +276,9 @@ def step():
     while t == 2:
         t = 3
 n = 2
+
+
+#what to do when staying
 def stay(event):
     global t, r, n
     if t == 1:
