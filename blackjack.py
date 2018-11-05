@@ -423,7 +423,7 @@ def stay(event):
             print("dealer busted")
             t = 3
             db = 5
-    if t /= 3:
+    if t != 4:
         if yb == 5:
             print("You lose")
         elif yourscore == dealerscore:
@@ -433,7 +433,7 @@ def stay(event):
         else:
             print("You win")
 
-        
+#check for if play has blackjack (todo)
 
 #getting the dealers starting score
 if q == H2:
