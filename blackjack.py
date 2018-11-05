@@ -320,6 +320,8 @@ def pauseplay(event):
             j.scale = .1
             db = 5
         cards.pop(0)
+    else:
+        print("No")
     if q == H2:
         dealerscore += 2
     elif q == S2:
@@ -469,9 +471,6 @@ def pauseplay(event):
         dealerscore += 1
     else:
         dealerscore += 10
-    
-    
-    
     #getting the starting score
     if s == H2:
         yourscore += 2
