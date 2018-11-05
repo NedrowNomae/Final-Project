@@ -289,8 +289,6 @@ def pauseplay(event):
             j.scale = .1
             db = 5
         cards.pop(0)
-    else:
-
     if q == H2:
         dealerscore += 2
     elif q == S2:
