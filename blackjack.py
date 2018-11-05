@@ -280,7 +280,7 @@ def step():
     while t == 2:
         t = 3
 n = 2
-
+m = 2
 
 #what to do when staying
 def stay(event):
