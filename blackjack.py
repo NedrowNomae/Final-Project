@@ -232,7 +232,7 @@ class AC(Sprite):
     def __init__(self,  position):
         super().__init__(AC.AC, position)
         
-
+ace = 0
 cards = [H2, H3, H4, H5, H6, H7, H8, H9, H10, JH, QH, KH, AH, D2, D3, D4, D5, D6, D7, D8, D9, D10, JD, QD, KD, AD, S2, S3, S4, S5, S6, S7, S8, S9, S10, JS, QS, KS, AS, C2, C3, C4, C5, C6, C7, C8, C9, C10, JC, QC, KC, AC]
 random.shuffle(cards)
 
