@@ -280,7 +280,7 @@ n = 2
 
 #what to do when staying
 def stay(event):
-    global t, r, n
+    global t, r, n, ace
     if t == 1:
         print("You stayed")
         t = 2
@@ -291,6 +291,9 @@ def stay(event):
     p.scale = .1
     cards.pop(0)
     n = n + 1
+    if ace == 1 and yourscore + 10 < 22:
+        yourscore = yourscore + 10
+        print("yourscore: " + yourscore)
     while dealerscore < 17:
         if o == H2:
             yourscore += 2
