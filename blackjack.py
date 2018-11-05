@@ -281,10 +281,11 @@ def step():
         t = 3
 n = 2
 m = 2
-
+db = 0
+yb = 0
 #what to do when staying
 def stay(event):
-    global t, r, n, ace, dealerscore, cards, m, yourscore
+    global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb
     if t == 1:
         print("You stayed")
         t = 2
@@ -421,6 +422,7 @@ def stay(event):
         if dealerscore > 21:
             print("dealer busted")
             t = 2
+            db = 5
     if yourscore > dealerscore:
         print("you win")
         
@@ -947,6 +949,7 @@ def hit(event):
         if yourscore > 21:
             print("You busted")
             t = 2
+            yb = 5
 
 
 
