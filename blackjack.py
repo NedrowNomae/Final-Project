@@ -284,7 +284,7 @@ m = 2
 
 #what to do when staying
 def stay(event):
-    global t, r, n, ace, dealerscore, cards, m
+    global t, r, n, ace, dealerscore, cards, m, yourscore
     if t == 1:
         print("You stayed")
         t = 2
