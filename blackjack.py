@@ -295,127 +295,126 @@ def stay(event):
         yourscore = yourscore + 10
         print("yourscore: " + yourscore)
     while dealerscore < 17:
-        if t == 1:
-            if o == H2:
-                yourscore += 2
-                print(yourscore)
-            elif o == S2:
-                yourscore += 2
-                print(yourscore)
-            elif o == D2:
-                yourscore += 2
-                print(yourscore)
-            elif o == C2:
-                yourscore += 2
-                print(yourscore)
-        
-            elif o == H3:
-                yourscore += 3
-                print(yourscore)
-            elif o == S3:
-                yourscore += 3
-                print(yourscore)
-            elif o == D3:
-                yourscore += 3
-                print(yourscore)
-            elif o == C3:
-                yourscore += 3
-                print(yourscore)
-            elif o == H4:
-                yourscore += 4
-                print(yourscore)
-            elif o == S4:
-                yourscore += 4
-                print(yourscore)
-            elif o == D4:
-                yourscore += 4
-                print(yourscore)
-            elif o == C4:
-                yourscore += 4
-                print(yourscore)
-            elif o == H5:
-                yourscore += 5
-                print(yourscore)
-            elif o == C5:
-                yourscore += 5
-                print(yourscore)
-            elif o == D5:
-                yourscore += 5
-                print(yourscore)
-            elif o == S5:
-                yourscore += 5
-                print(yourscore)
-            elif o == H6:
-                yourscore += 6
-                print(yourscore)
-            elif o == S6:
-                yourscore += 6
-                print(yourscore)
-            elif o == D6:
-                yourscore += 6
-                print(yourscore)
-            elif o == C6:
-                yourscore += 6
-                print(yourscore)
-            elif o == H7:
-                yourscore += 7
-                print(yourscore)
-            elif o == C7:
-                yourscore += 7
-                print(yourscore)
-            elif o == S7:
-                yourscore += 7
-                print(yourscore)
-            elif o == D7:
-                yourscore += 7
-                print(yourscore)
-            elif o == D8:
-                yourscore += 8
-                print(yourscore)
-            elif o == C8:
-                yourscore += 8
-                print(yourscore)
-            elif o == S8:
-                yourscore += 8
-                print(yourscore)
-            elif o == H8:
-                yourscore += 8
-                print(yourscore)
-            elif o == D9:
-                yourscore += 9
-                print(yourscore)
-            elif o == H9:
-                yourscore += 9
-                print(yourscore)
-            elif o == S9:
-                yourscore += 9
-                print(yourscore)
-            elif o == C9:
-                yourscore += 9
-                print(yourscore)
-            elif o == AH:
-                yourscore += 1
-                ace = 1
-                print(yourscore)
-                ace = 1
-            elif o == AS:
-                yourscore += 1
-                print(yourscore)
-                ace = 1
-            elif o == AC:
-                yourscore += 1
-                ace = 1
-                print(yourscore)
-            elif o == AD:
-                yourscore += 1
-                print(yourscore)
-                ace = 1
-            else:
-                yourscore += 10
-                print(yourscore)
-            if yourscore > 21:
-                print("You busted")
-                t = 2
+        if o == H2:
+            dealerscore += 2
+            print(dealerscore)
+        elif o == S2:
+            dealerscore += 2
+            print(dealerscore)
+        elif o == D2:
+            dealerscore += 2
+            print(dealerscore)
+        elif o == C2:
+            dealerscore += 2
+            print(dealerscore)
+    
+        elif o == H3:
+            dealerscore += 3
+            print(dealerscore)
+        elif o == S3:
+            dealerscore += 3
+            print(dealerscore)
+        elif o == D3:
+            dealerscore += 3
+            print(dealerscore)
+        elif o == C3:
+            dealerscore += 3
+            print(dealerscore)
+        elif o == H4:
+            dealerscore += 4
+            print(dealerscore)
+        elif o == S4:
+            dealerscore += 4
+            print(dealerscore)
+        elif o == D4:
+            dealerscore += 4
+            print(dealerscore)
+        elif o == C4:
+            dealerscore += 4
+            print(dealerscore)
+        elif o == H5:
+            dealerscore += 5
+            print(dealerscore)
+        elif o == C5:
+            dealerscore += 5
+            print(dealerscore)
+        elif o == D5:
+            dealerscore += 5
+            print(dealerscore)
+        elif o == S5:
+            dealerscore += 5
+            print(dealerscore)
+        elif o == H6:
+            dealerscore += 6
+            print(dealerscore)
+        elif o == S6:
+            dealerscore += 6
+            print(dealerscore)
+        elif o == D6:
+            dealerscore += 6
+            print(dealerscore)
+        elif o == C6:
+            dealerscore += 6
+            print(dealerscore)
+        elif o == H7:
+            dealerscore += 7
+            print(dealerscore)
+        elif o == C7:
+            dealerscore += 7
+            print(dealerscore)
+        elif o == S7:
+            dealerscore += 7
+            print(dealerscore)
+        elif o == D7:
+            dealerscore += 7
+            print(dealerscore)
+        elif o == D8:
+            dealerscore += 8
+            print(dealerscore)
+        elif o == C8:
+            dealerscore += 8
+            print(dealerscore)
+        elif o == S8:
+            dealerscore += 8
+            print(dealerscore)
+        elif o == H8:
+            dealerscore += 8
+            print(dealerscore)
+        elif o == D9:
+            dealerscore += 9
+            print(dealerscore)
+        elif o == H9:
+            dealerscore += 9
+            print(dealerscore)
+        elif o == S9:
+            dealerscore += 9
+            print(dealerscore)
+        elif o == C9:
+            dealerscore += 9
+            print(dealerscore)
+        elif o == AH:
+            dealerscore += 1
+            ace = 1
+            print(dealerscore)
+
+        elif o == AS:
+            dealerscore += 1
+            print(dealerscore)
+
+        elif o == AC:
+            dealerscore += 1
+
+            print(dealerscore)
+        elif o == AD:
+            dealerscore += 1
+            print(dealerscore)
+
+        else:
+            dealerscore += 10
+            print(dealerscore)
+        if dealerscore > 21:
+            print("You busted")
+            t = 2
         
 
 #getting the dealers starting score
