@@ -231,32 +231,7 @@ class AC(Sprite):
     def __init__(self,  position):
         super().__init__(AC.AC, position)
 money = input("How much money would you like to start with?")
-ace = 0
-cards = [H2, H3, H4, H5, H6, H7, H8, H9, H10, JH, QH, KH, AH, D2, D3, D4, D5, D6, D7, D8, D9, D10, JD, QD, KD, AD, S2, S3, S4, S5, S6, S7, S8, S9, S10, JS, QS, KS, AS, C2, C3, C4, C5, C6, C7, C8, C9, C10, JC, QC, KC, AC]
-random.shuffle(cards)
 
-s = cards[0]
-a = s((50,150))
-a.scale = 0.1
-
-cards.pop(0)
-
-b = cards[0]
-c = b((150,150))
-c.scale = 0.1
-
-cards.pop(0)
-
-q = cards[0]
-w = q((50,25))
-w.scale = .1
-
-cards.pop(0)
-r = cards[0]
-cards.pop(0)
-
-r = cards[0]
-cards.pop(0)
 
 
 
@@ -270,8 +245,32 @@ print("Press r for the rules")
 def rules(event):
     print("The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
-    global t
-    t = 1
+    ace = 0
+    cards = [H2, H3, H4, H5, H6, H7, H8, H9, H10, JH, QH, KH, AH, D2, D3, D4, D5, D6, D7, D8, D9, D10, JD, QD, KD, AD, S2, S3, S4, S5, S6, S7, S8, S9, S10, JS, QS, KS, AS, C2, C3, C4, C5, C6, C7, C8, C9, C10, JC, QC, KC, AC]
+    random.shuffle(cards)
+    
+    s = cards[0]
+    a = s((50,150))
+    a.scale = 0.1
+    
+    cards.pop(0)
+    
+    b = cards[0]
+    c = b((150,150))
+    c.scale = 0.1
+    
+    cards.pop(0)
+    
+    q = cards[0]
+    w = q((50,25))
+    w.scale = .1
+    
+    cards.pop(0)
+    r = cards[0]
+    cards.pop(0)
+    
+    r = cards[0]
+    cards.pop(0)
     print("Press H to hit or S to stay")
 
 def step():
