@@ -871,6 +871,8 @@ def stay(event):
     if t != 4:
         if yb == 5:
             print("You lose")
+        if db == 5:
+            print("You win")
         elif yourscore == dealerscore:
             print("Push")
         elif yourscore < dealerscore:
