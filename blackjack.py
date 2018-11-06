@@ -739,9 +739,9 @@ def stay(event):
 
     if ace == 1 and yourscore + 10 < 22:
         yourscore = yourscore + 10
-        print("yourscore: " + yourscore)
+        print("yourscore: " + str(yourscore))
     else:
-        print("yourscore: " + yourscore)
+        print("yourscore: " + str(yourscore))
     while dealerscore < 17:
         o = cards[0]
         p = o((100*n+50,25))
