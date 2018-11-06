@@ -482,10 +482,9 @@ def pauseplay(event):
     
     if b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
         if a == AH or a == AD or a == AS or a == AC:
-            print("Dealer has blackjack")
+            print("You have blackjack")
             j = r((150,25))
             j.scale = .1
-            yb = 5
         cards.pop(0)
     #getting the starting score
     if s == H2:
@@ -878,12 +877,6 @@ def stay(event):
             print("You lose")
         else:
             print("You win")
-
-#check for if player has blackjack (todo)
-
-
-#getting the dealers starting score
-
 
 
 
