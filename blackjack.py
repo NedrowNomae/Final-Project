@@ -231,8 +231,8 @@ class AC(Sprite):
     def __init__(self,  position):
         super().__init__(AC.AC, position)
 
-money = input("How much money would you like to start with?")
-startmoney = money
+#money = input("How much money would you like to start with?")
+#startmoney = money
 
 
 
@@ -254,7 +254,7 @@ def pauseplay(event):
         actual.visible = False
     random.shuffle(cards)
     #bet
-    bet = input("How much would you like to bet?")
+    #bet = input("How much would you like to bet?")
     #starting cards
     e = cardback((150, 25))
     e.scale = .1
