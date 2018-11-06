@@ -234,8 +234,7 @@ class AC(Sprite):
 #money = input("How much money would you like to start with?")
 #startmoney = money
 
-p = cardback((0,0))
-p.visible = False
+
 showing = []
 
 t = 1
