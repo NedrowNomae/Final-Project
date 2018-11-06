@@ -241,7 +241,7 @@ print("Press r for the rules")
 def rules(event):
     print("The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
-    global q
+    global q, dealerscore, yourscore, cards
     e = cardback((150, 25))
     e.scale = .1
     t = 1
