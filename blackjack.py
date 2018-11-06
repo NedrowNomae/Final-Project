@@ -728,6 +728,7 @@ n = 2
 m = 2
 db = 0
 yb = 0
+ace = 0
 #what to do when staying
 def stay(event):
     global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb
@@ -739,8 +740,7 @@ def stay(event):
     if ace == 1 and yourscore + 10 < 22:
         yourscore = yourscore + 10
         print("yourscore: " + str(yourscore))
-    print("Hello")
-    if:
+    else:
         print("yourscore: " + str(yourscore))
     while dealerscore < 17:
         o = cards[0]
