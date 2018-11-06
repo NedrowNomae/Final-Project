@@ -423,6 +423,57 @@ def pauseplay(event):
         dealerscore += 1
     else:
         dealerscore += 10
+    #check for dealer blackjack
+    if q == H10 or q == JH or q == QH or q == KH or q == D10 or q == JD or q == QD or q == KD or q == S10 or q == JS or q == QS or q == KS or q == C10 or q == JC or q == QC or q == KC:
+        if r == AH or r == AD or r == AS or r == AC:
+            if a == H10 or a == JH or a == QH or a == KH or a == D10 or a == JD or a == QD or a == KD or a == S10 or a == JS or a == QS or a == KS or a == C10 or a == JC or a == QC or a == KC:
+                if b == AH or b == AD or b == AS or b == AC:
+                    print("You both have blackjack")
+            
+            elif b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
+                if a == AH or a == AD or a == AS or a == AC:
+                    print("You both blackjack")
+            else:
+                print("Dealer has blackjack")
+                j = r((150,25))
+                j.scale = .1
+                db = 5
+            cards.pop(0)
+    
+    if r == H10 or r == JH or r == QH or r == KH or r == D10 or r == JD or r == QD or r == KD or r == S10 or r == JS or r == QS or r == KS or r == C10 or r == JC or r == QC or r == KC:
+        if q == AH or q == AD or q == AS or q == AC:
+            if a == H10 or a == JH or a == QH or a == KH or a == D10 or a == JD or a == QD or a == KD or a == S10 or a == JS or a == QS or a == KS or a == C10 or a == JC or a == QC or a == KC:
+                if b == AH or b == AD or b == AS or b == AC:
+                    print("You both have blackjack")
+            
+            elif b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
+                if a == AH or a == AD or a == AS or a == AC:
+                    print("You both blackjack")
+            else:
+                print("Dealer has blackjack")
+                j = r((150,25))
+                j.scale = .1
+                db = 5
+            cards.pop(0)
+    
+    
+    
+    #check if player blackjack(todo)
+    if a == H10 or a == JH or a == QH or a == KH or a == D10 or a == JD or a == QD or a == KD or a == S10 or a == JS or a == QS or a == KS or a == C10 or a == JC or a == QC or a == KC:
+        if b == AH or b == AD or b == AS or b == AC:
+            print("Dealer has blackjack")
+            j = r((150,25))
+            j.scale = .1
+            db = 5
+        cards.pop(0)
+    
+    if b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
+        if a == AH or a == AD or a == AS or a == AC:
+            print("Dealer has blackjack")
+            j = r((150,25))
+            j.scale = .1
+            yb = 5
+        cards.pop(0)
 
 def step():
     global t
@@ -588,57 +639,7 @@ def stay(event):
 #getting the dealers starting score
 
 
-#check for dealer blackjack
-if q == H10 or q == JH or q == QH or q == KH or q == D10 or q == JD or q == QD or q == KD or q == S10 or q == JS or q == QS or q == KS or q == C10 or q == JC or q == QC or q == KC:
-    if r == AH or r == AD or r == AS or r == AC:
-        if a == H10 or a == JH or a == QH or a == KH or a == D10 or a == JD or a == QD or a == KD or a == S10 or a == JS or a == QS or a == KS or a == C10 or a == JC or a == QC or a == KC:
-            if b == AH or b == AD or b == AS or b == AC:
-                print("You both have blackjack")
-        
-        elif b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
-            if a == AH or a == AD or a == AS or a == AC:
-                print("You both blackjack")
-        else:
-            print("Dealer has blackjack")
-            j = r((150,25))
-            j.scale = .1
-            db = 5
-        cards.pop(0)
 
-if r == H10 or r == JH or r == QH or r == KH or r == D10 or r == JD or r == QD or r == KD or r == S10 or r == JS or r == QS or r == KS or r == C10 or r == JC or r == QC or r == KC:
-    if q == AH or q == AD or q == AS or q == AC:
-        if a == H10 or a == JH or a == QH or a == KH or a == D10 or a == JD or a == QD or a == KD or a == S10 or a == JS or a == QS or a == KS or a == C10 or a == JC or a == QC or a == KC:
-            if b == AH or b == AD or b == AS or b == AC:
-                print("You both have blackjack")
-        
-        elif b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
-            if a == AH or a == AD or a == AS or a == AC:
-                print("You both blackjack")
-        else:
-            print("Dealer has blackjack")
-            j = r((150,25))
-            j.scale = .1
-            db = 5
-        cards.pop(0)
-
-
-
-#check if player blackjack(todo)
-if a == H10 or a == JH or a == QH or a == KH or a == D10 or a == JD or a == QD or a == KD or a == S10 or a == JS or a == QS or a == KS or a == C10 or a == JC or a == QC or a == KC:
-    if b == AH or b == AD or b == AS or b == AC:
-        print("Dealer has blackjack")
-        j = r((150,25))
-        j.scale = .1
-        db = 5
-    cards.pop(0)
-
-if b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
-    if a == AH or a == AD or a == AS or a == AC:
-        print("Dealer has blackjack")
-        j = r((150,25))
-        j.scale = .1
-        yb = 5
-    cards.pop(0)
 
 #getting the starting score
 if s == H2:
