@@ -885,7 +885,7 @@ def stay(event):
 
 m = 2
 def hit(event):
-    global cards, y, m, yourscore, t, ace
+    global cards, y, m, yourscore, t, ace, o, p
     y = 150
     if t == 1:
         o = cards[0]
