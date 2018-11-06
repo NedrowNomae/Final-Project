@@ -257,7 +257,8 @@ def pauseplay(event):
         actual.scale = 0.1
         #actual.visible = False
     random.shuffle(cards)
-    for seen in showing
+    for seen in showing:
+        seen.visible = False
     #bet
     #bet = input("How much would you like to bet?")
     #starting cards
