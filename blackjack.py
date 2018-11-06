@@ -236,7 +236,7 @@ class AC(Sprite):
 
 p = cardback((0,0))
 p.visible = False
-
+showing = []
 
 t = 1
 
@@ -257,6 +257,7 @@ def pauseplay(event):
         actual.scale = 0.1
         #actual.visible = False
     random.shuffle(cards)
+    for seen in showing
     #bet
     #bet = input("How much would you like to bet?")
     #starting cards
