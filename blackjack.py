@@ -230,7 +230,7 @@ class AC(Sprite):
     AC = ImageAsset("AC.png")
     def __init__(self,  position):
         super().__init__(AC.AC, position)
-money = input("How much money would you like to start with?")
+#money = input("How much money would you like to start with?")
 
 
 
@@ -245,6 +245,7 @@ print("Press r for the rules")
 def rules(event):
     print("The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
+    global q
     ace = 0
     cards = [H2, H3, H4, H5, H6, H7, H8, H9, H10, JH, QH, KH, AH, D2, D3, D4, D5, D6, D7, D8, D9, D10, JD, QD, KD, AD, S2, S3, S4, S5, S6, S7, S8, S9, S10, JS, QS, KS, AS, C2, C3, C4, C5, C6, C7, C8, C9, C10, JC, QC, KC, AC]
     random.shuffle(cards)
@@ -272,6 +273,156 @@ def pauseplay(event):
     r = cards[0]
     cards.pop(0)
     print("Press H to hit or S to stay")
+    
+    if q == H2:
+        dealerscore += 2
+    elif q == S2:
+        dealerscore += 2
+    elif q == D2:
+        dealerscore += 2
+    elif q == C2:
+        dealerscore += 2
+    elif q == H3:
+        dealerscore += 3
+    elif q == S3:
+        dealerscore += 3
+    elif q == D3:
+        dealerscore += 3
+    elif q == C3:
+        dealerscore += 3
+    elif q == H4:
+        dealerscore += 4
+    elif q == S4:
+        dealerscore += 4
+    elif q == D4:
+        dealerscore += 4
+    elif q == C4:
+        dealerscore += 4
+    elif q == H5:
+        dealerscore += 5
+    elif q == C5:
+        dealerscore += 5
+    elif q == D5:
+        dealerscore += 5
+    elif q == S5:
+        dealerscore += 5
+    elif q == H6:
+        dealerscore += 6
+    elif q == S6:
+        dealerscore += 6
+    elif q == D6:
+        dealerscore += 6
+    elif q == C6:
+        dealerscore += 6
+    elif q == H7:
+        dealerscore += 7
+    elif q == C7:
+        dealerscore += 7
+    elif q == S7:
+        dealerscore += 7
+    elif q == D7:
+        dealerscore += 7
+    elif q == D8:
+        dealerscore += 8
+    elif q == C8:
+        dealerscore += 8
+    elif q == S8:
+        dealerscore += 8
+    elif q == H8:
+        dealerscore += 8
+    elif q == D9:
+        dealerscore += 9
+    elif q == H9:
+        dealerscore += 9
+    elif q == S9:
+        dealerscore += 9
+    elif q == C9:
+        dealerscore += 9
+    elif q == AH:
+        dealerscore += 1
+    elif q == AS:
+        dealerscore += 1
+    elif q == AC:
+        dealerscore += 1
+    elif q == AD:
+        dealerscore += 1
+    else:
+        dealerscore += 10
+    
+    if r == H2:
+        dealerscore += 2
+    elif r == S2:
+        dealerscore += 2
+    elif r == D2:
+        dealerscore += 2
+    elif r == C2:
+        dealerscore += 2
+    elif r == H3:
+        dealerscore += 3
+    elif r == S3:
+        dealerscore += 3
+    elif r == D3:
+        dealerscore += 3
+    elif r == C3:
+        dealerscore += 3
+    elif r == H4:
+        dealerscore += 4
+    elif r == S4:
+        dealerscore += 4
+    elif r == D4:
+        dealerscore += 4
+    elif r == C4:
+        dealerscore += 4
+    elif r == H5:
+        dealerscore += 5
+    elif r == C5:
+        dealerscore += 5
+    elif r == D5:
+        dealerscore += 5
+    elif r == S5:
+        dealerscore += 5
+    elif r == H6:
+        dealerscore += 6
+    elif r == S6:
+        dealerscore += 6
+    elif r == D6:
+        dealerscore += 6
+    elif r == C6:
+        dealerscore += 6
+    elif r == H7:
+        dealerscore += 7
+    elif r == C7:
+        dealerscore += 7
+    elif r == S7:
+        dealerscore += 7
+    elif r == D7:
+        dealerscore += 7
+    elif r == D8:
+        dealerscore += 8
+    elif r == C8:
+        dealerscore += 8
+    elif r == S8:
+        dealerscore += 8
+    elif r == H8:
+        dealerscore += 8
+    elif r == D9:
+        dealerscore += 9
+    elif r == H9:
+        dealerscore += 9
+    elif r == S9:
+        dealerscore += 9
+    elif r == C9:
+        dealerscore += 9
+    elif r == AH:
+        dealerscore += 1
+    elif r == AS:
+        dealerscore += 1
+    elif r == AC:
+        dealerscore += 1
+    elif r == AD:
+        dealerscore += 1
+    else:
+        dealerscore += 10
 
 def step():
     global t
@@ -435,155 +586,7 @@ def stay(event):
 
 
 #getting the dealers starting score
-if q == H2:
-    dealerscore += 2
-elif q == S2:
-    dealerscore += 2
-elif q == D2:
-    dealerscore += 2
-elif q == C2:
-    dealerscore += 2
-elif q == H3:
-    dealerscore += 3
-elif q == S3:
-    dealerscore += 3
-elif q == D3:
-    dealerscore += 3
-elif q == C3:
-    dealerscore += 3
-elif q == H4:
-    dealerscore += 4
-elif q == S4:
-    dealerscore += 4
-elif q == D4:
-    dealerscore += 4
-elif q == C4:
-    dealerscore += 4
-elif q == H5:
-    dealerscore += 5
-elif q == C5:
-    dealerscore += 5
-elif q == D5:
-    dealerscore += 5
-elif q == S5:
-    dealerscore += 5
-elif q == H6:
-    dealerscore += 6
-elif q == S6:
-    dealerscore += 6
-elif q == D6:
-    dealerscore += 6
-elif q == C6:
-    dealerscore += 6
-elif q == H7:
-    dealerscore += 7
-elif q == C7:
-    dealerscore += 7
-elif q == S7:
-    dealerscore += 7
-elif q == D7:
-    dealerscore += 7
-elif q == D8:
-    dealerscore += 8
-elif q == C8:
-    dealerscore += 8
-elif q == S8:
-    dealerscore += 8
-elif q == H8:
-    dealerscore += 8
-elif q == D9:
-    dealerscore += 9
-elif q == H9:
-    dealerscore += 9
-elif q == S9:
-    dealerscore += 9
-elif q == C9:
-    dealerscore += 9
-elif q == AH:
-    dealerscore += 1
-elif q == AS:
-    dealerscore += 1
-elif q == AC:
-    dealerscore += 1
-elif q == AD:
-    dealerscore += 1
-else:
-    dealerscore += 10
 
-if r == H2:
-    dealerscore += 2
-elif r == S2:
-    dealerscore += 2
-elif r == D2:
-    dealerscore += 2
-elif r == C2:
-    dealerscore += 2
-elif r == H3:
-    dealerscore += 3
-elif r == S3:
-    dealerscore += 3
-elif r == D3:
-    dealerscore += 3
-elif r == C3:
-    dealerscore += 3
-elif r == H4:
-    dealerscore += 4
-elif r == S4:
-    dealerscore += 4
-elif r == D4:
-    dealerscore += 4
-elif r == C4:
-    dealerscore += 4
-elif r == H5:
-    dealerscore += 5
-elif r == C5:
-    dealerscore += 5
-elif r == D5:
-    dealerscore += 5
-elif r == S5:
-    dealerscore += 5
-elif r == H6:
-    dealerscore += 6
-elif r == S6:
-    dealerscore += 6
-elif r == D6:
-    dealerscore += 6
-elif r == C6:
-    dealerscore += 6
-elif r == H7:
-    dealerscore += 7
-elif r == C7:
-    dealerscore += 7
-elif r == S7:
-    dealerscore += 7
-elif r == D7:
-    dealerscore += 7
-elif r == D8:
-    dealerscore += 8
-elif r == C8:
-    dealerscore += 8
-elif r == S8:
-    dealerscore += 8
-elif r == H8:
-    dealerscore += 8
-elif r == D9:
-    dealerscore += 9
-elif r == H9:
-    dealerscore += 9
-elif r == S9:
-    dealerscore += 9
-elif r == C9:
-    dealerscore += 9
-elif r == AH:
-    dealerscore += 1
-elif r == AS:
-    dealerscore += 1
-elif r == AC:
-    dealerscore += 1
-elif r == AD:
-    dealerscore += 1
-else:
-    dealerscore += 10
 
 #check for dealer blackjack
 if q == H10 or q == JH or q == QH or q == KH or q == D10 or q == JD or q == QD or q == KD or q == S10 or q == JS or q == QS or q == KS or q == C10 or q == JC or q == QC or q == KC:
