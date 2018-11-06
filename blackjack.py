@@ -734,7 +734,6 @@ def stay(event):
     global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb
     if t == 1:
         print("You stayed")
-        t = 2
         j = r((150,25))
         j.scale = .1
 #    while dealerscore < 17:
