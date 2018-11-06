@@ -1012,10 +1012,10 @@ def hit(event):
         else:
             yourscore += 10
             print(yourscore)
-        if yourscore > 21:
+        """if yourscore > 21:
             print("You busted")
             t = 4
-            yb = 5
+            yb = 5"""
 
 
 
