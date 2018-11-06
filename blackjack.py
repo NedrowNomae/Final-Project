@@ -251,6 +251,7 @@ def pauseplay(event):
     db = 0
 
     ace = 0
+    #set up deck
     cards = [H2, H3, H4, H5, H6, H7, H8, H9, H10, JH, QH, KH, AH, D2, D3, D4, D5, D6, D7, D8, D9, D10, JD, QD, KD, AD, S2, S3, S4, S5, S6, S7, S8, S9, S10, JS, QS, KS, AS, C2, C3, C4, C5, C6, C7, C8, C9, C10, JC, QC, KC, AC]
     #reset visible stuff
     random.shuffle(cards)
@@ -490,235 +491,235 @@ def pauseplay(event):
     #getting the starting score
     if s == H2:
         yourscore += 2
-        print(yourscore)
+        
     elif s == S2:
         yourscore += 2
-        print(yourscore)
+        
     elif s == D2:
         yourscore += 2
-        print(yourscore)
+        
     elif s == C2:
         yourscore += 2
-        print(yourscore)
+        
     elif s == H3:
         yourscore += 3
-        print(yourscore)
+        
     elif s == S3:
         yourscore += 3
-        print(yourscore)
+        
     elif s == D3:
         yourscore += 3
-        print(yourscore)
+        
     elif s == C3:
         yourscore += 3
-        print(yourscore)
+        
     elif s == H4:
         yourscore += 4
-        print(yourscore)
+        
     elif s == S4:
         yourscore += 4
-        print(yourscore)
+        
     elif s == D4:
         yourscore += 4
-        print(yourscore)
+        
     elif s == C4:
         yourscore += 4
-        print(yourscore)
+        
     elif s == H5:
         yourscore += 5
-        print(yourscore)
+        
     elif s == C5:
         yourscore += 5
-        print(yourscore)
+        
     elif s == D5:
         yourscore += 5
-        print(yourscore)
+        
     elif s == S5:
         yourscore += 5
-        print(yourscore)
+        
     elif s == H6:
         yourscore += 6
-        print(yourscore)
+        
     elif s == S6:
         yourscore += 6
-        print(yourscore)
+        
     elif s == D6:
         yourscore += 6
-        print(yourscore)
+        
     elif s == C6:
         yourscore += 6
-        print(yourscore)
+        
     elif s == H7:
         yourscore += 7
-        print(yourscore)
+        
     elif s == C7:
         yourscore += 7
-        print(yourscore)
+        
     elif s == S7:
         yourscore += 7
-        print(yourscore)
+        
     elif s == D7:
         yourscore += 7
-        print(yourscore)
+        
     elif s == D8:
         yourscore += 8
-        print(yourscore)
+        
     elif s == C8:
         yourscore += 8
-        print(yourscore)
+        
     elif s == S8:
         yourscore += 8
-        print(yourscore)
+        
     elif s == H8:
         yourscore += 8
-        print(yourscore)
+        
     elif s == D9:
         yourscore += 9
-        print(yourscore)
+        
     elif s == H9:
         yourscore += 9
-        print(yourscore)
+        
     elif s == S9:
         yourscore += 9
-        print(yourscore)
+        
     elif s == C9:
         yourscore += 9
-        print(yourscore)
+        
     elif s == AH:
         yourscore += 1
         ace = 1
-        print(yourscore)
+        
     elif s == AS:
         yourscore += 1
         ace = 1
-        print(yourscore)
+        
     elif s == AC:
         yourscore += 1
-        print(yourscore)
+        
         ace = 1
     elif s == AD:
         yourscore += 1
-        print(yourscore)
+        
         ace = 1
     else:
         yourscore += 10
-        print(yourscore)
+        
     
     if b == H2:
         yourscore += 2
-        print(yourscore)
+        
     elif b == S2:
         yourscore += 2
-        print(yourscore)
+        
     elif b == D2:
         yourscore += 2
-        print(yourscore)
+        
     elif b == C2:
         yourscore += 2
-        print(yourscore)
+        
     elif b == H3:
         yourscore += 3
-        print(yourscore)
+        
     elif b == S3:
         yourscore += 3
-        print(yourscore)
+        
     elif b == D3:
         yourscore += 3
-        print(yourscore)
+        
     elif b == C3:
         yourscore += 3
-        print(yourscore)
+        
     elif b == H4:
         yourscore += 4
-        print(yourscore)
+        
     elif b == S4:
         yourscore += 4
-        print(yourscore)
+        
     elif b == D4:
         yourscore += 4
-        print(yourscore)
+        
     elif b == C4:
         yourscore += 4
-        print(yourscore)
+        
     elif b == H5:
         yourscore += 5
-        print(yourscore)
+        
     elif b == C5:
         yourscore += 5
-        print(yourscore)
+        
     elif b == D5:
         yourscore += 5
-        print(yourscore)
+        
     elif b == S5:
         yourscore += 5
-        print(yourscore)
+        
     elif b == H6:
         yourscore += 6
-        print(yourscore)
+        
     elif b == S6:
         yourscore += 6
-        print(yourscore)
+        
     elif b == D6:
         yourscore += 6
-        print(yourscore)
+        
     elif b == C6:
         yourscore += 6
-        print(yourscore)
+        
     elif b == H7:
         yourscore += 7
-        print(yourscore)
+        
     elif b == C7:
         yourscore += 7
-        print(yourscore)
+        
     elif b == S7:
         yourscore += 7
-        print(yourscore)
+        
     elif b == D7:
         yourscore += 7
-        print(yourscore)
+        
     elif b == D8:
         yourscore += 8
-        print(yourscore)
+        
     elif b == C8:
         yourscore += 8
-        print(yourscore)
+        
     elif b == S8:
         yourscore += 8
-        print(yourscore)
+        
     elif b == H8:
         yourscore += 8
-        print(yourscore)
+        
     elif b == D9:
         yourscore += 9
-        print(yourscore)
+        
     elif b == H9:
         yourscore += 9
-        print(yourscore)
+        
     elif b == S9:
         yourscore += 9
-        print(yourscore)
+        
     elif b == C9:
         yourscore += 9
-        print(yourscore)
+        
     elif b == AH:
         yourscore += 1
-        print(yourscore)
+        
         ace = 1
     elif b == AS:
         yourscore += 1
-        print(yourscore)
+        
         ace = 1
     elif b == AC:
         yourscore += 1
-        print(yourscore)
+        
         ace = 1
     elif b == AD:
         yourscore += 1
-        print(yourscore)
+        
         ace = 1
     else:
         yourscore += 10
-        print(yourscore)
+        
 
 def step():
     global t
@@ -900,124 +901,123 @@ def hit(event):
     if t == 1:
         if o == H2:
             yourscore += 2
-            print(yourscore)
+            
         elif o == S2:
             yourscore += 2
-            print(yourscore)
+            
         elif o == D2:
             yourscore += 2
-            print(yourscore)
+            
         elif o == C2:
             yourscore += 2
-            print(yourscore)
+            
     
         elif o == H3:
             yourscore += 3
-            print(yourscore)
+            
         elif o == S3:
             yourscore += 3
-            print(yourscore)
+            
         elif o == D3:
             yourscore += 3
-            print(yourscore)
+            
         elif o == C3:
             yourscore += 3
-            print(yourscore)
+            
         elif o == H4:
             yourscore += 4
-            print(yourscore)
+            
         elif o == S4:
             yourscore += 4
-            print(yourscore)
+            
         elif o == D4:
             yourscore += 4
-            print(yourscore)
+            
         elif o == C4:
             yourscore += 4
-            print(yourscore)
+            
         elif o == H5:
             yourscore += 5
-            print(yourscore)
+            
         elif o == C5:
             yourscore += 5
-            print(yourscore)
+            
         elif o == D5:
             yourscore += 5
-            print(yourscore)
+            
         elif o == S5:
             yourscore += 5
-            print(yourscore)
+            
         elif o == H6:
             yourscore += 6
-            print(yourscore)
+            
         elif o == S6:
             yourscore += 6
-            print(yourscore)
+            
         elif o == D6:
             yourscore += 6
-            print(yourscore)
+            
         elif o == C6:
             yourscore += 6
-            print(yourscore)
+            
         elif o == H7:
             yourscore += 7
-            print(yourscore)
+            
         elif o == C7:
             yourscore += 7
-            print(yourscore)
+            
         elif o == S7:
             yourscore += 7
-            print(yourscore)
+            
         elif o == D7:
             yourscore += 7
-            print(yourscore)
+            
         elif o == D8:
             yourscore += 8
-            print(yourscore)
+            
         elif o == C8:
             yourscore += 8
-            print(yourscore)
+            
         elif o == S8:
             yourscore += 8
-            print(yourscore)
+            
         elif o == H8:
             yourscore += 8
-            print(yourscore)
+            
         elif o == D9:
             yourscore += 9
-            print(yourscore)
+            
         elif o == H9:
             yourscore += 9
-            print(yourscore)
+            
         elif o == S9:
             yourscore += 9
-            print(yourscore)
+            
         elif o == C9:
             yourscore += 9
-            print(yourscore)
+            
         elif o == AH:
             yourscore += 1
-            print(yourscore)
+            
             ace = 1
         elif o == AS:
             yourscore += 1
-            print(yourscore)
+            
             ace = 1
         elif o == AC:
             yourscore += 1
-            print(yourscore)
+            
             ace = 1
         elif o == AD:
             yourscore += 1
-            print(yourscore)
+            
             ace = 1
         else:
             yourscore += 10
-            print(yourscore)
-        """if yourscore > 21:
+            
+        if yourscore > 21:
             print("You busted")
-            t = 4
-            yb = 5"""
+            yb = 5
 
 
 
