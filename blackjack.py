@@ -252,7 +252,8 @@ def pauseplay(event):
     #starting cards
     e = cardback((150, 25))
     e.scale = .1
-    
+    yourscore = 0
+    dealerscore = 0
     s = cards[0]
     a = s((50,150))
     a.scale = 0.1
