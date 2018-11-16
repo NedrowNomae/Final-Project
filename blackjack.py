@@ -259,8 +259,6 @@ def pauseplay(event):
         random.shuffle(cards)
         for seen in showing:
             seen.visible = False
-        #bet
-        #bet = input("How much would you like to bet?")
         #starting cards
         e = cardback((150, 25))
         e.scale = .1
@@ -454,7 +452,7 @@ def pauseplay(event):
                     j = r((150,25))
                     j.scale = .1
                     db = 5
-                    money = money - bet
+                    money = money - int(bet)
                     print("You have $" + str(money))
                 cards.pop(0)
         
@@ -469,7 +467,7 @@ def pauseplay(event):
                         print("You both blackjack")
                 else:
                     print("Dealer has blackjack")
-                    money = money - bet
+                    money = money - int(bet)
                     print("You have $" + str(money))
                     j = r((150,25))
                     j.scale = .1
@@ -885,22 +883,22 @@ def stay(event):
 
         if yb == 5:
             print("You lose")
-            money = money - bet
+            money = money - int(bet)
             print("You have $" + str(money))
         if db == 5:
             print("You win")
-            money = money + bet
+            money = money + int(bet)
             print("You have $" + str(money))
         elif yourscore == dealerscore:
             print("Push")
             print("You have $" + str(money))
         elif yourscore < dealerscore:
             print("You lose")
-            money = money - bet
+            money = money - int(bet)
             print("You have $" + str(money))
         else:
             print("You win")
-            money = money + bet
+            money = money + int(bet)
             print("You have $" + str(money))
 
 
@@ -1037,7 +1035,7 @@ def hit(event):
             print("You busted")
             yb = 5
             t = 3
-            money = money - bet
+            money = money - int(bet)
             print("You have $" + str(money))
 
 
