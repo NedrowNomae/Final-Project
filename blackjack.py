@@ -741,7 +741,8 @@ yb = 0
 #what to do when staying
 def stay(event):
     global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet
-    if t != 3
+    if t != 3:
+        t = 3
         print("You stayed")
         j = r((150,25))
         j.scale = .1
