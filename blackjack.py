@@ -250,6 +250,7 @@ def pauseplay(event):
         m = 2
         for p in showing:
             p.visible = False
+        yourscore = 0
         n = 2
         bet = input("What is your bet?")
         yb = 0
