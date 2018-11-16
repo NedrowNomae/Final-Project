@@ -244,11 +244,11 @@ print("Press r for the rules")
 def rules(event):
     print("The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
-    global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t
+    global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t, showing
     if t == 3:
         t = 2
         m = 2
-        for a in showing[]:
+        for a in showing:
             a.visible = false
         n = 2
         bet = input("What is your bet?")
@@ -911,7 +911,7 @@ def stay(event):
 
 m = 2
 def hit(event):
-    global cards, y, m, yourscore, t, ace, o, p, yb
+    global cards, y, m, yourscore, t, ace, o, p, yb, showing
     y = 150
     if t == 1:
         o = cards[0]
