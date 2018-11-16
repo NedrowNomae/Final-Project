@@ -248,6 +248,8 @@ def pauseplay(event):
     if t == 3:
         t = 2
         m = 2
+        for a in showing[]:
+            a.visible = false
         n = 2
         bet = input("What is your bet?")
         yb = 0
