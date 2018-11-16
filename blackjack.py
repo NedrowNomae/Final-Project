@@ -911,16 +911,16 @@ def stay(event):
 
 m = 2
 def hit(event):
-    global cards, y, m, yourscore, t, ace, o, p, yb, showing
+    global cards, y, m, yourscore, t, ace, o, p, yb, showing, money
     y = 150
-    if t == 1:
+    if t == 2:
         o = cards[0]
         p = o((100*m+50,y))
         p.scale = .1
         cards.pop(0)
         showing.append(p)
         m = m + 1
-    if t == 1:
+    if t == 2:
         if o == H2:
             yourscore += 2
             
