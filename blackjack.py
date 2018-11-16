@@ -247,6 +247,7 @@ def rules(event):
 def pauseplay(event):
     global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t
     if t == 3:
+        t = 2
         b = input("What is your bet?")
         yb = 0
         db = 0
