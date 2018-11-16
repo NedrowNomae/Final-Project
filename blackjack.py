@@ -741,144 +741,145 @@ yb = 0
 #what to do when staying
 def stay(event):
     global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet
-    print("You stayed")
-    j = r((150,25))
-    j.scale = .1
-#    while dealerscore < 17:
-
-    if ace == 1 and yourscore + 10 < 22:
-        yourscore = yourscore + 10
-        print("yourscore: " + str(yourscore))
-    else:
-        print("yourscore: " + str(yourscore))
-    while dealerscore < 17:
-        o = cards[0]
-        p = o((100*n+50,25))
-        p.scale = .1
-        cards.pop(0)
-        n = n + 1
-        if o == H2:
-            dealerscore += 2
-            print(dealerscore)
-        elif o == S2:
-            dealerscore += 2
-            print(dealerscore)
-        elif o == D2:
-            dealerscore += 2
-            print(dealerscore)
-        elif o == C2:
-            dealerscore += 2
-            print(dealerscore)
+    if t != 3
+        print("You stayed")
+        j = r((150,25))
+        j.scale = .1
+    #    while dealerscore < 17:
     
-        elif o == H3:
-            dealerscore += 3
-            print(dealerscore)
-        elif o == S3:
-            dealerscore += 3
-            print(dealerscore)
-        elif o == D3:
-            dealerscore += 3
-            print(dealerscore)
-        elif o == C3:
-            dealerscore += 3
-            print(dealerscore)
-        elif o == H4:
-            dealerscore += 4
-            print(dealerscore)
-        elif o == S4:
-            dealerscore += 4
-            print(dealerscore)
-        elif o == D4:
-            dealerscore += 4
-            print(dealerscore)
-        elif o == C4:
-            dealerscore += 4
-            print(dealerscore)
-        elif o == H5:
-            dealerscore += 5
-            print(dealerscore)
-        elif o == C5:
-            dealerscore += 5
-            print(dealerscore)
-        elif o == D5:
-            dealerscore += 5
-            print(dealerscore)
-        elif o == S5:
-            dealerscore += 5
-            print(dealerscore)
-        elif o == H6:
-            dealerscore += 6
-            print(dealerscore)
-        elif o == S6:
-            dealerscore += 6
-            print(dealerscore)
-        elif o == D6:
-            dealerscore += 6
-            print(dealerscore)
-        elif o == C6:
-            dealerscore += 6
-            print(dealerscore)
-        elif o == H7:
-            dealerscore += 7
-            print(dealerscore)
-        elif o == C7:
-            dealerscore += 7
-            print(dealerscore)
-        elif o == S7:
-            dealerscore += 7
-            print(dealerscore)
-        elif o == D7:
-            dealerscore += 7
-            print(dealerscore)
-        elif o == D8:
-            dealerscore += 8
-            print(dealerscore)
-        elif o == C8:
-            dealerscore += 8
-            print(dealerscore)
-        elif o == S8:
-            dealerscore += 8
-            print(dealerscore)
-        elif o == H8:
-            dealerscore += 8
-            print(dealerscore)
-        elif o == D9:
-            dealerscore += 9
-            print(dealerscore)
-        elif o == H9:
-            dealerscore += 9
-            print(dealerscore)
-        elif o == S9:
-            dealerscore += 9
-            print(dealerscore)
-        elif o == C9:
-            dealerscore += 9
-            print(dealerscore)
-        elif o == AH:
-            dealerscore += 1
-            ace = 1
-            print(dealerscore)
-
-        elif o == AS:
-            dealerscore += 1
-            print(dealerscore)
-
-        elif o == AC:
-            dealerscore += 1
-
-            print(dealerscore)
-        elif o == AD:
-            dealerscore += 1
-            print(dealerscore)
-
+        if ace == 1 and yourscore + 10 < 22:
+            yourscore = yourscore + 10
+            print("yourscore: " + str(yourscore))
         else:
-            dealerscore += 10
-            print(dealerscore)
-        if dealerscore > 21:
-            print("dealer busted")
-            t = 3
-            db = 5
-    if t != 107:
+            print("yourscore: " + str(yourscore))
+        while dealerscore < 17:
+            o = cards[0]
+            p = o((100*n+50,25))
+            p.scale = .1
+            cards.pop(0)
+            n = n + 1
+            if o == H2:
+                dealerscore += 2
+                print(dealerscore)
+            elif o == S2:
+                dealerscore += 2
+                print(dealerscore)
+            elif o == D2:
+                dealerscore += 2
+                print(dealerscore)
+            elif o == C2:
+                dealerscore += 2
+                print(dealerscore)
+        
+            elif o == H3:
+                dealerscore += 3
+                print(dealerscore)
+            elif o == S3:
+                dealerscore += 3
+                print(dealerscore)
+            elif o == D3:
+                dealerscore += 3
+                print(dealerscore)
+            elif o == C3:
+                dealerscore += 3
+                print(dealerscore)
+            elif o == H4:
+                dealerscore += 4
+                print(dealerscore)
+            elif o == S4:
+                dealerscore += 4
+                print(dealerscore)
+            elif o == D4:
+                dealerscore += 4
+                print(dealerscore)
+            elif o == C4:
+                dealerscore += 4
+                print(dealerscore)
+            elif o == H5:
+                dealerscore += 5
+                print(dealerscore)
+            elif o == C5:
+                dealerscore += 5
+                print(dealerscore)
+            elif o == D5:
+                dealerscore += 5
+                print(dealerscore)
+            elif o == S5:
+                dealerscore += 5
+                print(dealerscore)
+            elif o == H6:
+                dealerscore += 6
+                print(dealerscore)
+            elif o == S6:
+                dealerscore += 6
+                print(dealerscore)
+            elif o == D6:
+                dealerscore += 6
+                print(dealerscore)
+            elif o == C6:
+                dealerscore += 6
+                print(dealerscore)
+            elif o == H7:
+                dealerscore += 7
+                print(dealerscore)
+            elif o == C7:
+                dealerscore += 7
+                print(dealerscore)
+            elif o == S7:
+                dealerscore += 7
+                print(dealerscore)
+            elif o == D7:
+                dealerscore += 7
+                print(dealerscore)
+            elif o == D8:
+                dealerscore += 8
+                print(dealerscore)
+            elif o == C8:
+                dealerscore += 8
+                print(dealerscore)
+            elif o == S8:
+                dealerscore += 8
+                print(dealerscore)
+            elif o == H8:
+                dealerscore += 8
+                print(dealerscore)
+            elif o == D9:
+                dealerscore += 9
+                print(dealerscore)
+            elif o == H9:
+                dealerscore += 9
+                print(dealerscore)
+            elif o == S9:
+                dealerscore += 9
+                print(dealerscore)
+            elif o == C9:
+                dealerscore += 9
+                print(dealerscore)
+            elif o == AH:
+                dealerscore += 1
+                ace = 1
+                print(dealerscore)
+    
+            elif o == AS:
+                dealerscore += 1
+                print(dealerscore)
+    
+            elif o == AC:
+                dealerscore += 1
+    
+                print(dealerscore)
+            elif o == AD:
+                dealerscore += 1
+                print(dealerscore)
+    
+            else:
+                dealerscore += 10
+                print(dealerscore)
+            if dealerscore > 21:
+                print("dealer busted")
+                t = 3
+                db = 5
+
         if yb == 5:
             print("You lose")
             money = money - bet
@@ -1032,7 +1033,7 @@ def hit(event):
         if yourscore > 21:
             print("You busted")
             yb = 5
-            t = 2
+            t = 3
             money = money - bet
             print("You have $" + str(money))
 
