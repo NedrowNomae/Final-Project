@@ -585,20 +585,20 @@ def pauseplay(event):
         
     elif s == AH:
         yourscore += 1
-        ace = 1
+        yace = 1
         
     elif s == AS:
         yourscore += 1
-        ace = 1
+        yace = 1
         
     elif s == AC:
         yourscore += 1
         
-        ace = 1
+        yace = 1
     elif s == AD:
         yourscore += 1
         
-        ace = 1
+        yace = 1
     else:
         yourscore += 10
         
