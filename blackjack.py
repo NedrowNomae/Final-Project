@@ -231,7 +231,7 @@ class AC(Sprite):
     def __init__(self,  position):
         super().__init__(AC.AC, position)
 
-#money = input("How much money would you like to start with?")
+money = input("How much money would you like to start with?")
 #startmoney = money
 
 
@@ -246,6 +246,7 @@ def rules(event):
     print("The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
     global q, dealerscore, yourscore, r, a, b, cards, money, startmoney, o, p, yb, db
+    b = input("What is your bet?")
     yb = 0
     db = 0
     t = 1
@@ -451,6 +452,7 @@ def pauseplay(event):
                 j = r((150,25))
                 j.scale = .1
                 db = 5
+                money = money - bet
             cards.pop(0)
     
     if r == H10 or r == JH or r == QH or r == KH or r == D10 or r == JD or r == QD or r == KD or r == S10 or r == JS or r == QS or r == KS or r == C10 or r == JC or r == QC or r == KC:
@@ -464,6 +466,7 @@ def pauseplay(event):
                     print("You both blackjack")
             else:
                 print("Dealer has blackjack")
+                money = money - bet
                 j = r((150,25))
                 j.scale = .1
                 db = 5
@@ -474,17 +477,20 @@ def pauseplay(event):
     #check if player blackjack(todo)
     if s == H10 or s == JH or s == QH or s == KH or s == D10 or s == JD or s == QD or s == KD or s == S10 or s == JS or s == QS or s == KS or s == C10 or s == JC or s == QC or s == KC:
         if b == AH or b == AD or b == AS or b == AC:
-            print("Dealer has blackjack")
+            print("You have blackjack")
             j = r((150,25))
             j.scale = .1
             db = 5
+            money = money + 1.5*bet
         cards.pop(0)
+        
     
     if b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
         if s == AH or s == AD or s == AS or s == AC:
             print("You have blackjack")
             j = r((150,25))
             j.scale = .1
+            money = money + 1.5*bet
         cards.pop(0)
     #getting the starting score
     if s == H2:
@@ -871,14 +877,18 @@ def stay(event):
     if t != 4:
         if yb == 5:
             print("You lose")
+            money = money - bet
         if db == 5:
             print("You win")
+            money = money + bet
         elif yourscore == dealerscore:
             print("Push")
         elif yourscore < dealerscore:
             print("You lose")
+            money = money - bet
         else:
             print("You win")
+            money = money + bet
 
 
 
