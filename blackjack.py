@@ -731,7 +731,7 @@ def pauseplay(event):
 
 def step():
     global t
-    while t == 2:
+    while t == 19:
         t = 3
 n = 2
 m = 2
