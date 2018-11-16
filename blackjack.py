@@ -237,7 +237,7 @@ money = input("How much money would you like to start with?")
 
 showing = []
 
-t = 2
+t = 3
 
 print("press space to begin")
 print("Press r for the rules")
