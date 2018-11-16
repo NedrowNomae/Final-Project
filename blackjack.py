@@ -450,6 +450,7 @@ def pauseplay(event):
                         print("You both blackjack")
                 else:
                     print("Dealer has blackjack")
+                    t = 3
                     j = r((150,25))
                     j.scale = .1
                     db = 5
@@ -468,6 +469,7 @@ def pauseplay(event):
                         print("You both blackjack")
                 else:
                     print("Dealer has blackjack")
+                    t = 3
                     money = int(money) - int(bet)
                     print("You have $" + str(money))
                     j = r((150,25))
@@ -481,6 +483,7 @@ def pauseplay(event):
         if s == H10 or s == JH or s == QH or s == KH or s == D10 or s == JD or s == QD or s == KD or s == S10 or s == JS or s == QS or s == KS or s == C10 or s == JC or s == QC or s == KC:
             if b == AH or b == AD or b == AS or b == AC:
                 print("You have blackjack")
+                t = 3
                 j = r((150,25))
                 j.scale = .1
                 db = 5
@@ -492,6 +495,7 @@ def pauseplay(event):
         if b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
             if s == AH or s == AD or s == AS or s == AC:
                 print("You have blackjack")
+                t = 3
                 j = r((150,25))
                 j.scale = .1
                 money = int(money) + 1.5*bet
