@@ -245,7 +245,7 @@ print("Press r for the rules")
 def rules(event):
     print("The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
-    global q, dealerscore, yourscore, r, a, b, cards, money, startmoney, o, p, yb, db
+    global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db
     b = input("What is your bet?")
     yb = 0
     db = 0
@@ -453,6 +453,7 @@ def pauseplay(event):
                 j.scale = .1
                 db = 5
                 money = money - bet
+                print("You have $" + str(money))
             cards.pop(0)
     
     if r == H10 or r == JH or r == QH or r == KH or r == D10 or r == JD or r == QD or r == KD or r == S10 or r == JS or r == QS or r == KS or r == C10 or r == JC or r == QC or r == KC:
@@ -467,6 +468,7 @@ def pauseplay(event):
             else:
                 print("Dealer has blackjack")
                 money = money - bet
+                print("You have $" + str(money))
                 j = r((150,25))
                 j.scale = .1
                 db = 5
@@ -482,6 +484,7 @@ def pauseplay(event):
             j.scale = .1
             db = 5
             money = money + 1.5*bet
+            print("You have $" + str(money))
         cards.pop(0)
         
     
@@ -491,6 +494,7 @@ def pauseplay(event):
             j = r((150,25))
             j.scale = .1
             money = money + 1.5*bet
+            print("You have $" + str(money))
         cards.pop(0)
     #getting the starting score
     if s == H2:
@@ -878,17 +882,22 @@ def stay(event):
         if yb == 5:
             print("You lose")
             money = money - bet
+            print("You have $" + str(money))
         if db == 5:
             print("You win")
             money = money + bet
+            print("You have $" + str(money))
         elif yourscore == dealerscore:
             print("Push")
+            print("You have $" + str(money))
         elif yourscore < dealerscore:
             print("You lose")
             money = money - bet
+            print("You have $" + str(money))
         else:
             print("You win")
             money = money + bet
+            print("You have $" + str(money))
 
 
 
