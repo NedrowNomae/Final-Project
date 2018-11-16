@@ -585,20 +585,20 @@ def pauseplay(event):
         
     elif s == AH:
         yourscore += 1
-        yace = 1
+        ace = 1
         
     elif s == AS:
         yourscore += 1
-        yace = 1
+        ace = 1
         
     elif s == AC:
         yourscore += 1
         
-        yace = 1
+        ace = 1
     elif s == AD:
         yourscore += 1
         
-        yace = 1
+        ace = 1
     else:
         yourscore += 10
         
@@ -727,7 +727,7 @@ n = 2
 m = 2
 db = 0
 yb = 0
-ace = 0
+
 #what to do when staying
 def stay(event):
     global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb
