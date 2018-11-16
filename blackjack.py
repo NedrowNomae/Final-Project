@@ -1020,19 +1020,15 @@ def hit(event):
             
         elif o == AH:
             yourscore += 1
-            
             ace = 1
         elif o == AS:
             yourscore += 1
-            
             ace = 1
         elif o == AC:
             yourscore += 1
-            
             ace = 1
         elif o == AD:
             yourscore += 1
-            
             ace = 1
         else:
             yourscore += 10
