@@ -232,7 +232,6 @@ class AC(Sprite):
         super().__init__(AC.AC, position)
 
 money = input("How much money would you like to start with?")
-#startmoney = money
 
 
 showing = []
@@ -452,7 +451,7 @@ def pauseplay(event):
                     j = r((150,25))
                     j.scale = .1
                     db = 5
-                    money = money - int(bet)
+                    money = int(money) - int(bet)
                     print("You have $" + str(money))
                 cards.pop(0)
         
@@ -467,7 +466,7 @@ def pauseplay(event):
                         print("You both blackjack")
                 else:
                     print("Dealer has blackjack")
-                    money = money - int(bet)
+                    money = int(money) - int(bet)
                     print("You have $" + str(money))
                     j = r((150,25))
                     j.scale = .1
@@ -483,7 +482,7 @@ def pauseplay(event):
                 j = r((150,25))
                 j.scale = .1
                 db = 5
-                money = money + 1.5*bet
+                money = int(money) + 1.5*bet
                 print("You have $" + str(money))
             cards.pop(0)
             
@@ -493,7 +492,7 @@ def pauseplay(event):
                 print("You have blackjack")
                 j = r((150,25))
                 j.scale = .1
-                money = money + 1.5*bet
+                money = int(money) + 1.5*bet
                 print("You have $" + str(money))
             cards.pop(0)
         #getting the starting score
@@ -883,22 +882,22 @@ def stay(event):
 
         if yb == 5:
             print("You lose")
-            money = money - int(bet)
+            money = int(money) - int(bet)
             print("You have $" + str(money))
         if db == 5:
             print("You win")
-            money = money + int(bet)
+            money = int(money) + int(bet)
             print("You have $" + str(money))
         elif yourscore == dealerscore:
             print("Push")
             print("You have $" + str(money))
         elif yourscore < dealerscore:
             print("You lose")
-            money = money - int(bet)
+            money = int(money) - int(bet)
             print("You have $" + str(money))
         else:
             print("You win")
-            money = money + int(bet)
+            money = int(money) + int(bet)
             print("You have $" + str(money))
 
 
@@ -1035,7 +1034,7 @@ def hit(event):
             print("You busted")
             yb = 5
             t = 3
-            money = money - int(bet)
+            money = int(money) - int(bet)
             print("You have $" + str(money))
 
 
