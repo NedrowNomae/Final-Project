@@ -736,7 +736,7 @@ yb = 0
 
 #what to do when staying
 def stay(event):
-    global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb
+    global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet
     print("You stayed")
     j = r((150,25))
     j.scale = .1
