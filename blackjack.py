@@ -490,6 +490,7 @@ def pauseplay(event):
                 money = int(money) + 1.5*int(bet)
                 print("You have $" + str(money))
                 t = 3
+                print("Press space to start another round")
             cards.pop(0)
             
         
@@ -892,21 +893,26 @@ def stay(event):
             print("You lose")
             money = int(money) - int(bet)
             print("You have $" + str(money))
+            print("Press space to start another round")
         if db == 5:
             print("You win")
             money = int(money) + int(bet)
             print("You have $" + str(money))
+            print("Press space to start another round")
         elif yourscore == dealerscore:
             print("Push")
             print("You have $" + str(money))
+            print("Press space to start another round")
         elif yourscore < dealerscore:
             print("You lose")
             money = int(money) - int(bet)
             print("You have $" + str(money))
+            print("Press space to start another round")
         else:
             print("You win")
             money = int(money) + int(bet)
             print("You have $" + str(money))
+            print("Press space to start another round")
 
 
 
@@ -1039,6 +1045,7 @@ def hit(event):
             t = 3
             money = int(money) - int(bet)
             print("You have $" + str(money))
+            print("Press space to start another round")
     #changing you score
 
 
