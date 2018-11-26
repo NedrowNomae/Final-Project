@@ -498,7 +498,7 @@ def pauseplay(event):
                 print("You have blackjack")
                 j = r((150,25))
                 j.scale = .1
-                money = int(money) + 1.5*bet
+                money = int(money) + 1.5*int(bet)
                 print("You have $" + str(money))
                 t = 3
             cards.pop(0)
@@ -746,7 +746,7 @@ yb = 0
 
 #what to do when staying
 def stay(event):
-    global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet
+    global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet, showing, p
     if t != 3:
         t = 3
         print("You stayed")
@@ -762,6 +762,7 @@ def stay(event):
         while dealerscore < 17:
             o = cards[0]
             p = o((100*n+50,25))
+            showing.append(p)
             p.scale = .1
             cards.pop(0)
             n = n + 1
@@ -1038,6 +1039,7 @@ def hit(event):
             t = 3
             money = int(money) - int(bet)
             print("You have $" + str(money))
+    #changing you score
 
 
 
