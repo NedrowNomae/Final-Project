@@ -231,7 +231,7 @@ class AC(Sprite):
     def __init__(self,  position):
         super().__init__(AC.AC, position)
 
-money = input("How much money would you like to start with?")
+money = input("How many dollars are you bringing to the casino?")
 
 
 showing = []
