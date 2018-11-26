@@ -487,7 +487,7 @@ def pauseplay(event):
                 j = r((150,25))
                 j.scale = .1
                 db = 5
-                money = int(money) + 1.5*bet
+                money = int(money) + 1.5*int(bet)
                 print("You have $" + str(money))
                 t = 3
             cards.pop(0)
