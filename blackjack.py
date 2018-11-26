@@ -245,7 +245,7 @@ def rules(event):
     print("The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
     global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t, showing, n
-    if money < 0:
+    if int(money) < 0:
         print("The casino throws you out because you're broke")
         t = 52
     if t == 3:
