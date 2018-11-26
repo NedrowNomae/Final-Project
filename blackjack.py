@@ -445,6 +445,7 @@ def pauseplay(event):
                 if s == H10 or s == JH or s == QH or s == KH or s == D10 or s == JD or s == QD or s == KD or s == S10 or s == JS or s == QS or s == KS or s == C10 or s == JC or s == QC or s == KC:
                     if b == AH or b == AD or b == AS or b == AC:
                         print("You both have blackjack")
+                        print("Press space to start another round")
                 
                 elif b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
                     if s == AH or s == AD or s == AS or s == AC:
@@ -457,6 +458,7 @@ def pauseplay(event):
                     db = 5
                     money = int(money) - int(bet)
                     print("You have $" + str(money))
+                    print("Press space to start another round")
                 cards.pop(0)
         
         if r == H10 or r == JH or r == QH or r == KH or r == D10 or r == JD or r == QD or r == KD or r == S10 or r == JS or r == QS or r == KS or r == C10 or r == JC or r == QC or r == KC:
@@ -476,6 +478,7 @@ def pauseplay(event):
                     j = r((150,25))
                     j.scale = .1
                     db = 5
+                    print("Press space to start another round")
                 cards.pop(0)
         
         
@@ -501,6 +504,7 @@ def pauseplay(event):
                 j.scale = .1
                 money = int(money) + 1.5*int(bet)
                 print("You have $" + str(money))
+                print("Press space to start another round")
                 t = 3
             cards.pop(0)
         #getting the starting score
