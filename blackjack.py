@@ -362,12 +362,16 @@ def pauseplay(event):
             dealerscore += 9
         elif q == AH:
             dealerscore += 1
+            dealerace = 1
         elif q == AS:
             dealerscore += 1
+            dealerace = 1
         elif q == AC:
             dealerscore += 1
+            dealerace = 1
         elif q == AD:
             dealerscore += 1
+            dealerace = 1
         else:
             dealerscore += 10
         
@@ -437,12 +441,16 @@ def pauseplay(event):
             dealerscore += 9
         elif r == AH:
             dealerscore += 1
+            dealerace = 1
         elif r == AS:
             dealerscore += 1
+            dealerace = 1
         elif r == AC:
             dealerscore += 1
+            dealerace = 1
         elif r == AD:
             dealerscore += 1
+            dealerace = 1
         else:
             dealerscore += 10
         #check for dealer blackjack
@@ -873,20 +881,20 @@ def stay(event):
                 
             elif o == AH:
                 dealerscore += 1
-                ace = 1
+                dealerace = 1
                 
     
             elif o == AS:
                 dealerscore += 1
-                
+                dealerace = 1
     
             elif o == AC:
                 dealerscore += 1
-    
+                dealerace = 1
                 
             elif o == AD:
                 dealerscore += 1
-                
+                dealerace = 1
     
             else:
                 dealerscore += 10
