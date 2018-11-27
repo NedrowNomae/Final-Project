@@ -763,7 +763,7 @@ def stay(event):
         print("You stayed")
         j = r((150,25))
         j.scale = .1
-    #    while dealerscore < 17:
+
     
         if ace == 1 and yourscore + 10 < 22:
             yourscore = yourscore + 10
