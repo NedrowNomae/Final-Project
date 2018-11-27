@@ -775,12 +775,12 @@ def stay(event):
     
         if ace == 1 and yourscore + 10 < 22:
             yourscore = yourscore + 10
-        if dealerace == 1:
+        """if dealerace == 1:
             if dealerscore + 10 < 21:
                 if dealerscore + 10 > 17:
                     dealerscore = dealerscore + 10
         else:
-            g = 50
+            g = 50"""
         while dealerscore < 17:
             o = cards[0]
             p = o((100*n+50,25))
