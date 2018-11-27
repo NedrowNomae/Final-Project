@@ -244,7 +244,7 @@ print("Press r for the rules")
 def rules(event):
     print("The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
-    global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t, showing, n, m
+    global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t, showing, n, m, dealerace
     if int(money) <= 0:
         print("The casino throws you out because you're broke")
         t = 52
@@ -765,7 +765,7 @@ yb = 0
 
 #what to do when staying
 def stay(event):
-    global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet, showing, p
+    global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet, showing, p, dealerace
     if t != 3:
         t = 3
         print("You stayed")
@@ -775,6 +775,10 @@ def stay(event):
     
         if ace == 1 and yourscore + 10 < 22:
             yourscore = yourscore + 10
+        if dealerace == 1:
+            if dealerscore + 10 < 21:
+                if dealerscore + 10 > 17:
+                    dealerscore = dealerscore + 10
         while dealerscore < 17:
             o = cards[0]
             p = o((100*n+50,25))
@@ -898,6 +902,11 @@ def stay(event):
     
             else:
                 dealerscore += 10
+            
+            if dealerace == 1:
+                if dealerscore + 10 < 21:
+                    if dealerscore + 10 > 17:
+                        dealerscore = dealerscore + 10
                 
             if dealerscore > 21:
                 print("The dealer has busted")
