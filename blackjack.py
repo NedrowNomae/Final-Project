@@ -905,7 +905,7 @@ def stay(event):
                 dealerscore += 10
             
             if dealerace == 1:
-                if dealerscore + 10 < 21:
+                if dealerscore + 10 < 22:
                     if dealerscore + 10 > 17:
                         dealerscore = dealerscore + 10
                 
