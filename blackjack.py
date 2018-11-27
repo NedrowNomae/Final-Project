@@ -779,6 +779,8 @@ def stay(event):
             if dealerscore + 10 < 21:
                 if dealerscore + 10 > 17:
                     dealerscore = dealerscore + 10
+        else:
+            g = 50
         while dealerscore < 17:
             o = cards[0]
             p = o((100*n+50,25))
