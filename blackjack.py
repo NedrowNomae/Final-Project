@@ -237,7 +237,7 @@ money = input("How many dollars are you bringing to the casino?")
 showing = []
 
 t = 3
-
+dealerace = 0
 print("press space to begin")
 print("Press r for the rules")
 
@@ -260,6 +260,7 @@ def pauseplay(event):
             print("You cannot bet more than you have.")
             bet = input("What is your bet?")
         yb = 0
+        dealerace = 0
         db = 0
         ace = 0
         #set up deck
@@ -775,12 +776,10 @@ def stay(event):
     
         if ace == 1 and yourscore + 10 < 22:
             yourscore = yourscore + 10
-        """if dealerace == 1:
+        if dealerace == 1:
             if dealerscore + 10 < 21:
                 if dealerscore + 10 > 17:
                     dealerscore = dealerscore + 10
-        else:
-            g = 50"""
         while dealerscore < 17:
             o = cards[0]
             p = o((100*n+50,25))
