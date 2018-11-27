@@ -911,6 +911,7 @@ def stay(event):
                 
             if dealerscore > 21:
                 print("The dealer has busted")
+                print(dealerscore)
                 t = 3
                 db = 5
 
