@@ -14,6 +14,7 @@ class cardback(Sprite):
 
 #colors
 black = Color(0x000000, 1.0)
+white = Color(0xffffff, 1.0)
 red = Color(0xff0000, 1.0)
 noline = LineStyle(0, black)
 #the black squares with the numbers inside them
@@ -21,7 +22,7 @@ RectangleAsset(100,40,noline,black)
 
 #numbers
 class zero(Sprite):
-    zero = RectangleAsset(50,10,noline,red) and RectangleAsset(10,50,noline,red)
+    zero = RectangleAsset(50,10,redline,white)
     def __init__(self,  position):
         super().__init__(zero.zero, position)
 
