@@ -10,6 +10,10 @@ class cardback(Sprite):
     def __init__(self,  position):
         super().__init__(cardback.cardback, position)
 
+#colors
+black = Color(0x000000, 1.0)
+#the black squares with the numbers inside them
+RectangleAsset(100,40,noline,black)
 
 #hearts
 
