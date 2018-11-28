@@ -25,7 +25,7 @@ class zero(Sprite):
     def __init__(self,  position):
         super().__init__(Cell1.cll1, position)
 
-zero(50,50)
+zero((50,50))
 #hearts
 
 class H2(Sprite):
