@@ -16,6 +16,8 @@ class cardback(Sprite):
 black = Color(0x000000, 1.0)
 white = Color(0xffffff, 1.0)
 red = Color(0xff0000, 1.0)
+#lines
+zeroline = LineStyle(10,red)
 noline = LineStyle(0, black)
 #the black squares with the numbers inside them
 RectangleAsset(100,40,noline,black)
