@@ -30,7 +30,7 @@ class nine(Sprite):
 
 
 class eight(Sprite):
-    nine = ImageAsset("number-150797_640.png")
+    eight = ImageAsset("number-150797_640.png")
     def __init__(self,  position):
         super().__init__(eight.eight, position)
 
