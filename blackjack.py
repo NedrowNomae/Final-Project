@@ -231,7 +231,7 @@ class AC(Sprite):
     def __init__(self,  position):
         super().__init__(AC.AC, position)
 
-money = input("How many dollars are you bringing to the casino?")
+money = 100
 
 
 showing = []
@@ -242,7 +242,7 @@ print("press space to begin")
 print("Press r for the rules")
 
 def rules(event):
-    print("The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
+    print("Your hand is on the bottom. The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
     global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t, showing, n, m, dealerace
     if int(money) <= 0:
@@ -274,13 +274,13 @@ def pauseplay(event):
         yourscore = 0
         dealerscore = 0
         s = cards[0]
-        a = s((50,150))
+        a = s((50,350))
         a.scale = 0.1
         
         cards.pop(0)
         
         b = cards[0]
-        c = b((150,150))
+        c = b((150,350))
         c.scale = 0.1
         
         cards.pop(0)
@@ -945,7 +945,7 @@ def stay(event):
 m = 2
 def hit(event):
     global cards, y, m, yourscore, t, ace, o, p, yb, showing, money
-    y = 150
+    y = 350
     if t == 2:
         o = cards[0]
         p = o((100*m+50,y))
