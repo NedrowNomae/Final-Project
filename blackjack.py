@@ -26,7 +26,7 @@ RectangleAsset(100,40,noline,black)
 class nine(Sprite):
     nine = ImageAsset("number-150798_640.png")
     def __init__(self,  position):
-        super().__init__(H2.H2, position)
+        super().__init__(nine.nine, position)
 nine((50,50))
 
 
