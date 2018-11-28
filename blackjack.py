@@ -29,10 +29,10 @@ class zero(Sprite):
         super().__init__(zero.zero, position)
 
 class one(Sprite):
-    one = RectangleAsset(10,40,zeroline,red)
+    one = RectangleAsset(5,40,zeroline,red)
     def __init__(self,  position):
         super().__init__(one.one, position)
-
+zero((10,10))
 one((50,50))
 
 
