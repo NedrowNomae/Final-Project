@@ -27,6 +27,7 @@ class zero(Sprite):
         super().__init__(zero.zero, position)
 
 zero((50,20))
+zero1((50,20))
 #hearts
 
 class H2(Sprite):
