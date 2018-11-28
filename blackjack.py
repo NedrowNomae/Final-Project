@@ -27,7 +27,9 @@ class nine(Sprite):
     nine = ImageAsset("number-150798_640.png")
     def __init__(self,  position):
         super().__init__(nine.nine, position)
-nine((50,50))
+e = nine(())
+e.scale = .1
+e((50,50))
 
 
 
