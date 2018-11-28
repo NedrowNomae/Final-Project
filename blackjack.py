@@ -24,7 +24,7 @@ RectangleAsset(100,40,noline,black)
 
 #numbers
 class zero(Sprite):
-    zero = RectangleAsset(50,10,redline,white)
+    zero = RectangleAsset(50,10,zeroline,white)
     def __init__(self,  position):
         super().__init__(zero.zero, position)
 
