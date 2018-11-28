@@ -21,8 +21,7 @@ RectangleAsset(100,40,noline,black)
 
 #numbers
 class zero(Sprite):
-    zero1 = RectangleAsset(50,20,noline,red)
-    zero2 = RectangleAsset(20,50,noline,red)
+    zero = RectangleAsset(50,20,noline,red) and RectangleAsset(20,50,noline,red)
     def __init__(self,  position):
         super().__init__(zero.zero, position)
 
