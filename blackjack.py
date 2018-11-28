@@ -28,7 +28,10 @@ class zero(Sprite):
     def __init__(self,  position):
         super().__init__(zero.zero, position)
 
-zero((50,20))
+class one(Sprite):
+    one = RectangleAsset(10,40,zeroline,red)
+    def __init__(self,  position):
+        super().__init__(zero.zero, position)
 #hearts
 
 class H2(Sprite):
