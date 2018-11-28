@@ -34,8 +34,48 @@ class eight(Sprite):
     def __init__(self,  position):
         super().__init__(eight.eight, position)
 
-e = eight((50,50))
-e.scale = .07
+class seven(Sprite):
+    seven = ImageAsset("number-150796_640.png")
+    def __init__(self,  position):
+        super().__init__(seven.seven, position)
+
+class six(Sprite):
+    six = ImageAsset("number-150795_640.png")
+    def __init__(self,  position):
+        super().__init__(six.six, position)
+
+class five(Sprite):
+    five = ImageAsset("number-150794_640.png")
+    def __init__(self,  position):
+        super().__init__(five.five, position)
+
+class four(Sprite):
+    four = ImageAsset("number-150793_640.png")
+    def __init__(self,  position):
+        super().__init__(four.four, position)
+        
+class three(Sprite):
+    three = ImageAsset("number-150792_640.png")
+    def __init__(self,  position):
+        super().__init__(three.three, position)
+        
+class two(Sprite):
+    two = ImageAsset("number-150791_640.png")
+    def __init__(self,  position):
+        super().__init__(two.two, position)
+        
+class one(Sprite):
+    one = ImageAsset("number-150790_640.png")
+    def __init__(self,  position):
+        super().__init__(one.one, position)
+        
+class zero(Sprite):
+    zero = ImageAsset("number-150799_640.png")
+    def __init__(self,  position):
+        super().__init__(zero.zero, position)
+        
+
+
 
 
 
