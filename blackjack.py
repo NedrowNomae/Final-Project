@@ -23,17 +23,11 @@ noline = LineStyle(0, black)
 RectangleAsset(100,40,noline,black)
 
 #numbers
-class zero(Sprite):
-    zero = RectangleAsset(25,40,zeroline,white)
+class nine(Sprite):
+    nine = ImageAsset("number-150798_640.png")
     def __init__(self,  position):
-        super().__init__(zero.zero, position)
-
-class one(Sprite):
-    one = RectangleAsset(5,40,zeroline,red)
-    def __init__(self,  position):
-        super().__init__(one.one, position)
-zero((10,10))
-one((50,50))
+        super().__init__(H2.H2, position)
+nine((50,50))
 
 
 
