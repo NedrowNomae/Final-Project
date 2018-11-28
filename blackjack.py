@@ -328,7 +328,7 @@ def pauseplay(event):
         if dollars[0] == 0:
             zero((50,50))
         if dollars[1] == 1:
-            one((50,50))
+            one((100,300))
     if t == 3:
         t = 2
         m = 2
