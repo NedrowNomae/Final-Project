@@ -21,13 +21,12 @@ RectangleAsset(100,40,noline,black)
 
 #numbers
 class zero(Sprite):
-    zero = RectangleAsset(50,20,noline,red)
-    zero1 = RectangleAsset(20,50,noline,red)
+    zero1 = RectangleAsset(50,20,noline,red)
+    zero2 = RectangleAsset(20,50,noline,red)
     def __init__(self,  position):
         super().__init__(zero.zero, position)
 
 zero((50,20))
-zero1((50,20))
 #hearts
 
 class H2(Sprite):
