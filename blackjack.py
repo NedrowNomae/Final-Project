@@ -10,11 +10,22 @@ class cardback(Sprite):
     def __init__(self,  position):
         super().__init__(cardback.cardback, position)
 
+
+
 #colors
 black = Color(0x000000, 1.0)
+red = Color(0xff0000, 1.0)
+noline = LineStyle(0, black)
 #the black squares with the numbers inside them
 RectangleAsset(100,40,noline,black)
 
+#numbers
+class zero(Sprite):
+    zero = RectangleAsset(20,20,noline,red)
+    def __init__(self,  position):
+        super().__init__(Cell1.cll1, position)
+
+zero(50,50)
 #hearts
 
 class H2(Sprite):
