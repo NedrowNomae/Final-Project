@@ -336,42 +336,52 @@ def pauseplay(event):
                 qr = zero((600+33*placenumber,100))
                 placenumber += 1
                 qr.scale = .07
+                moneyshowing2.append(qr)
             elif moneyshowing[a] == "1":
-                qe = one((600+33*placenumber,100))
+                qr = one((600+33*placenumber,100))
                 placenumber += 1
-                qe.scale = .07
+                qr.scale = .07
+                moneyshowing2.append(qr)
             if moneyshowing[a] == "2":
                 qr = two((600+33*placenumber,100))
                 placenumber += 1
                 qr.scale = .07
+                moneyshowing2.append(qr)
             elif moneyshowing[a] == "3":
-                qe = three((600+33*placenumber,100))
+                qr = three((600+33*placenumber,100))
                 placenumber += 1
-                qe.scale = .07
+                qr.scale = .07
+                moneyshowing2.append(qr)
             if moneyshowing[a] == "4":
                 qr = four((600+33*placenumber,100))
                 placenumber += 1
                 qr.scale = .07
+                moneyshowing2.append(qr)
             elif moneyshowing[a] == "5":
-                qe = five((600+33*placenumber,100))
+                qr = five((600+33*placenumber,100))
                 placenumber += 1
-                qe.scale = .07
+                qr.scale = .07
+                moneyshowing2.append(qr)
             if moneyshowing[a] == "6":
                 qr = six((600+33*placenumber,100))
                 placenumber += 1
                 qr.scale = .07
+                moneyshowing2.append(qr)
             elif moneyshowing[a] == "7":
-                qe = seven((600+33*placenumber,100))
+                qr = seven((600+33*placenumber,100))
                 placenumber += 1
-                qe.scale = .07
+                qr.scale = .07
+                moneyshowing2.append(qr)
             if moneyshowing[a] == "8":
                 qr = eight((600+33*placenumber,100))
                 placenumber += 1
                 qr.scale = .07
+                moneyshowing2.append(qr)
             elif moneyshowing[a] == "9":
-                qe = nine((600+33*placenumber,100))
+                qr = nine((600+33*placenumber,100))
                 placenumber += 1
-                qe.scale = .07
+                qr.scale = .07
+                moneyshowing2.append(qr)
 
 
 
