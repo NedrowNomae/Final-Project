@@ -334,10 +334,11 @@ def pauseplay(event):
         qw = len(moneyshowing)
         for a in range(0,qw-1):
             if moneyshowing[a] == "0":
-                zero((100,100))
+                qr = zero((100,100))
+                qr.scale = .07
             elif moneyshowing[a] == "1":
                 qe = one((100,100))
-                qe.scale = .1
+                qe.scale = .07
             
         m = 2
         for p in showing:
