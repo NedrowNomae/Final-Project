@@ -4,7 +4,7 @@ import random
 run = 0
 yourscore = 0
 dealerscore = 0
-
+associations = "0123456789"
 class cardback(Sprite):
     cardback = ImageAsset("gray_back.png")
     def __init__(self,  position):
@@ -309,9 +309,10 @@ class AC(Sprite):
 
 money = 100
 
-
+moneyshowing = []
+moneyshowing2 = []
 showing = []
-
+placenumber = 0
 t = 3
 dealerace = 0
 print("press space to begin")
@@ -320,7 +321,7 @@ print("Press r for the rules")
 def rules(event):
     print("Your hand is on the bottom. The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
-    global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t, showing, n, m, dealerace
+    global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t, showing, n, m, dealerace, moneyshowing, placenumber
     if int(money) <= 0:
         print("The casino throws you out because you're broke")
         t = 52
@@ -331,6 +332,18 @@ def pauseplay(event):
             one((100,300))
     if t == 3:
         t = 2
+        for p in moneyshowing2:
+            p.visible = False
+        for a in money:
+            moneyshowing.append(a)
+        digitsmoney = len(moneyshowing)
+        for a in range(0,digitsmoney-1):
+            if moneyshowing[0] = "0":
+                qw = zero((300,300))
+            if moneyshowing[0] = "1":
+                qw = one((300,300))
+            
+            
         m = 2
         for p in showing:
             p.visible = False
