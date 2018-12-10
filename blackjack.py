@@ -327,20 +327,7 @@ def pauseplay(event):
         t = 52
     if t == 3:
         t = 2
-        print(money)
-        for p in moneyshowing2:
-            p.visible = False
         stringmoney = str(money)
-        for a in stringmoney:
-            moneyshowing.append(a)
-            print("HEY")
-        print(moneyshowing)
-        digitsmoney = len(moneyshowing)
-"""        for a in range(0,digitsmoney-1):
-            if moneyshowing[0] = "0":
-                qw = zero((300,300))
-            if moneyshowing[0] = "1":
-                qw = one((300,300))"""
             
             
         m = 2
