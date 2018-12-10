@@ -325,11 +325,6 @@ def pauseplay(event):
     if int(money) <= 0:
         print("The casino throws you out because you're broke")
         t = 52
-        dollars = list(money)
-        if dollars[0] == 0:
-            zero((50,50))
-        if dollars[1] == 1:
-            one((100,300))
     if t == 3:
         t = 2
         for p in moneyshowing2:
