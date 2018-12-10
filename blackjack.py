@@ -328,7 +328,9 @@ def pauseplay(event):
     if t == 3:
         t = 2
         stringmoney = str(money)
-            
+        for a in stringmoney:
+            moneyshowing.append[a]
+        print(moneyshowing)
             
         m = 2
         for p in showing:
