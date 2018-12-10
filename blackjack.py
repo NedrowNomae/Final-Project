@@ -308,7 +308,7 @@ class AC(Sprite):
         super().__init__(AC.AC, position)
 
 money = 100
-
+stringmoney = ""
 moneyshowing = []
 moneyshowing2 = []
 showing = []
