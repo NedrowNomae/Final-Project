@@ -333,9 +333,9 @@ def pauseplay(event):
         print(moneyshowing)
         qw = len(moneyshowing)
         for a in range(0,qw-1):
-            if moneyshowing[a] = "0":
+            if moneyshowing[a] == "0":
                 zero((100,100))
-            elif moneyshowing[a] = "1":
+            elif moneyshowing[a] == "1":
                 one((100,100))
             
         m = 2
