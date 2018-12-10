@@ -330,7 +330,6 @@ def pauseplay(event):
         stringmoney = str(money)
         for a in stringmoney:
             moneyshowing.append(a)
-        print(moneyshowing)
         qw = len(moneyshowing)
         for a in range(0,qw-1):
             if moneyshowing[a] == "0":
