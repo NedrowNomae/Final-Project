@@ -334,9 +334,9 @@ def pauseplay(event):
         t = 2
         for p in moneyshowing2:
             p.visible = False
-        for a in money:
+        stringmoney = str(money)
+        for a in stringmoney:
             moneyshowing.append(a)
-            print("HEY")
         print(moneyshowing)
         digitsmoney = len(moneyshowing)
         for a in range(0,digitsmoney-1):
