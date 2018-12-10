@@ -336,11 +336,11 @@ def pauseplay(event):
             print("HEY")
         print(moneyshowing)
         digitsmoney = len(moneyshowing)
-        for a in range(0,digitsmoney-1):
+"""        for a in range(0,digitsmoney-1):
             if moneyshowing[0] = "0":
                 qw = zero((300,300))
             if moneyshowing[0] = "1":
-                qw = one((300,300))
+                qw = one((300,300))"""
             
             
         m = 2
