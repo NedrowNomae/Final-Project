@@ -334,34 +334,44 @@ def pauseplay(event):
         qw = len(moneyshowing)
         for a in range(0,qw-1):
             if moneyshowing[a] == "0":
-                qr = zero((100,100))
+                qr = zero((100+15*placenumber,100))
+                placenumber += 1
                 qr.scale = .07
             elif moneyshowing[a] == "1":
                 qe = one((100,100))
+                placenumber += 1
                 qe.scale = .07
             if moneyshowing[a] == "2":
                 qr = two((100,100))
+                placenumber += 1
                 qr.scale = .07
             elif moneyshowing[a] == "3":
                 qe = three((100,100))
+                placenumber += 1
                 qe.scale = .07
             if moneyshowing[a] == "4":
                 qr = four((100,100))
+                placenumber += 1
                 qr.scale = .07
             elif moneyshowing[a] == "5":
                 qe = five((100,100))
+                placenumber += 1
                 qe.scale = .07
             if moneyshowing[a] == "6":
                 qr = six((100,100))
+                placenumber += 1
                 qr.scale = .07
             elif moneyshowing[a] == "7":
                 qe = seven((100,100))
+                placenumber += 1
                 qe.scale = .07
             if moneyshowing[a] == "8":
                 qr = eight((100,100))
+                placenumber += 1
                 qr.scale = .07
             elif moneyshowing[a] == "9":
                 qe = nine((100,100))
+                placenumber += 1
                 qe.scale = .07
 
 
