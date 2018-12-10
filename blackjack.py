@@ -336,6 +336,7 @@ def pauseplay(event):
             p.visible = False
         for a in money:
             moneyshowing.append(a)
+        print(moneyshowing)
         digitsmoney = len(moneyshowing)
         for a in range(0,digitsmoney-1):
             if moneyshowing[0] = "0":
