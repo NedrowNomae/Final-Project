@@ -336,7 +336,8 @@ def pauseplay(event):
             if moneyshowing[a] == "0":
                 zero((100,100))
             elif moneyshowing[a] == "1":
-                one((100,100))
+                qe = one((100,100))
+                qe.scale = .1
             
         m = 2
         for p in showing:
