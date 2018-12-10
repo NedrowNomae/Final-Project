@@ -329,7 +329,7 @@ def pauseplay(event):
         t = 2
         stringmoney = str(money)
         for a in stringmoney:
-            moneyshowing.append[a]
+            moneyshowing.append(a)
         print(moneyshowing)
             
         m = 2
