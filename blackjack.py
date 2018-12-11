@@ -321,15 +321,13 @@ allowbet = 1
 def rules(event):
     print("Your hand is on the bottom. The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
-    global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t, showing, n, m, dealerace, moneyshowing, placenumber, stringmoney, moneyshowing2, allowbet,
+    global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t, showing, n, m, dealerace, moneyshowing, placenumber, stringmoney, moneyshowing2, allowbet
     if int(money) <= 0:
         print("The casino throws you out because you're broke")
         t = 52
     if t == 3:
         t = 2
         placenumber = 0
-        
-
         allowbet = 1
         stringmoney = str(money)
         for a in stringmoney:
