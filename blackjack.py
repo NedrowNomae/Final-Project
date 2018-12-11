@@ -72,6 +72,7 @@ class one(Sprite):
 class zero(Sprite):
     zero = ImageAsset("number-150799_640.png")
     def __init__(self,  position):
+        print(position)
         super().__init__(zero.zero, position)
         
 
@@ -329,6 +330,7 @@ def pauseplay(event):
         t = 2
         allowbet = 1
         money = round(money)
+        moneyshowing = []
         stringmoney = str(money)
         for a in stringmoney:
             moneyshowing.append(a)
