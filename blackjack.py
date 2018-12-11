@@ -904,8 +904,9 @@ bet = 0
 stringbet = ""
 def bet(event):
     global allowbet, betshowing, bethidden, bet
-    print("HEY")
+
     if allowbet == 1:
+        print("HEY")
         bet += 1
         stringbet = str(bet)
         for a in stringbet:
