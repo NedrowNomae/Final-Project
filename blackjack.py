@@ -72,7 +72,6 @@ class one(Sprite):
 class zero(Sprite):
     zero = ImageAsset("number-150799_640.png")
     def __init__(self,  position):
-        print(position)
         super().__init__(zero.zero, position)
         
 
