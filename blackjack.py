@@ -328,6 +328,7 @@ def pauseplay(event):
     if t == 3:
         t = 2
         placenumber = 0
+        qr.visible = False
         allowbet = 1
         stringmoney = str(money)
         for a in stringmoney:
@@ -903,6 +904,7 @@ bethidden = []
 def bet(event):
     global allowbet
     if allowbet == 1:
+        print("HEY")
         
 n = 2
 m = 2
