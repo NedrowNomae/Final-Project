@@ -397,7 +397,6 @@ def pauseplay(event):
             p.visible = False
         yourscore = 0
         n = 2
-        bet = input("What is your bet?")
         while int(bet) > int(money):
             print("You cannot bet more than you have.")
             bet = input("What is your bet?")
