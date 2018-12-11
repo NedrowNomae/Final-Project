@@ -327,13 +327,13 @@ def pauseplay(event):
         t = 52
     if t == 3:
         t = 2
-        placenumber = 0
         allowbet = 1
         stringmoney = str(money)
         for a in stringmoney:
             moneyshowing.append(a)
         for vari in moneyshowing2:
             vari.visible = False
+        placenumber = 0
         qw = len(moneyshowing)
         for a in range(0,qw):
             if moneyshowing[a] == "0":
