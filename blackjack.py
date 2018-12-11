@@ -327,6 +327,9 @@ def pauseplay(event):
         t = 52
     if t == 3:
         bet = 0
+        betshowing = []
+        for vari in bethidden:
+            vari.visible = False
         t = 2
         allowbet = 1
         money = round(money)
