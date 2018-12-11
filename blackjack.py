@@ -329,7 +329,7 @@ def pauseplay(event):
     if t == 3:
         t = 2
         placenumber = 0
-        if first = 0:
+        if first == 0:
             qr.visible = False
         else:
             first = 1
