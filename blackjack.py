@@ -913,7 +913,7 @@ def bet(event):
         for vari in bethidden:
             vari.visible = False
         placenumber = 0
-        qw = len(moneyhidden)
+        qw = len(bethidden)
         #abcdefg
         for a in range(0,qw):
             if moneyhidden[a] == "0":
