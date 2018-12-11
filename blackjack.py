@@ -904,9 +904,9 @@ def step():
 betshowing = []
 bethidden = []
 def bet(event):
-    global allowbet
+    global allowbet, betshowing, bethidden, bet
     if allowbet == 1:
-        betshowing += 1
+        bet += 1
         
 n = 2
 m = 2
