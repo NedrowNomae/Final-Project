@@ -388,7 +388,6 @@ def pauseplay(event):
                 placenumber += 1
                 qr.scale = .07
                 moneyshowing2.append(qr)
-        print(moneyshowing2)
 
 
 
