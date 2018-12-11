@@ -906,7 +906,7 @@ bethidden = []
 def bet(event):
     global allowbet
     if allowbet == 1:
-        print("HEY")
+        betshowing += 1
         
 n = 2
 m = 2
