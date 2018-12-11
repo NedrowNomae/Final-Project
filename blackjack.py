@@ -903,10 +903,13 @@ def step():
         t = 3
 betshowing = []
 bethidden = []
+bet = 0
+stringbet = ""
 def bet(event):
     global allowbet, betshowing, bethidden, bet
     if allowbet == 1:
         bet += 1
+        stringbet = str(bet)
         
 n = 2
 m = 2
