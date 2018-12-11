@@ -317,17 +317,18 @@ t = 3
 dealerace = 0
 print("press space to begin")
 print("Press r for the rules")
-
+allowbet = 1
 def rules(event):
     print("Your hand is on the bottom. The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
-    global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t, showing, n, m, dealerace, moneyshowing, placenumber, stringmoney, moneyshowing2
+    global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t, showing, n, m, dealerace, moneyshowing, placenumber, stringmoney, moneyshowing2, allowbet
     if int(money) <= 0:
         print("The casino throws you out because you're broke")
         t = 52
     if t == 3:
         t = 2
         placenumber = 0
+        allowbet = 1
         stringmoney = str(money)
         for a in stringmoney:
             moneyshowing.append(a)
@@ -897,6 +898,12 @@ def step():
     global t
     while t == 19:
         t = 3
+betshowing = []
+bethidden = []
+def bet(event):
+    global allowbet
+    if allowbet == 1:
+        
 n = 2
 m = 2
 db = 0
@@ -904,13 +911,13 @@ yb = 0
 
 #what to do when staying
 def stay(event):
-    global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet, showing, p, dealerace
+    global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet, showing, p, dealerace, allowbet
     if t != 3:
         t = 3
         print("You stayed")
         j = r((150,25))
         j.scale = .1
-
+        allowbet = 2
     
         if ace == 1 and yourscore + 10 < 22:
             yourscore = yourscore + 10
@@ -1082,7 +1089,8 @@ def stay(event):
 
 m = 2
 def hit(event):
-    global cards, y, m, yourscore, t, ace, o, p, yb, showing, money
+    global cards, y, m, yourscore, t, ace, o, p, yb, showing, money, allowbet
+    allowbet = 2
     y = 350
     if t == 2:
         o = cards[0]
@@ -1227,4 +1235,5 @@ app.run(step)
 myapp.listenKeyEvent('keydown','space',pauseplay)
 myapp.listenKeyEvent('keydown','s',stay)
 myapp.listenKeyEvent('keydown','h',hit)
+myapp.listenKeyEvent('keydown','b',bet)
 myapp.listenKeyEvent('keydown','r',rules)
