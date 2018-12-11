@@ -906,16 +906,11 @@ def bet(event):
     global allowbet, betshowing, bethidden, bet
 
     if allowbet == 1:
-        print("HEY")
         bet += 1
         stringbet = str(bet)
         for a in stringbet:
             betshowing.append(a)
             print(betshowing)
-        betshowing = []
-        
-        for vari in bethidden:
-            vari.visible = False
         placenumber = 0
         qw = len(betshowing)
         #abcdefg
