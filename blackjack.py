@@ -327,9 +327,9 @@ def pauseplay(event):
         t = 52
     if t == 3:
         bet = 0
-        betshowing = []
+        """betshowing = []
         for vari in bethidden:
-            vari.visible = False
+            vari.visible = False"""
         t = 2
         allowbet = 1
         money = round(money)
@@ -916,6 +916,7 @@ def bet(event):
             print(betshowing)
         placenumber = 0
         qw = len(betshowing)
+
         #abcdefg
         for a in range(0,qw):
             if betshowing[a] == "0":
