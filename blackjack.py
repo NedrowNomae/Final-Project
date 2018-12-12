@@ -310,7 +310,8 @@ class AC(Sprite):
     AC = ImageAsset("AC.png")
     def __init__(self,  position):
         super().__init__(AC.AC, position)
-lkm = betins((100,100))
+lkm = betins((600,400))
+lkm.scale = .4
 money = 100
 stringmoney = ""
 moneyshowing = []
