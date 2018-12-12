@@ -913,9 +913,11 @@ def bet(event):
         stringbet = str(bet)
         for a in bethidden:
             a.visible = False
+        betshowing = []
         for a in stringbet:
             betshowing.append(a)
             print(betshowing)
+        
         placenumber = 0
         qw = len(betshowing)
 
