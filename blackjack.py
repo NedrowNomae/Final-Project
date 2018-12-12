@@ -909,7 +909,7 @@ def bet(event):
     global allowbet, betshowing, bethidden, bet
 
     if allowbet == 1:
-        bet = int(bet) + 1
+        bet = bet + 1
         stringbet = str(bet)
         for a in bethidden:
             a.visible = False
