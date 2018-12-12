@@ -326,7 +326,6 @@ def pauseplay(event):
         t = 52
     if t == 3:
         t = 2
-        allowbet = 1
         money = round(money)
         moneyshowing = []
         stringmoney = str(money)
