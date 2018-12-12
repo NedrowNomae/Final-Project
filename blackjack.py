@@ -599,6 +599,7 @@ def pauseplay(event):
                             print("You both have blackjack")
                             print("Press space to start another round")
                             bet = 0
+                            begin = 0
                     
                     elif b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
                         if s == AH or s == AD or s == AS or s == AC:
@@ -613,6 +614,7 @@ def pauseplay(event):
                         print("You have $" + str(money))
                         print("Press space to start another round")
                         bet = 0
+                        begin = 0
                     cards.pop(0)
             
             if r == H10 or r == JH or r == QH or r == KH or r == D10 or r == JD or r == QD or r == KD or r == S10 or r == JS or r == QS or r == KS or r == C10 or r == JC or r == QC or r == KC:
@@ -621,11 +623,13 @@ def pauseplay(event):
                         if b == AH or b == AD or b == AS or b == AC:
                             print("You both have blackjack")
                             bet = 0
+                            begin = 0
                     
                     elif b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
                         if s == AH or s == AD or s == AS or s == AC:
                             print("You both blackjack")
                             bet = 0
+                            begin = 0
                     else:
                         print("Dealer has blackjack")
                         t = 3
@@ -636,6 +640,7 @@ def pauseplay(event):
                         db = 5
                         print("Press space to start another round")
                         bet = 0
+                        begin = 0
                     cards.pop(0)
             
             
