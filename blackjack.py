@@ -994,6 +994,7 @@ def stay(event):
         allowbet = 2
         for a in bethidden:
             a.visible = False
+        allowbet = 1
         
         if ace == 1 and yourscore + 10 < 22:
             yourscore = yourscore + 10
@@ -1322,6 +1323,7 @@ def hit(event):
             bet = 0
             for a in betshowing:
                 a.visible = False
+            allowbet = 1
     #changing you score
 
 
