@@ -1132,26 +1132,32 @@ def stay(event):
             money = int(money) - int(bet)
             print("You have $" + str(money))
             print("Press space to start another round")
+            begin = 0
         if db == 5:
             print("You win")
             money = int(money) + int(bet)
             print("You have $" + str(money))
             print("Press space to start another round")
+            begin = 0
         elif yourscore == dealerscore:
             print("Push")
             print("You have $" + str(money))
             print("Press space to start another round")
+            begin = 0
         elif yourscore < dealerscore:
             print("You lose")
             money = int(money) - int(bet)
             print("You have $" + str(money))
             print("Press space to start another round")
+            begin = 0
         else:
             print("You win")
             money = int(money) + int(bet)
             print("You have $" + str(money))
             print("Press space to start another round")
+            begin = 0
 
+begin = 0
 def begin(event):
     global begin, allowbet
     if t== 2:
