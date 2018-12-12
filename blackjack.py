@@ -905,7 +905,7 @@ betshowing = []
 bethidden = []
 bet = 0
 stringbet = ""
-def bet(event):
+def betting(event):
     global allowbet, betshowing, bethidden, bet
 
     if allowbet == 1:
@@ -1328,5 +1328,5 @@ myapp.listenKeyEvent('keydown','space',pauseplay)
 myapp.listenKeyEvent('keydown','s',stay)
 myapp.listenKeyEvent('keydown','enter',begin)
 myapp.listenKeyEvent('keydown','h',hit)
-myapp.listenKeyEvent('keydown','b',bet)
+myapp.listenKeyEvent('keydown','b',betting)
 myapp.listenKeyEvent('keydown','r',rules)
