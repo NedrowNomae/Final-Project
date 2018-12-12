@@ -321,588 +321,582 @@ allowbet = 1
 def rules(event):
     print("Your hand is on the bottom. The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
-    global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t, showing, n, m, dealerace, moneyshowing, placenumber, stringmoney, moneyshowing2, allowbet, begin
+    global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t, showing, n, m, dealerace, moneyshowing, placenumber, stringmoney, moneyshowing2, allowbet
     if int(money) <= 0:
         print("The casino throws you out because you're broke")
         t = 52
-    
-    
-    
-    
-    
-    if begin == 1:
-        if t == 3:
-            bet = 0
-            """betshowing = []
-            for vari in bethidden:
-                vari.visible = False"""
-            t = 2
-            allowbet = 1
-            money = round(money)
-            moneyshowing = []
-            stringmoney = str(money)
-            for a in stringmoney:
-                moneyshowing.append(a)
-            for vari in moneyshowing2:
-                vari.visible = False
-            placenumber = 0
-            qw = len(moneyshowing)
-            for a in range(0,qw):
-                if moneyshowing[a] == "0":
-                    qr = zero((600+33*placenumber,100))
-                    placenumber += 1
-                    qr.scale = .07
-                    moneyshowing2.append(qr)
-                elif moneyshowing[a] == "1":
-                    qr = one((600+33*placenumber,100))
-                    placenumber += 1
-                    qr.scale = .07
-                    moneyshowing2.append(qr)
-                if moneyshowing[a] == "2":
-                    qr = two((600+33*placenumber,100))
-                    placenumber += 1
-                    qr.scale = .07
-                    moneyshowing2.append(qr)
-                elif moneyshowing[a] == "3":
-                    qr = three((600+33*placenumber,100))
-                    placenumber += 1
-                    qr.scale = .07
-                    moneyshowing2.append(qr)
-                if moneyshowing[a] == "4":
-                    qr = four((600+33*placenumber,100))
-                    placenumber += 1
-                    qr.scale = .07
-                    moneyshowing2.append(qr)
-                elif moneyshowing[a] == "5":
-                    qr = five((600+33*placenumber,100))
-                    placenumber += 1
-                    qr.scale = .07
-                    moneyshowing2.append(qr)
-                if moneyshowing[a] == "6":
-                    qr = six((600+33*placenumber,100))
-                    placenumber += 1
-                    qr.scale = .07
-                    moneyshowing2.append(qr)
-                elif moneyshowing[a] == "7":
-                    qr = seven((600+33*placenumber,100))
-                    placenumber += 1
-                    qr.scale = .07
-                    moneyshowing2.append(qr)
-                if moneyshowing[a] == "8":
-                    qr = eight((600+33*placenumber,100))
-                    placenumber += 1
-                    qr.scale = .07
-                    moneyshowing2.append(qr)
-                elif moneyshowing[a] == "9":
-                    qr = nine((600+33*placenumber,100))
-                    placenumber += 1
-                    qr.scale = .07
-                    moneyshowing2.append(qr)
-    
-    
-    
-    
-            m = 2
-            for p in showing:
-                p.visible = False
-            yourscore = 0
-            n = 2
-            yb = 0
-            dealerace = 0
-            db = 0
-            ace = 0
-            #set up deck
-            cards = [H2, H3, H4, H5, H6, H7, H8, H9, H10, JH, QH, KH, AH, D2, D3, D4, D5, D6, D7, D8, D9, D10, JD, QD, KD, AD, S2, S3, S4, S5, S6, S7, S8, S9, S10, JS, QS, KS, AS, C2, C3, C4, C5, C6, C7, C8, C9, C10, JC, QC, KC, AC]
-            #reset visible stuff
-            random.shuffle(cards)
-    
-            #starting cards
-            e = cardback((150, 25))
-            e.scale = .1
-            yourscore = 0
-            dealerscore = 0
-            s = cards[0]
-            a = s((50,350))
-            a.scale = 0.1
-            
-            cards.pop(0)
-            
-            b = cards[0]
-            c = b((150,350))
-            c.scale = 0.1
-            
-            cards.pop(0)
-            
-            q = cards[0]
-            w = q((50,25))
-            w.scale = .1
-            
-            cards.pop(0)
-            r = cards[0]
-            cards.pop(0)
-            
-            r = cards[0]
-            cards.pop(0)
-            print("Press H to hit or S to stay")
-            
-            if q == H2:
-                dealerscore += 2
-            elif q == S2:
-                dealerscore += 2
-            elif q == D2:
-                dealerscore += 2
-            elif q == C2:
-                dealerscore += 2
-            elif q == H3:
-                dealerscore += 3
-            elif q == S3:
-                dealerscore += 3
-            elif q == D3:
-                dealerscore += 3
-            elif q == C3:
-                dealerscore += 3
-            elif q == H4:
-                dealerscore += 4
-            elif q == S4:
-                dealerscore += 4
-            elif q == D4:
-                dealerscore += 4
-            elif q == C4:
-                dealerscore += 4
-            elif q == H5:
-                dealerscore += 5
-            elif q == C5:
-                dealerscore += 5
-            elif q == D5:
-                dealerscore += 5
-            elif q == S5:
-                dealerscore += 5
-            elif q == H6:
-                dealerscore += 6
-            elif q == S6:
-                dealerscore += 6
-            elif q == D6:
-                dealerscore += 6
-            elif q == C6:
-                dealerscore += 6
-            elif q == H7:
-                dealerscore += 7
-            elif q == C7:
-                dealerscore += 7
-            elif q == S7:
-                dealerscore += 7
-            elif q == D7:
-                dealerscore += 7
-            elif q == D8:
-                dealerscore += 8
-            elif q == C8:
-                dealerscore += 8
-            elif q == S8:
-                dealerscore += 8
-            elif q == H8:
-                dealerscore += 8
-            elif q == D9:
-                dealerscore += 9
-            elif q == H9:
-                dealerscore += 9
-            elif q == S9:
-                dealerscore += 9
-            elif q == C9:
-                dealerscore += 9
-            elif q == AH:
-                dealerscore += 1
-                dealerace = 1
-            elif q == AS:
-                dealerscore += 1
-                dealerace = 1
-            elif q == AC:
-                dealerscore += 1
-                dealerace = 1
-            elif q == AD:
-                dealerscore += 1
-                dealerace = 1
-            else:
-                dealerscore += 10
-            
-            if r == H2:
-                dealerscore += 2
-            elif r == S2:
-                dealerscore += 2
-            elif r == D2:
-                dealerscore += 2
-            elif r == C2:
-                dealerscore += 2
-            elif r == H3:
-                dealerscore += 3
-            elif r == S3:
-                dealerscore += 3
-            elif r == D3:
-                dealerscore += 3
-            elif r == C3:
-                dealerscore += 3
-            elif r == H4:
-                dealerscore += 4
-            elif r == S4:
-                dealerscore += 4
-            elif r == D4:
-                dealerscore += 4
-            elif r == C4:
-                dealerscore += 4
-            elif r == H5:
-                dealerscore += 5
-            elif r == C5:
-                dealerscore += 5
-            elif r == D5:
-                dealerscore += 5
-            elif r == S5:
-                dealerscore += 5
-            elif r == H6:
-                dealerscore += 6
-            elif r == S6:
-                dealerscore += 6
-            elif r == D6:
-                dealerscore += 6
-            elif r == C6:
-                dealerscore += 6
-            elif r == H7:
-                dealerscore += 7
-            elif r == C7:
-                dealerscore += 7
-            elif r == S7:
-                dealerscore += 7
-            elif r == D7:
-                dealerscore += 7
-            elif r == D8:
-                dealerscore += 8
-            elif r == C8:
-                dealerscore += 8
-            elif r == S8:
-                dealerscore += 8
-            elif r == H8:
-                dealerscore += 8
-            elif r == D9:
-                dealerscore += 9
-            elif r == H9:
-                dealerscore += 9
-            elif r == S9:
-                dealerscore += 9
-            elif r == C9:
-                dealerscore += 9
-            elif r == AH:
-                dealerscore += 1
-                dealerace = 1
-            elif r == AS:
-                dealerscore += 1
-                dealerace = 1
-            elif r == AC:
-                dealerscore += 1
-                dealerace = 1
-            elif r == AD:
-                dealerscore += 1
-                dealerace = 1
-            else:
-                dealerscore += 10
-            #check for dealer blackjack
-            if q == H10 or q == JH or q == QH or q == KH or q == D10 or q == JD or q == QD or q == KD or q == S10 or q == JS or q == QS or q == KS or q == C10 or q == JC or q == QC or q == KC:
-                if r == AH or r == AD or r == AS or r == AC:
-                    if s == H10 or s == JH or s == QH or s == KH or s == D10 or s == JD or s == QD or s == KD or s == S10 or s == JS or s == QS or s == KS or s == C10 or s == JC or s == QC or s == KC:
-                        if b == AH or b == AD or b == AS or b == AC:
-                            print("You both have blackjack")
-                            print("Press space to start another round")
-                    
-                    elif b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
-                        if s == AH or s == AD or s == AS or s == AC:
-                            print("You both blackjack")
-                    else:
-                        print("Dealer has blackjack")
-                        t = 3
-                        j = r((150,25))
-                        j.scale = .1
-                        db = 5
-                        money = int(money) - int(bet)
-                        print("You have $" + str(money))
+    if t == 3:
+        bet = 0
+        """betshowing = []
+        for vari in bethidden:
+            vari.visible = False"""
+        t = 2
+        allowbet = 1
+        money = round(money)
+        moneyshowing = []
+        stringmoney = str(money)
+        for a in stringmoney:
+            moneyshowing.append(a)
+        for vari in moneyshowing2:
+            vari.visible = False
+        placenumber = 0
+        qw = len(moneyshowing)
+        for a in range(0,qw):
+            if moneyshowing[a] == "0":
+                qr = zero((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            elif moneyshowing[a] == "1":
+                qr = one((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            if moneyshowing[a] == "2":
+                qr = two((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            elif moneyshowing[a] == "3":
+                qr = three((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            if moneyshowing[a] == "4":
+                qr = four((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            elif moneyshowing[a] == "5":
+                qr = five((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            if moneyshowing[a] == "6":
+                qr = six((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            elif moneyshowing[a] == "7":
+                qr = seven((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            if moneyshowing[a] == "8":
+                qr = eight((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            elif moneyshowing[a] == "9":
+                qr = nine((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+
+
+
+
+        m = 2
+        for p in showing:
+            p.visible = False
+        yourscore = 0
+        n = 2
+        yb = 0
+        dealerace = 0
+        db = 0
+        ace = 0
+        #set up deck
+        cards = [H2, H3, H4, H5, H6, H7, H8, H9, H10, JH, QH, KH, AH, D2, D3, D4, D5, D6, D7, D8, D9, D10, JD, QD, KD, AD, S2, S3, S4, S5, S6, S7, S8, S9, S10, JS, QS, KS, AS, C2, C3, C4, C5, C6, C7, C8, C9, C10, JC, QC, KC, AC]
+        #reset visible stuff
+        random.shuffle(cards)
+
+        #starting cards
+        e = cardback((150, 25))
+        e.scale = .1
+        yourscore = 0
+        dealerscore = 0
+        s = cards[0]
+        a = s((50,350))
+        a.scale = 0.1
+        
+        cards.pop(0)
+        
+        b = cards[0]
+        c = b((150,350))
+        c.scale = 0.1
+        
+        cards.pop(0)
+        
+        q = cards[0]
+        w = q((50,25))
+        w.scale = .1
+        
+        cards.pop(0)
+        r = cards[0]
+        cards.pop(0)
+        
+        r = cards[0]
+        cards.pop(0)
+        print("Press H to hit or S to stay")
+        
+        if q == H2:
+            dealerscore += 2
+        elif q == S2:
+            dealerscore += 2
+        elif q == D2:
+            dealerscore += 2
+        elif q == C2:
+            dealerscore += 2
+        elif q == H3:
+            dealerscore += 3
+        elif q == S3:
+            dealerscore += 3
+        elif q == D3:
+            dealerscore += 3
+        elif q == C3:
+            dealerscore += 3
+        elif q == H4:
+            dealerscore += 4
+        elif q == S4:
+            dealerscore += 4
+        elif q == D4:
+            dealerscore += 4
+        elif q == C4:
+            dealerscore += 4
+        elif q == H5:
+            dealerscore += 5
+        elif q == C5:
+            dealerscore += 5
+        elif q == D5:
+            dealerscore += 5
+        elif q == S5:
+            dealerscore += 5
+        elif q == H6:
+            dealerscore += 6
+        elif q == S6:
+            dealerscore += 6
+        elif q == D6:
+            dealerscore += 6
+        elif q == C6:
+            dealerscore += 6
+        elif q == H7:
+            dealerscore += 7
+        elif q == C7:
+            dealerscore += 7
+        elif q == S7:
+            dealerscore += 7
+        elif q == D7:
+            dealerscore += 7
+        elif q == D8:
+            dealerscore += 8
+        elif q == C8:
+            dealerscore += 8
+        elif q == S8:
+            dealerscore += 8
+        elif q == H8:
+            dealerscore += 8
+        elif q == D9:
+            dealerscore += 9
+        elif q == H9:
+            dealerscore += 9
+        elif q == S9:
+            dealerscore += 9
+        elif q == C9:
+            dealerscore += 9
+        elif q == AH:
+            dealerscore += 1
+            dealerace = 1
+        elif q == AS:
+            dealerscore += 1
+            dealerace = 1
+        elif q == AC:
+            dealerscore += 1
+            dealerace = 1
+        elif q == AD:
+            dealerscore += 1
+            dealerace = 1
+        else:
+            dealerscore += 10
+        
+        if r == H2:
+            dealerscore += 2
+        elif r == S2:
+            dealerscore += 2
+        elif r == D2:
+            dealerscore += 2
+        elif r == C2:
+            dealerscore += 2
+        elif r == H3:
+            dealerscore += 3
+        elif r == S3:
+            dealerscore += 3
+        elif r == D3:
+            dealerscore += 3
+        elif r == C3:
+            dealerscore += 3
+        elif r == H4:
+            dealerscore += 4
+        elif r == S4:
+            dealerscore += 4
+        elif r == D4:
+            dealerscore += 4
+        elif r == C4:
+            dealerscore += 4
+        elif r == H5:
+            dealerscore += 5
+        elif r == C5:
+            dealerscore += 5
+        elif r == D5:
+            dealerscore += 5
+        elif r == S5:
+            dealerscore += 5
+        elif r == H6:
+            dealerscore += 6
+        elif r == S6:
+            dealerscore += 6
+        elif r == D6:
+            dealerscore += 6
+        elif r == C6:
+            dealerscore += 6
+        elif r == H7:
+            dealerscore += 7
+        elif r == C7:
+            dealerscore += 7
+        elif r == S7:
+            dealerscore += 7
+        elif r == D7:
+            dealerscore += 7
+        elif r == D8:
+            dealerscore += 8
+        elif r == C8:
+            dealerscore += 8
+        elif r == S8:
+            dealerscore += 8
+        elif r == H8:
+            dealerscore += 8
+        elif r == D9:
+            dealerscore += 9
+        elif r == H9:
+            dealerscore += 9
+        elif r == S9:
+            dealerscore += 9
+        elif r == C9:
+            dealerscore += 9
+        elif r == AH:
+            dealerscore += 1
+            dealerace = 1
+        elif r == AS:
+            dealerscore += 1
+            dealerace = 1
+        elif r == AC:
+            dealerscore += 1
+            dealerace = 1
+        elif r == AD:
+            dealerscore += 1
+            dealerace = 1
+        else:
+            dealerscore += 10
+        #check for dealer blackjack
+        if q == H10 or q == JH or q == QH or q == KH or q == D10 or q == JD or q == QD or q == KD or q == S10 or q == JS or q == QS or q == KS or q == C10 or q == JC or q == QC or q == KC:
+            if r == AH or r == AD or r == AS or r == AC:
+                if s == H10 or s == JH or s == QH or s == KH or s == D10 or s == JD or s == QD or s == KD or s == S10 or s == JS or s == QS or s == KS or s == C10 or s == JC or s == QC or s == KC:
+                    if b == AH or b == AD or b == AS or b == AC:
+                        print("You both have blackjack")
                         print("Press space to start another round")
-                    cards.pop(0)
-            
-            if r == H10 or r == JH or r == QH or r == KH or r == D10 or r == JD or r == QD or r == KD or r == S10 or r == JS or r == QS or r == KS or r == C10 or r == JC or r == QC or r == KC:
-                if q == AH or q == AD or q == AS or q == AC:
-                    if s == H10 or s == JH or s == QH or s == KH or s == D10 or s == JD or s == QD or s == KD or s == S10 or s == JS or s == QS or s == KS or s == C10 or s == JC or s == QC or s == KC:
-                        if b == AH or b == AD or b == AS or b == AC:
-                            print("You both have blackjack")
-                    
-                    elif b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
-                        if s == AH or s == AD or s == AS or s == AC:
-                            print("You both blackjack")
-                    else:
-                        print("Dealer has blackjack")
-                        t = 3
-                        money = int(money) - int(bet)
-                        print("You have $" + str(money))
-                        j = r((150,25))
-                        j.scale = .1
-                        db = 5
-                        print("Press space to start another round")
-                    cards.pop(0)
-            
-            
-            
-            #check if player blackjack(todo)
-            if s == H10 or s == JH or s == QH or s == KH or s == D10 or s == JD or s == QD or s == KD or s == S10 or s == JS or s == QS or s == KS or s == C10 or s == JC or s == QC or s == KC:
-                if b == AH or b == AD or b == AS or b == AC:
-                    print("You have blackjack")
+                
+                elif b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
+                    if s == AH or s == AD or s == AS or s == AC:
+                        print("You both blackjack")
+                else:
+                    print("Dealer has blackjack")
+                    t = 3
                     j = r((150,25))
                     j.scale = .1
                     db = 5
-                    money = int(money) + 1.5*int(bet)
+                    money = int(money) - int(bet)
                     print("You have $" + str(money))
-                    t = 3
                     print("Press space to start another round")
                 cards.pop(0)
+        
+        if r == H10 or r == JH or r == QH or r == KH or r == D10 or r == JD or r == QD or r == KD or r == S10 or r == JS or r == QS or r == KS or r == C10 or r == JC or r == QC or r == KC:
+            if q == AH or q == AD or q == AS or q == AC:
+                if s == H10 or s == JH or s == QH or s == KH or s == D10 or s == JD or s == QD or s == KD or s == S10 or s == JS or s == QS or s == KS or s == C10 or s == JC or s == QC or s == KC:
+                    if b == AH or b == AD or b == AS or b == AC:
+                        print("You both have blackjack")
                 
-            
-            if b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
-                if s == AH or s == AD or s == AS or s == AC:
-                    print("You have blackjack")
+                elif b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
+                    if s == AH or s == AD or s == AS or s == AC:
+                        print("You both blackjack")
+                else:
+                    print("Dealer has blackjack")
+                    t = 3
+                    money = int(money) - int(bet)
+                    print("You have $" + str(money))
                     j = r((150,25))
                     j.scale = .1
-                    money = int(money) + 1.5*int(bet)
-                    print("You have $" + str(money))
+                    db = 5
                     print("Press space to start another round")
-                    t = 3
                 cards.pop(0)
-            #getting the starting score
-            if s == H2:
-                yourscore += 2
-                
-            elif s == S2:
-                yourscore += 2
-                
-            elif s == D2:
-                yourscore += 2
-                
-            elif s == C2:
-                yourscore += 2
-                
-            elif s == H3:
-                yourscore += 3
-                
-            elif s == S3:
-                yourscore += 3
-                
-            elif s == D3:
-                yourscore += 3
-                
-            elif s == C3:
-                yourscore += 3
-                
-            elif s == H4:
-                yourscore += 4
-                
-            elif s == S4:
-                yourscore += 4
-                
-            elif s == D4:
-                yourscore += 4
-                
-            elif s == C4:
-                yourscore += 4
-                
-            elif s == H5:
-                yourscore += 5
-                
-            elif s == C5:
-                yourscore += 5
-                
-            elif s == D5:
-                yourscore += 5
-                
-            elif s == S5:
-                yourscore += 5
-                
-            elif s == H6:
-                yourscore += 6
-                
-            elif s == S6:
-                yourscore += 6
-                
-            elif s == D6:
-                yourscore += 6
-                
-            elif s == C6:
-                yourscore += 6
-                
-            elif s == H7:
-                yourscore += 7
-                
-            elif s == C7:
-                yourscore += 7
-                
-            elif s == S7:
-                yourscore += 7
-                
-            elif s == D7:
-                yourscore += 7
-                
-            elif s == D8:
-                yourscore += 8
-                
-            elif s == C8:
-                yourscore += 8
-                
-            elif s == S8:
-                yourscore += 8
-                
-            elif s == H8:
-                yourscore += 8
-                
-            elif s == D9:
-                yourscore += 9
-                
-            elif s == H9:
-                yourscore += 9
-                
-            elif s == S9:
-                yourscore += 9
-                
-            elif s == C9:
-                yourscore += 9
-                
-            elif s == AH:
-                yourscore += 1
-                ace = 1
-                
-            elif s == AS:
-                yourscore += 1
-                ace = 1
-                
-            elif s == AC:
-                yourscore += 1
-                
-                ace = 1
-            elif s == AD:
-                yourscore += 1
-                
-                ace = 1
-            else:
-                yourscore += 10
-                
+        
+        
+        
+        #check if player blackjack(todo)
+        if s == H10 or s == JH or s == QH or s == KH or s == D10 or s == JD or s == QD or s == KD or s == S10 or s == JS or s == QS or s == KS or s == C10 or s == JC or s == QC or s == KC:
+            if b == AH or b == AD or b == AS or b == AC:
+                print("You have blackjack")
+                j = r((150,25))
+                j.scale = .1
+                db = 5
+                money = int(money) + 1.5*int(bet)
+                print("You have $" + str(money))
+                t = 3
+                print("Press space to start another round")
+            cards.pop(0)
             
-            if b == H2:
-                yourscore += 2
-                
-            elif b == S2:
-                yourscore += 2
-                
-            elif b == D2:
-                yourscore += 2
-                
-            elif b == C2:
-                yourscore += 2
-                
-            elif b == H3:
-                yourscore += 3
-                
-            elif b == S3:
-                yourscore += 3
-                
-            elif b == D3:
-                yourscore += 3
-                
-            elif b == C3:
-                yourscore += 3
-                
-            elif b == H4:
-                yourscore += 4
-                
-            elif b == S4:
-                yourscore += 4
-                
-            elif b == D4:
-                yourscore += 4
-                
-            elif b == C4:
-                yourscore += 4
-                
-            elif b == H5:
-                yourscore += 5
-                
-            elif b == C5:
-                yourscore += 5
-                
-            elif b == D5:
-                yourscore += 5
-                
-            elif b == S5:
-                yourscore += 5
-                
-            elif b == H6:
-                yourscore += 6
-                
-            elif b == S6:
-                yourscore += 6
-                
-            elif b == D6:
-                yourscore += 6
-                
-            elif b == C6:
-                yourscore += 6
-                
-            elif b == H7:
-                yourscore += 7
-                
-            elif b == C7:
-                yourscore += 7
-                
-            elif b == S7:
-                yourscore += 7
-                
-            elif b == D7:
-                yourscore += 7
-                
-            elif b == D8:
-                yourscore += 8
-                
-            elif b == C8:
-                yourscore += 8
-                
-            elif b == S8:
-                yourscore += 8
-                
-            elif b == H8:
-                yourscore += 8
-                
-            elif b == D9:
-                yourscore += 9
-                
-            elif b == H9:
-                yourscore += 9
-                
-            elif b == S9:
-                yourscore += 9
-                
-            elif b == C9:
-                yourscore += 9
-                
-            elif b == AH:
-                yourscore += 1
-                
-                ace = 1
-            elif b == AS:
-                yourscore += 1
-                
-                ace = 1
-            elif b == AC:
-                yourscore += 1
-                
-                ace = 1
-            elif b == AD:
-                yourscore += 1
-                
-                ace = 1
-            else:
-                yourscore += 10
+        
+        if b == H10 or b == JH or b == QH or b == KH or b == D10 or b == JD or b == QD or b == KD or b == S10 or b == JS or b == QS or b == KS or b == C10 or b == JC or b == QC or b == KC:
+            if s == AH or s == AD or s == AS or s == AC:
+                print("You have blackjack")
+                j = r((150,25))
+                j.scale = .1
+                money = int(money) + 1.5*int(bet)
+                print("You have $" + str(money))
+                print("Press space to start another round")
+                t = 3
+            cards.pop(0)
+        #getting the starting score
+        if s == H2:
+            yourscore += 2
             
-begin = 0
+        elif s == S2:
+            yourscore += 2
+            
+        elif s == D2:
+            yourscore += 2
+            
+        elif s == C2:
+            yourscore += 2
+            
+        elif s == H3:
+            yourscore += 3
+            
+        elif s == S3:
+            yourscore += 3
+            
+        elif s == D3:
+            yourscore += 3
+            
+        elif s == C3:
+            yourscore += 3
+            
+        elif s == H4:
+            yourscore += 4
+            
+        elif s == S4:
+            yourscore += 4
+            
+        elif s == D4:
+            yourscore += 4
+            
+        elif s == C4:
+            yourscore += 4
+            
+        elif s == H5:
+            yourscore += 5
+            
+        elif s == C5:
+            yourscore += 5
+            
+        elif s == D5:
+            yourscore += 5
+            
+        elif s == S5:
+            yourscore += 5
+            
+        elif s == H6:
+            yourscore += 6
+            
+        elif s == S6:
+            yourscore += 6
+            
+        elif s == D6:
+            yourscore += 6
+            
+        elif s == C6:
+            yourscore += 6
+            
+        elif s == H7:
+            yourscore += 7
+            
+        elif s == C7:
+            yourscore += 7
+            
+        elif s == S7:
+            yourscore += 7
+            
+        elif s == D7:
+            yourscore += 7
+            
+        elif s == D8:
+            yourscore += 8
+            
+        elif s == C8:
+            yourscore += 8
+            
+        elif s == S8:
+            yourscore += 8
+            
+        elif s == H8:
+            yourscore += 8
+            
+        elif s == D9:
+            yourscore += 9
+            
+        elif s == H9:
+            yourscore += 9
+            
+        elif s == S9:
+            yourscore += 9
+            
+        elif s == C9:
+            yourscore += 9
+            
+        elif s == AH:
+            yourscore += 1
+            ace = 1
+            
+        elif s == AS:
+            yourscore += 1
+            ace = 1
+            
+        elif s == AC:
+            yourscore += 1
+            
+            ace = 1
+        elif s == AD:
+            yourscore += 1
+            
+            ace = 1
+        else:
+            yourscore += 10
+            
+        
+        if b == H2:
+            yourscore += 2
+            
+        elif b == S2:
+            yourscore += 2
+            
+        elif b == D2:
+            yourscore += 2
+            
+        elif b == C2:
+            yourscore += 2
+            
+        elif b == H3:
+            yourscore += 3
+            
+        elif b == S3:
+            yourscore += 3
+            
+        elif b == D3:
+            yourscore += 3
+            
+        elif b == C3:
+            yourscore += 3
+            
+        elif b == H4:
+            yourscore += 4
+            
+        elif b == S4:
+            yourscore += 4
+            
+        elif b == D4:
+            yourscore += 4
+            
+        elif b == C4:
+            yourscore += 4
+            
+        elif b == H5:
+            yourscore += 5
+            
+        elif b == C5:
+            yourscore += 5
+            
+        elif b == D5:
+            yourscore += 5
+            
+        elif b == S5:
+            yourscore += 5
+            
+        elif b == H6:
+            yourscore += 6
+            
+        elif b == S6:
+            yourscore += 6
+            
+        elif b == D6:
+            yourscore += 6
+            
+        elif b == C6:
+            yourscore += 6
+            
+        elif b == H7:
+            yourscore += 7
+            
+        elif b == C7:
+            yourscore += 7
+            
+        elif b == S7:
+            yourscore += 7
+            
+        elif b == D7:
+            yourscore += 7
+            
+        elif b == D8:
+            yourscore += 8
+            
+        elif b == C8:
+            yourscore += 8
+            
+        elif b == S8:
+            yourscore += 8
+            
+        elif b == H8:
+            yourscore += 8
+            
+        elif b == D9:
+            yourscore += 9
+            
+        elif b == H9:
+            yourscore += 9
+            
+        elif b == S9:
+            yourscore += 9
+            
+        elif b == C9:
+            yourscore += 9
+            
+        elif b == AH:
+            yourscore += 1
+            
+            ace = 1
+        elif b == AS:
+            yourscore += 1
+            
+            ace = 1
+        elif b == AC:
+            yourscore += 1
+            
+            ace = 1
+        elif b == AD:
+            yourscore += 1
+            
+            ace = 1
+        else:
+            yourscore += 10
+            
+
 def step():
     global t
     while t == 19:
@@ -979,11 +973,6 @@ def bet(event):
                 placenumber += 1
                 qr.scale = .07
                 bethidden.append(qr)
-
-def event(begin):
-    global allowbet, begin
-    allowbet = 2
-    begin = 1
         
 n = 2
 m = 2
@@ -1314,7 +1303,6 @@ myapp = App()
 app = App(500,500)  
 app.run(step)
 myapp.listenKeyEvent('keydown','space',pauseplay)
-myapp.listenKeyEvent('keydown','enter',begin)
 myapp.listenKeyEvent('keydown','s',stay)
 myapp.listenKeyEvent('keydown','h',hit)
 myapp.listenKeyEvent('keydown','b',bet)
