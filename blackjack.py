@@ -995,7 +995,68 @@ def stay(event):
         allowbet = 2
         for a in bethidden:
             a.visible = False
-    
+
+        money = round(money)
+        moneyshowing = []
+        stringmoney = str(money)
+        for a in stringmoney:
+            moneyshowing.append(a)
+        for vari in moneyshowing2:
+            vari.visible = False
+        placenumber = 0
+        qw = len(moneyshowing)
+        for a in range(0,qw):
+            if moneyshowing[a] == "0":
+                qr = zero((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            elif moneyshowing[a] == "1":
+                qr = one((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            if moneyshowing[a] == "2":
+                qr = two((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            elif moneyshowing[a] == "3":
+                qr = three((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            if moneyshowing[a] == "4":
+                qr = four((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            elif moneyshowing[a] == "5":
+                qr = five((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            if moneyshowing[a] == "6":
+                qr = six((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            elif moneyshowing[a] == "7":
+                qr = seven((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            if moneyshowing[a] == "8":
+                qr = eight((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+            elif moneyshowing[a] == "9":
+                qr = nine((600+33*placenumber,100))
+                placenumber += 1
+                qr.scale = .07
+                moneyshowing2.append(qr)
+
         if ace == 1 and yourscore + 10 < 22:
             yourscore = yourscore + 10
         if dealerace == 1:
