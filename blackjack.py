@@ -1164,6 +1164,7 @@ def begin(event):
     if t == 2:
         allowbet = 2
         begin = 1
+        t = 3
         
         
     
