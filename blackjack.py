@@ -326,7 +326,6 @@ def pauseplay(event):
         print("The casino throws you out because you're broke")
         t = 52
     if t == 3:
-        bet = 0
         t = 2
         allowbet = 1
         money = round(money)
@@ -1133,29 +1132,34 @@ def stay(event):
             print("You have $" + str(money))
             print("Press space to start another round")
             begin = 0
+            bet = 0
         if db == 5:
             print("You win")
             money = int(money) + int(bet)
             print("You have $" + str(money))
             print("Press space to start another round")
+            bet = 0
             begin = 0
         elif yourscore == dealerscore:
             print("Push")
             print("You have $" + str(money))
             print("Press space to start another round")
             begin = 0
+            bet = 0
         elif yourscore < dealerscore:
             print("You lose")
             money = int(money) - int(bet)
             print("You have $" + str(money))
             print("Press space to start another round")
             begin = 0
+            bet = 0
         else:
             print("You win")
             money = int(money) + int(bet)
             print("You have $" + str(money))
             print("Press space to start another round")
             begin = 0
+            bet = 0
 
 begin = 0
 def begin(event):
@@ -1171,7 +1175,7 @@ def begin(event):
 
 m = 2
 def hit(event):
-    global cards, y, m, yourscore, t, ace, o, p, yb, showing, money, allowbet
+    global cards, y, m, yourscore, t, ace, o, p, yb, showing, money, allowbet, bet
     allowbet = 2
     y = 350
     if t == 2:
@@ -1301,6 +1305,7 @@ def hit(event):
             print("You have $" + str(money))
             print("Press space to start another round")
             begin = 0
+            bet = 0
     #changing you score
 
 
