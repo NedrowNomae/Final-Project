@@ -993,6 +993,8 @@ def stay(event):
         j = r((150,25))
         j.scale = .1
         allowbet = 2
+        for a in bethidden:
+            a.visible = False
     
         if ace == 1 and yourscore + 10 < 22:
             yourscore = yourscore + 10
@@ -1173,8 +1175,6 @@ def stay(event):
             print("Press space to start another round")
             begin = 0
             bet = 0
-        for a in bethidden:
-            a.visible = False
 
 begin = 0
 def begin(event):
