@@ -1142,8 +1142,7 @@ def stay(event):
             print("Press space to start another round")
             begin = 0
             bet = 0
-            for a in betshowing:
-                a.visible = False
+            
         if db == 5:
             print("You win")
             money = int(money) + int(bet)
@@ -1151,16 +1150,14 @@ def stay(event):
             print("Press space to start another round")
             bet = 0
             begin = 0
-            for a in betshowing:
-                a.visible = False
+
         elif yourscore == dealerscore:
             print("Push")
             print("You have $" + str(money))
             print("Press space to start another round")
             begin = 0
             bet = 0
-            for a in betshowing:
-                a.visible = False
+
         elif yourscore < dealerscore:
             print("You lose")
             money = int(money) - int(bet)
@@ -1168,8 +1165,7 @@ def stay(event):
             print("Press space to start another round")
             begin = 0
             bet = 0
-            for a in betshowing:
-                a.visible = False
+
         else:
             print("You win")
             money = int(money) + int(bet)
@@ -1177,8 +1173,8 @@ def stay(event):
             print("Press space to start another round")
             begin = 0
             bet = 0
-            for a in betshowing:
-                a.visible = False
+        for a in betshowing:
+            a.visible = False
 
 begin = 0
 def begin(event):
