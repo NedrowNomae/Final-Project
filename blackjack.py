@@ -312,6 +312,7 @@ class AC(Sprite):
         super().__init__(AC.AC, position)
 lkm = betins((500,400))
 lkm.scale = .4
+lkm.visible = False
 money = 100
 stringmoney = ""
 moneyshowing = []
