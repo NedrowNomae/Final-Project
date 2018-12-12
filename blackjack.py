@@ -11,7 +11,7 @@ class cardback(Sprite):
         super().__init__(cardback.cardback, position)
 
 
-
+bet = 0
 #colors
 black = Color(0x000000, 1.0)
 white = Color(0xffffff, 1.0)
