@@ -21,6 +21,11 @@ noline = LineStyle(0, black)
 #the black squares with the numbers inside them
 RectangleAsset(100,40,noline,black)
 
+class betins(Sprite):
+    betins = ImageAsset("Drawing.png")
+    def __init__(self,  position):
+        super().__init__(betins.betins, position)
+
 #numbers
 class nine(Sprite):
     nine = ImageAsset("number-150798_640.png")
@@ -305,7 +310,7 @@ class AC(Sprite):
     AC = ImageAsset("AC.png")
     def __init__(self,  position):
         super().__init__(AC.AC, position)
-
+lkm = betins((100,100))
 money = 100
 stringmoney = ""
 moneyshowing = []
@@ -325,6 +330,7 @@ def pauseplay(event):
         print("The casino throws you out because you're broke")
         t = 52
     if t == 3:
+        lkm
         t = 2
         money = round(money)
         moneyshowing = []
