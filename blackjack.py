@@ -986,7 +986,7 @@ yb = 0
 
 #what to do when staying
 def stay(event):
-    global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet, showing, p, dealerace, allowbet, begin, betshowing
+    global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet, showing, p, dealerace, allowbet, begin, bethidden
     if t != 3:
         t = 3
         print("You stayed")
@@ -1173,7 +1173,7 @@ def stay(event):
             print("Press space to start another round")
             begin = 0
             bet = 0
-        for a in betshowing:
+        for a in bethidden:
             a.visible = False
 
 begin = 0
