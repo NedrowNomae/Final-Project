@@ -978,7 +978,7 @@ yb = 0
 
 #what to do when staying
 def stay(event):
-    global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet, showing, p, dealerace, allowbet
+    global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet, showing, p, dealerace, allowbet, begin
     if t != 3:
         t = 3
         print("You stayed")
@@ -1296,6 +1296,7 @@ def hit(event):
             money = int(money) - int(bet)
             print("You have $" + str(money))
             print("Press space to start another round")
+            begin = 0
     #changing you score
 
 
