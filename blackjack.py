@@ -911,6 +911,8 @@ def bet(event):
     if allowbet == 1:
         bet += 1
         stringbet = str(bet)
+        for a in bethidden:
+            a.visible = False
         for a in stringbet:
             betshowing.append(a)
             print(betshowing)
