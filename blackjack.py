@@ -398,7 +398,6 @@ def pauseplay(event):
 
 
         if begin == 1:
-            lkm.visible = False
             m = 2
             for p in showing:
                 p.visible = False
@@ -1195,6 +1194,7 @@ def begin(event):
     global begin, allowbet, t
     print(t)
     if t == 2:
+        lkm.visible = False
         allowbet = 2
         begin = 1
         t = 3
