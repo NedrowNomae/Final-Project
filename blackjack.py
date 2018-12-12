@@ -1160,9 +1160,10 @@ def stay(event):
 begin = 0
 def begin(event):
     global begin, allowbet
-    if t== 2:
+    if t == 2:
         allowbet = 2
         begin = 1
+        
         
     
 
