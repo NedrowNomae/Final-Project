@@ -986,7 +986,7 @@ yb = 0
 
 #what to do when staying
 def stay(event):
-    global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet, showing, p, dealerace, allowbet, begin
+    global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet, showing, p, dealerace, allowbet, begin, betshowing
     if t != 3:
         t = 3
         print("You stayed")
