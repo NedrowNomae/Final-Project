@@ -999,7 +999,7 @@ yb = 0
 #what to do when staying
 def stay(event):
     global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet, showing, p, dealerace, allowbet, begin, bethidden
-    if t != 3:
+    if t == 2:
         t = 3
         print("You stayed")
         j = r((150,25))
@@ -1205,9 +1205,9 @@ def begin(event):
 m = 2
 def hit(event):
     global cards, y, m, yourscore, t, ace, o, p, yb, showing, money, allowbet, bet, betshowing
-    allowbet = 2
     y = 350
     if t == 2:
+        allowbet = 2
         o = cards[0]
         p = o((100*m+50,y))
         p.scale = .1
