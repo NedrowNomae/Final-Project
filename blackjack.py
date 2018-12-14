@@ -333,7 +333,6 @@ def pauseplay(event):
         t = 52
     if t == 3:
         lkm.visible = True
-        t = 2
         money = round(money)
         moneyshowing = []
         stringmoney = str(money)
@@ -1193,11 +1192,11 @@ begin = 0
 def begin(event):
     global begin, allowbet, t
     print(t)
-    if t == 2:
+    if t == 3:
         lkm.visible = False
         allowbet = 2
         begin = 1
-        t = 3
+        t = 2
         
         
     
