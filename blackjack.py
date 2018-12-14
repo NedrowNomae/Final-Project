@@ -1214,7 +1214,7 @@ def hit(event):
         cards.pop(0)
         showing.append(p)
         m = m + 1
-    if t == 2:
+    
         if o == H2:
             yourscore += 2
             
