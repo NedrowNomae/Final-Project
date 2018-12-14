@@ -333,6 +333,7 @@ def pauseplay(event):
         t = 52
     if t == 3:
         t = 2
+        lkm.visible = True
         money = round(money)
         moneyshowing = []
         stringmoney = str(money)
@@ -397,7 +398,6 @@ def pauseplay(event):
 
 
         if begin == 1:
-            lkm.visible = True
             m = 2
             for p in showing:
                 p.visible = False
