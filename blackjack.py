@@ -1205,8 +1205,8 @@ y = 0
 m = 2
 def hit(event):
     global cards, y, m, yourscore, t, ace, o, p, yb, showing, money, allowbet, bet, betshowing
-    y = 350
     if t == 4:
+        y = 350
         allowbet = 2
         o = cards[0]
         p = o((100*m+50,y))
