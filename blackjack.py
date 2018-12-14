@@ -333,7 +333,7 @@ def pauseplay(event):
         t = 52
     if t == 3:
         lkm.visible = True
-        t = 2
+        t = 4
         money = round(money)
         moneyshowing = []
         stringmoney = str(money)
@@ -1000,7 +1000,7 @@ yb = 0
 def stay(event):
     global t, r, n, ace, dealerscore, cards, m, yourscore, db, yb, money, bet, showing, p, dealerace, allowbet, begin, bethidden
     if t == 2:
-        t = 3
+        t = 4
         print("You stayed")
         j = r((150,25))
         j.scale = .1
@@ -1206,7 +1206,7 @@ m = 2
 def hit(event):
     global cards, y, m, yourscore, t, ace, o, p, yb, showing, money, allowbet, bet, betshowing
     y = 350
-    if t == 2:
+    if t == 4:
         allowbet = 2
         o = cards[0]
         p = o((100*m+50,y))
