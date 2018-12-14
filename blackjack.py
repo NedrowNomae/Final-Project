@@ -1200,7 +1200,7 @@ def begin(event):
         t = 3
         
         
-    
+y = 0
 
 m = 2
 def hit(event):
