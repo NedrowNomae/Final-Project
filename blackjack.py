@@ -1197,7 +1197,6 @@ def begin(event):
         lkm.visible = False
         allowbet = 2
         begin = 1
-        t = 2
         
         
     
