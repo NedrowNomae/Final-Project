@@ -1194,7 +1194,7 @@ begin = 0
 def begin(event):
     global begin, allowbet, t
     print(t)
-    if t == 2:
+    if t == 3:
         lkm.visible = False
         allowbet = 2
         begin = 1
