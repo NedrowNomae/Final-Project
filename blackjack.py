@@ -316,7 +316,7 @@ class AC(Sprite):
     def __init__(self,  position):
         super().__init__(AC.AC, position)
 lkm = betins((500,400))
-klm = spacetobegin((250,250))
+klm = spacetobegin((100,100))
 lkm.scale = .4
 lkm.visible = False
 money = 100
