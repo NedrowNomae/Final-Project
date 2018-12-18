@@ -337,6 +337,7 @@ def pauseplay(event):
     if int(money) <= 0:
         print("The casino throws you out because you're broke")
         t = 52
+        klm.visible = False
     if t == 3:
         lkm.visible = True
         money = round(money)
