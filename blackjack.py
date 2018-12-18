@@ -26,6 +26,11 @@ class betins(Sprite):
     def __init__(self,  position):
         super().__init__(betins.betins, position)
 
+class spacetobegin(Sprite):
+    spacetobegin = ImageAsset("a5293d9a-72db-4ee6-ace4-440e0559c94d.png")
+    def __init__(self,  position):
+        super().__init__(spacetobegin.spacetobegin, position)
+
 #numbers
 class nine(Sprite):
     nine = ImageAsset("number-150798_640.png")
