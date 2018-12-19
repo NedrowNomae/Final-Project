@@ -31,6 +31,10 @@ class spacetobegin(Sprite):
     def __init__(self,  position):
         super().__init__(spacetobegin.spacetobegin, position)
 
+class howhowtobet:
+    howhowtobet = ImageAsset("")
+    def __init__(self,  position):
+        super().__init__(howhowtobet.howhowtobet, position)    
 #numbers
 class nine(Sprite):
     nine = ImageAsset("number-150798_640.png")
