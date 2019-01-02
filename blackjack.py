@@ -4,7 +4,6 @@ import random
 run = 0
 yourscore = 0
 dealerscore = 0
-associations = "0123456789"
 class cardback(Sprite):
     cardback = ImageAsset("gray_back.png")
     def __init__(self,  position):
