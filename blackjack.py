@@ -405,7 +405,7 @@ def pauseplay(event):
 
 
         if begin == 1:
-            m = 2
+            #m = 2
             t = 2
             for p in showing:
                 p.visible = False
