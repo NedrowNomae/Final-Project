@@ -1333,7 +1333,7 @@ def hit(event):
 
 
 
-
+#Note: This game is for educational use only
 
 
 
