@@ -338,6 +338,9 @@ def pauseplay(event):
         print("The casino throws you out because you're broke")
         t = 52
     if t == 3:
+        print(allowbet)
+        print(begin)
+        print(t)
         money = round(money)
         moneyshowing = []
         stringmoney = str(money)
