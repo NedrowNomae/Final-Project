@@ -318,10 +318,7 @@ class AC(Sprite):
     AC = ImageAsset("AC.png")
     def __init__(self,  position):
         super().__init__(AC.AC, position)
-lkm = betins((500,400))
-klm = spacetobegin((100,100))
-lkm.scale = .4
-lkm.visible = False
+"lkm klm"
 money = 100
 stringmoney = ""
 moneyshowing = []
@@ -337,13 +334,10 @@ def rules(event):
     print("Your hand is on the bottom. The game has mostly standard rules of blackjack. You may not split. You may not surrender.")
 def pauseplay(event):
     global q, dealerscore, yourscore, r, a, b, cards, money, o, p, yb, db, bet, ace, t, showing, n, m, dealerace, moneyshowing, placenumber, stringmoney, moneyshowing2, allowbet, begin
-    klm.visible = False
     if int(money) <= 0:
         print("The casino throws you out because you're broke")
         t = 52
-        klm.visible = False
     if t == 3:
-        lkm.visible = True
         money = round(money)
         moneyshowing = []
         stringmoney = str(money)
@@ -1205,7 +1199,6 @@ def begin(event):
     global begin, allowbet, t
     print(t)
     if t == 3:
-        lkm.visible = False
         allowbet = 2
         begin = 1
         
