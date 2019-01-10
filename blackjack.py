@@ -1340,7 +1340,6 @@ def hit(event):
             bet = 0
             for a in betshowing:
                 a.visible = False
-            allowbet = 1
     #changing you score
 
 
