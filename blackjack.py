@@ -20,20 +20,6 @@ noline = LineStyle(0, black)
 #the black squares with the numbers inside them
 RectangleAsset(100,40,noline,black)
 
-class betins(Sprite):
-    betins = ImageAsset("a5293d9a-72db-4ee6-ace4-440e0559c94d.png")
-    def __init__(self,  position):
-        super().__init__(betins.betins, position)
-
-class spacetobegin(Sprite):
-    spacetobegin = ImageAsset("0971418d-e3ae-42bd-a53c-da60d5148e8d.png")
-    def __init__(self,  position):
-        super().__init__(spacetobegin.spacetobegin, position)
-
-class howhowtobet:
-    howhowtobet = ImageAsset("")
-    def __init__(self,  position):
-        super().__init__(howhowtobet.howhowtobet, position)    
 #numbers
 class nine(Sprite):
     nine = ImageAsset("number-150798_640.png")
