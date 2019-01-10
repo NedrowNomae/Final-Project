@@ -1324,8 +1324,6 @@ def hit(event):
             money = int(money) - int(bet)
             print("You have $" + str(money))
             print("Press space to start another round")
-            begin = 0
-            bet = 0
             for a in betshowing:
                 a.visible = False
     #changing you score
