@@ -1320,12 +1320,13 @@ def hit(event):
         if yourscore > 21.5:
             print("You busted")
             t = 3
-            bet = 0
+            yb = 5
             begin = 0
             allowbet = 1
             money = int(money) - int(bet)
             print("You have $" + str(money))
             print("Press space to start another round")
+            bet = 0
             for a in betshowing:
                 a.visible = False
     #changing you score
