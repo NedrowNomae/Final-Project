@@ -1322,6 +1322,7 @@ def hit(event):
             t = 3
             bet = 0
             begin = 0
+            allowbet = 1
             money = int(money) - int(bet)
             print("You have $" + str(money))
             print("Press space to start another round")
