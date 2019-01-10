@@ -1336,7 +1336,6 @@ def hit(event):
             yourscore += 10
         if yourscore > 21.5:
             print("You busted")
-            yb = 5
             t = 3
             allowbet = 1
             money = int(money) - int(bet)
