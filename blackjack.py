@@ -1319,9 +1319,8 @@ def hit(event):
             yourscore += 10
         if yourscore > 21.5:
             print("You busted")
-            t = 3
+            #t = 3
             yb = 5
-            begin = 0
             allowbet = 1
             money = int(money) - int(bet)
             print("You have $" + str(money))
@@ -1329,6 +1328,7 @@ def hit(event):
             bet = 0
             m = 2
             n = 2
+            begin = 0
             for a in betshowing:
                 a.visible = False
     #changing you score
